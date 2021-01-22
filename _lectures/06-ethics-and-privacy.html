@@ -7,10 +7,13 @@ author:
   institute: 
   twitter: lawrennd
   gscholar: r3SJcvoAAAAJ
-  orchid: 
+  orcid: 0000-0001-9258-1030
+edit_url: https://github.com/lawrennd/talks/edit/gh-pages/_execed/ethics-and-privacy.md
 week: 0
 session: 6
 reveal: 06-ethics-and-privacy.slides.html
+pptx: 06-ethics-and-privacy.pptx
+edit_url: https://github.com/lawrennd/talks/edit/gh-pages/_execed/ethics-and-privacy.md
 layout: lecture
 categories:
 - notes
@@ -48,10 +51,10 @@ categories:
 compute
 </td>
 <td align="center">
-<br /><span class="math display"> ≈ 100 gigaflops</span><br />
+<span class="math display">\[\approx 100 \text{ gigaflops}\]</span>
 </td>
 <td align="center">
-<br /><span class="math display"> ≈ 16 petaflops</span><br />
+<span class="math display">\[\approx 16 \text{ petaflops}\]</span>
 </td>
 </tr>
 <tr>
@@ -59,10 +62,10 @@ compute
 communicate
 </td>
 <td align="center">
-<br /><span class="math display">1 gigbit/s</span><br />
+<span class="math display">\[1 \text{ gigbit/s}\]</span>
 </td>
 <td align="center">
-<br /><span class="math display">100 bit/s</span><br />
+<span class="math display">\[100 \text{ bit/s}\]</span>
 </td>
 </tr>
 <tr>
@@ -70,18 +73,19 @@ communicate
 (compute/communicate)
 </td>
 <td align="center">
-<br /><span class="math display">10<sup>4</sup></span><br />
+<span class="math display">\[10^{4}\]</span>
 </td>
 <td align="center">
-<br /><span class="math display">10<sup>14</sup></span><br />
+<span class="math display">\[10^{14}\]</span>
 </td>
 </tr>
 </table>
+<p>See <a href="https://arxiv.org/abs/1705.07996" target="_blank" >“Living Together: Mind and Machine Intelligence” <span class="citation" data-cites="Lawrence:embodiment17">Lawrence (2017)</span></a></p>
 <p>There is a fundamental limit placed on our intelligence based on our ability to communicate. Claude Shannon founded the field of information theory. The clever part of this theory is it allows us to separate our measurement of information from what the information pertains to<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 <p>Shannon measured information in bits. One bit of information is the amount of information I pass to you when I give you the result of a coin toss. Shannon was also interested in the amount of information in the English language. He estimated that on average a word in the English language contains 12 bits of information.</p>
-<p>Given typical speaking rates, that gives us an estimate of our ability to communicate of around 100 bits per second <span class="citation" data-cites="Reed-information98">(Reed and Durlach 1998)</span>. Computers on the other hand can communicate much more rapidly. Current wired network speeds are around a billion bits per second, ten million times faster.</p>
+<p>Given typical speaking rates, that gives us an estimate of our ability to communicate of around 100 bits per second <span class="citation" data-cites="Reed-information98">(Reed and Durlach, 1998)</span>. Computers on the other hand can communicate much more rapidly. Current wired network speeds are around a billion bits per second, ten million times faster.</p>
 <p>When it comes to compute though, our best estimates indicate our computers are slower. A typical modern computer can process make around 100 billion floating point operations per second, each floating point operation involves a 64 bit number. So the computer is processing around 6,400 billion bits per second.</p>
-<p>It’s difficult to get similar estimates for humans, but by some estimates the amount of compute we would require to <em>simulate</em> a human brain is equivalent to that in the UK’s fastest computer <span class="citation" data-cites="Ananthanarayanan-cat09">(Ananthanarayanan et al. 2009)</span>, the MET office machine in Exeter, which in 2018 ranks as the 11th fastest computer in the world. That machine simulates the world’s weather each morning, and then simulates the world’s climate in the afternoon. It is a 16 petaflop machine, processing around 1,000 <em>trillion</em> bits per second.</p>
+<p>It’s difficult to get similar estimates for humans, but by some estimates the amount of compute we would require to <em>simulate</em> a human brain is equivalent to that in the UK’s fastest computer <span class="citation" data-cites="Ananthanarayanan-cat09">(Ananthanarayanan et al., 2009)</span>, the MET office machine in Exeter, which in 2018 ranks as the 11th fastest computer in the world. That machine simulates the world’s weather each morning, and then simulates the world’s climate in the afternoon. It is a 16 petaflop machine, processing around 1,000 <em>trillion</em> bits per second.</p>
 <h2 id="data-rights">Data Rights</h2>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/data-property.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/data-property.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
 <p>Data is not property, at least not in the modern sense of the word. But if we look back over time, we see different notions of property. In particular, associated with different resources. For example, common land is a particular type of property, which may or may not be explicitly owned, but members of a community have a particular set of rights to.</p>
@@ -184,7 +188,7 @@ communicate
 <p>One particularly interesting mechanism also dates back to Medieval law. The Courts of Equity is a separate system of law that runs alongside Common Law. One of the domains of law it recognises are Trusts.</p>
 <p>Trusts are institutions where there is an enhanced duty of care, known as “fiducirary duty” or “undivided loyalty” over the trustees to implement the constituent terms of the trust.</p>
 <p>Broadly speaking a Trust has three components. There are the settlors. This group is the group that starts with assets. These might be rights to the property, or in the data trust, the rights to data. Then there are the beneficiaries. This is the group that will benefit from the operation of the trust. Finally there are the Trustees. This group oversees the management of the trust and ensures that the settlors intent is being conformed to in the management of the assets.</p>
-<p>In a Data Trust <span class="citation" data-cites="Delacroix:trusts19">(Delacroix and Lawrence 2019)</span> the settlors and the beneficiaries will be the same, or significantly overlapping groups. Unusually, because the value of data only comes when it accumulates, it is only once the data is within the Trust that it becomes useful. In the data trust, the Trustee takes on the role of data-controller. But they are now obliged to conform to the constitutional terms of the trust that is formed.</p>
+<p>In a Data Trust <span class="citation" data-cites="Delacroix:trusts19">(Delacroix and Lawrence, 2019)</span> the settlors and the beneficiaries will be the same, or significantly overlapping groups. Unusually, because the value of data only comes when it accumulates, it is only once the data is within the Trust that it becomes useful. In the data trust, the Trustee takes on the role of data-controller. But they are now obliged to conform to the constitutional terms of the trust that is formed.</p>
 <p>The data trust is not a specfic solution for data sharing. It is a set of legal mechanisms that can be used to create solutions. The consitutional terms of the trust will depend on what data is being shared and for what purpose. One can imagine data trusts that are associated with special interests, like a group of patients with a particular cancer. Or data trusts that might be associated with a region (the Hackney Data Trust) for assisting with local issues like transport links etc. Or one could imagine general data trusts, that would interact with individual specialized data trusts.</p>
 <div class="figure">
 <div id="data-trusts-guardian-figure" class="figure-frame">
@@ -213,13 +217,16 @@ communicate
 <h1 class="unnumbered" id="references">References</h1>
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-Ananthanarayanan-cat09">
-<p>Ananthanarayanan, Rajagopal, Steven K. Esser, Horst D. Simon, and Dharmendra S. Modha. 2009. “The Cat Is Out of the Bag: Cortical Simulations with <span class="math inline">10<sup>9</sup></span> Neurons, <span class="math inline">10<sup>13</sup></span> Synapses.” In <em>Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis - Sc ’09</em>. <a href="https://doi.org/10.1145/1654059.1654124">https://doi.org/10.1145/1654059.1654124</a>.</p>
+<p>Ananthanarayanan, R., Esser, S.K., Simon, H.D., Modha, D.S., 2009. The cat is out of the bag: Cortical simulations with <span class="math inline">\(10^9\)</span> neurons, <span class="math inline">\(10^{13}\)</span> synapses, in: Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis - Sc ’09. <a href="https://doi.org/10.1145/1654059.1654124">https://doi.org/10.1145/1654059.1654124</a></p>
 </div>
 <div id="ref-Delacroix:trusts19">
-<p>Delacroix, Sylvie, and Neil D. Lawrence. 2019. “Bottom-up Data Trusts: Disturbing the ‘One Size Fits All’ Approach to Data Governance.” <em>International Data Privacy Law</em>, October. <a href="https://doi.org/10.1093/idpl/ipz014">https://doi.org/10.1093/idpl/ipz014</a>.</p>
+<p>Delacroix, S., Lawrence, N.D., 2019. Bottom-up data trusts: Disturbing the “one size fits all” approach to data governance. International Data Privacy Law. <a href="https://doi.org/10.1093/idpl/ipz014">https://doi.org/10.1093/idpl/ipz014</a></p>
+</div>
+<div id="ref-Lawrence:embodiment17">
+<p>Lawrence, N.D., 2017. Living together: Mind and machine intelligence. arXiv.</p>
 </div>
 <div id="ref-Reed-information98">
-<p>Reed, Charlotte, and Nathaniel I. Durlach. 1998. “Note on Information Transfer Rates in Human Communication.” <em>Presence Teleoperators &amp; Virtual Environments</em> 7 (5): 509–18. <a href="https://doi.org/10.1162/105474698565893">https://doi.org/10.1162/105474698565893</a>.</p>
+<p>Reed, C., Durlach, N.I., 1998. Note on information transfer rates in human communication. Presence Teleoperators &amp; Virtual Environments 7, 509–518. <a href="https://doi.org/10.1162/105474698565893">https://doi.org/10.1162/105474698565893</a></p>
 </div>
 </div>
 <section class="footnotes" role="doc-endnotes">

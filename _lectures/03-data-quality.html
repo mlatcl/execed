@@ -8,10 +8,13 @@ author:
   institute: 
   twitter: lawrennd
   gscholar: r3SJcvoAAAAJ
-  orchid: 
+  orcid: 0000-0001-9258-1030
+edit_url: https://github.com/lawrennd/talks/edit/gh-pages/_execed/data-quality.md
 week: 0
 session: 3
 reveal: 03-data-quality.slides.html
+pptx: 03-data-quality.pptx
+edit_url: https://github.com/lawrennd/talks/edit/gh-pages/_execed/data-quality.md
 layout: lecture
 categories:
 - notes
@@ -56,13 +59,13 @@ categories:
 </div>
 <p>Google trends gives us insight into how far along various technological terms are on the hype cycle.</p>
 <p>Examining Google treds for ‘artificial intelligence’, ‘big data’, ‘data mining’, ‘deep learning’ and ‘machine learning’ we can see that ‘artificial intelligence’ <em>may</em> be entering a plateau of productivity, ‘big data’ is entering the trough of disillusionment, and ‘data mining’ seems to be deeply within the trough. On the other hand ‘deep learning’ and ‘machine learning’ appear to be ascending to the peak of inflated expectations having experienced a technology trigger.</p>
-<p>For deep learning that technology trigger was the ImageNet result of 2012 <span class="citation" data-cites="Krizhevsky:imagenet12">(Krizhevsky, Sutskever, and Hinton, n.d.)</span>. This step change in performance on object detection in images was achieved through convolutional neural networks, popularly known as ‘deep learning’.</p>
+<p>For deep learning that technology trigger was the ImageNet result of 2012 <span class="citation" data-cites="Krizhevsky:imagenet12">(Krizhevsky et al., n.d.)</span>. This step change in performance on object detection in images was achieved through convolutional neural networks, popularly known as ‘deep learning’.</p>
 <!--include{_ai/includes/game-playing-ai.md}-->
 <h2 id="machine-learning">Machine Learning</h2>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/data-quality.mdtmp.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/data-quality.mdtmp.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
-<p><br /><span class="math display">$$
+<p><span class="math display">\[
 \text{data} + \text{model} \stackrel{\text{compute}}{\rightarrow} \text{prediction}
-$$</span><br /></p>
+\]</span></p>
 <h2 id="code-and-data-separation">Code and Data Separation</h2>
 <ul>
 <li>Classical computer science separates code and data.</li>
@@ -179,33 +182,172 @@ $$</span><br /></p>
 <p>Many of the most important questions in supply chain take the form of counterfactuals. E.g. “What would happen if we opened a manufacturing facility in Cambridge?” A counter factual is a question that implies a mechanistic understanding of a system. It goes beyond simple smoothness assumptions or translation invariants. It requires a physical, or <em>mechanistic</em> understanding of the supply chain network. For this reason, the type of models we deploy in supply chain often involve simulations or more mechanistic understanding of the network.</p>
 <p>In supply chain Machine Learning alone is not enough, we need to bridge between models that contain real mechanisms and models that are entirely data driven.</p>
 <p>This is challenging, because as we introduce more mechanism to the models we use, it becomes harder to develop efficient algorithms to match those models to data.</p>
-<!--
-
-* Moving goods to where they need to be.
-  * Raw materials
- 
-
-
-
-
-
-* The Supply Chain is driven by Supply and Demand
-
-* Moving goods to be where they should be at any given time.
-
-
-
-* Recent advances in the world have focussed on *information infrastructure*.
-
-* UK developed with roads, rails and canals-->
-<ul>
-<li>Examples
-<ul>
-<li>Guardian article on <a href="https://www.theguardian.com/media-network/">Data Science Africa</a>(2015/aug/25/africa-benefit-data-science-information)</li>
-<li><a href="https://safeboda.com/ug/">SafeBoda</a></li>
-<li><a href="https://kudu.ug">Kudu Project</a></li>
-</ul></li>
-</ul>
+<h2 id="data-science-africa">Data Science Africa</h2>
+<p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-science-africa.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-science-africa.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
+<div class="figure">
+<div id="data-science-africa-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="../slides/diagrams/data-science-africa-logo.png" width="30%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="data-science-africa-magnify" class="magnify" onclick="magnifyFigure(&#39;data-science-africa&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="data-science-africa-caption" class="caption-frame">
+<p>Figure: Data Science Africa <a href="http://datascienceafrica.org" class="uri">http://datascienceafrica.org</a> is a ground up initiative for capacity building around data science, machine learning and artificial intelligence on the African continent.</p>
+</div>
+</div>
+<p>Data Science Africa is a bottom up initiative for capacity building in data science, machine learning and artificial intelligence on the African continent.</p>
+<p>As of 2019 there have been five workshops and five schools, located in Nyeri, Kenya (twice); Kampala, Uganda; Arusha, Tanzania; Abuja, Nigeria; Addis Ababa, Ethiopia and Accra, Ghana. The next event is scheduled for June 2020 in Kampala, Uganda.</p>
+<p>The main notion is <em>end-to-end</em> data science. For example, going from data collection in the farmer’s field to decision making in the Ministry of Agriculture. Or going from malaria disease counts in health centers to medicine distribution.</p>
+<p>The philosophy is laid out in <span class="citation" data-cites="Lawrence:dsa15">(Lawrence, 2015)</span>. The key idea is that the modern <em>information infrastructure</em> presents new solutions to old problems. Modes of development change because less capital investment is required to take advantage of this infrastructure. The philosophy is that local capacity building is the right way to leverage these challenges in addressing data science problems in the African context.</p>
+<p>Data Science Africa is now a non-govermental organization registered in Kenya. The organising board of the meeting is entirely made up of scientists and academics based on the African continent.</p>
+<div class="figure">
+<div id="africa-benefit-data-revolution-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="../slides/diagrams/data-science/africa-benefit-data-revolution.png" width="70%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="africa-benefit-data-revolution-magnify" class="magnify" onclick="magnifyFigure(&#39;africa-benefit-data-revolution&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="africa-benefit-data-revolution-caption" class="caption-frame">
+<p>Figure: The lack of existing physical infrastructure on the African continent makes it a particularly interesting environment for deploying solutions based on the <em>information infrastructure</em>. The idea is explored more in this Guardian op-ed on Guardian article on <a href="https://www.theguardian.com/media-network/2015/aug/25/africa-benefit-data-science-information">How African can benefit from the data revolution</a>.</p>
+</div>
+</div>
+<p>Guardian article on <a href="https://www.theguardian.com/media-network/2015/aug/25/africa-benefit-data-science-information">Data Science Africa</a></p>
+<h2 id="crop-monitoring">Crop Monitoring</h2>
+<p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/crop-monitoring.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/crop-monitoring.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
+<div class="centered" style="">
+<svg viewBox="0 0 200 200" style="width:15%">
+<defs> <clipPath id="clip0">
+<style>
+circle {
+  fill: black;
+}
+</style>
+<circle cx="100" cy="100" r="100"/> </clipPath> </defs>
+<title>
+Ernest Mwebaze
+</title>
+<image preserveAspectRatio="xMinYMin slice" width="100%" xlink:href="../slides/diagrams/people/ernest-mwebaze.png" clip-path="url(#clip0)"/>
+</svg>
+</div>
+<div class="figure">
+<div id="mobile-monitoring-crop-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="../slides/diagrams/africa/mobile-monitoring-of-crop-disease.png" width="60%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="mobile-monitoring-crop-magnify" class="magnify" onclick="magnifyFigure(&#39;mobile-monitoring-crop&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="mobile-monitoring-crop-caption" class="caption-frame">
+<p>Figure: Mobile Monitoring of Crop Disease</p>
+</div>
+</div>
+<h2 id="biosurveillance">Biosurveillance</h2>
+<p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/biosurveillance.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/biosurveillance.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
+<div class="centered" style="">
+<svg viewBox="0 0 200 200" style="width:15%">
+<defs> <clipPath id="clip1">
+<style>
+circle {
+  fill: black;
+}
+</style>
+<circle cx="100" cy="100" r="100"/> </clipPath> </defs>
+<title>
+Martin Mubangizi
+</title>
+<image preserveAspectRatio="xMinYMin slice" width="100%" xlink:href="../slides/diagrams/people/martin-mubangizi.png" clip-path="url(#clip1)"/>
+</svg>
+</div>
+<div class="figure">
+<div id="spatiotemporal-models-biosurveillance-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="../slides/diagrams/africa/spatiotemporal-models-for-biosurveillance.png" width="60%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="spatiotemporal-models-biosurveillance-magnify" class="magnify" onclick="magnifyFigure(&#39;spatiotemporal-models-biosurveillance&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="spatiotemporal-models-biosurveillance-caption" class="caption-frame">
+<p>Figure: Spatiotemporal Models for Biosurveillance</p>
+</div>
+</div>
+<h2 id="community-radio">Community Radio</h2>
+<p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/community-radio.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/community-radio.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
+<div class="centered" style="">
+<svg viewBox="0 0 200 200" style="width:15%">
+<defs> <clipPath id="clip2">
+<style>
+circle {
+  fill: black;
+}
+</style>
+<circle cx="100" cy="100" r="100"/> </clipPath> </defs>
+<title>
+Morine Amutorine
+</title>
+<image preserveAspectRatio="xMinYMin slice" width="100%" xlink:href="../slides/diagrams/people/morine-amutorine.png" clip-path="url(#clip2)"/>
+</svg>
+</div>
+<div class="figure">
+<div id="ugandan-community-radio-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="../slides/diagrams/africa/ugandan-community-radio-project.png" width="45%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="ugandan-community-radio-magnify" class="magnify" onclick="magnifyFigure(&#39;ugandan-community-radio&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="ugandan-community-radio-caption" class="caption-frame">
+<p>Figure: Ugandan Community Radio Project</p>
+</div>
+</div>
+<h2 id="kudu-project">Kudu Project</h2>
+<p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/kudu-project.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/kudu-project.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
+<div class="figure">
+<div id="kudu-project-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="../slides/diagrams/africa/kudu-project.png" width="60%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="kudu-project-magnify" class="magnify" onclick="magnifyFigure(&#39;kudu-project&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="kudu-project-caption" class="caption-frame">
+<p>Figure: Kudu Project</p>
+</div>
+</div>
+<h2 id="safe-boda">Safe Boda</h2>
+<p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/safe-boda.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/safe-boda.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
+<div class="figure">
+<div id="safe-boda-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="../slides/diagrams/africa/safe-boda.png" width="60%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="safe-boda-magnify" class="magnify" onclick="magnifyFigure(&#39;safe-boda&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="safe-boda-caption" class="caption-frame">
+<p>Figure: Safe Boda</p>
+</div>
+</div>
+<h2 id="experiment-analyze-design">Experiment, Analyze, Design</h2>
+<p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_supply-chain/includes/experiment-analyze-design.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_supply-chain/includes/experiment-analyze-design.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
+<p>One thing about working in an industrial environment, is the way that short term thinking actions become important. For example, in Formula One, the teams are working on a two week cycle to digest information from the previous week’s race and incorporate updates to the car or their strategy.</p>
+<p>However, businesses have to also think about more medium term horizons. For example, in Formula 1 you need to worry about next year’s car. So while you’re working on updating this year’s car, you also need to think about what will happen for next year and prioritise these conflicting needs appropriately.</p>
+<p>In the Amazon supply chain, there are the equivalent demands. If we accept that an artificial intelligence is just an automated decision making system. And if we measure in terms of money automatically spent, or goods automatically moved, then Amazon’s buying system is perhaps the world’s largest AI.</p>
+<p>Those decisions are being made on short time schedules, purchases are made by the system on weekly cycles. But just as in Formula 1, there is also a need to think about what needs to be done next month, next quarter and next year. Planning meetings are held not only on a weekly basis (known as weekly business reviews), but monthly, quarterly and then yearly meetings for planning spends and investments.</p>
+<p>Amazon is known for being longer term thinking than many companies, and a lot of this is coming from the CEO. One quote from Jeff Bezos that stuck with me was the following.</p>
+<blockquote>
+<p>“I very frequently get the question: ‘What’s going to change in the next 10 years?’ And that is a very interesting question; it’s a very common one. I almost never get the question: ‘What’s not going to change in the next 10 years?’ And I submit to you that that second question is actually the more important of the two – because you can build a business strategy around the things that are stable in time. … [I]n our retail business, we know that customers want low prices, and I know that’s going to be true 10 years from now. They want fast delivery; they want vast selection. It’s impossible to imagine a future 10 years from now where a customer comes up and says, ‘Jeff I love Amazon; I just wish the prices were a little higher,’ [or] ‘I love Amazon; I just wish you’d deliver a little more slowly.’ Impossible. And so the effort we put into those things, spinning those things up, we know the energy we put into it today will still be paying off dividends for our customers 10 years from now. When you have something that you know is true, even over the long term, you can afford to put a lot of energy into it.”</p>
+</blockquote>
+<p>This quote is incredibly important for long term thinking. Indeed, it’s a failure of many of our simulations that they focus on what is going to happen, not what will not happen. In Amazon, this meant that there was constant focus on these three areas, keeping costs low, making delivery fast and improving selection. For example, shortly before I left Amazon moved its entire US network from 2 day delivery to 1 day delivery. This involves changing the way the entire buying system operates. Or, more recently, the company has had to radically change the portfolio of products it buys in the face of Covid19.</p>
+<!--These challenges are not just there for Amazon and Formula 1. In Sheffield, we worked closely with a Chesterfield based company called Fusion Group. They make joints that fuse PTFE pipes together. These pipes are used for transporting both water and gas. Their founder, Eric Bridgstock, was an engineer who introduced PTFE piping to the UK when working for DuPont. Eric set up Fusion group to manufacture the fusion fittings. Because PTFE pipes carry water or gas at high pressure, when these fittings fail significant damage can occur. When these fittings were originally installed in the early 1980s, the job was done by a specialist, but nowadays the pipe weld is compelted by the same team that digs the hole. While costs have come down, the number of PTFE weld failures went up. Eric's company focussed on new systems for auto-->
 <div class="figure">
 <div id="experiment-analyze-design-figure" class="figure-frame">
 <object class="svgplot " data="../slides/diagrams/ml/experiment-analyze-design.svg" width="50%" style=" ">
@@ -215,23 +357,21 @@ $$</span><br /></p>
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="experiment-analyze-design-caption" class="caption-frame">
-<p>Figure: The experiment, analyze, design flywheel for scientific innovation at Amazon.</p>
+<p>Figure: The experiment, analyze, design flywheel for scientific innovation.</p>
 </div>
 </div>
+<p>From the perspective of the team we had in the supply chain, we looked at what we most needed to focus on. Amazon moves very quickly, but we could also take a leaf out of Jeff’s book, and instead of worrying about what was going to change, remember what wasn’t going to change.</p>
 <blockquote>
 <p>We don’t know what science we’ll want to do in 5 years time, but we won’t want slower experiments, we won’t want more expensive experiments and we won’t want a narrower selection of experiments.</p>
 </blockquote>
-<ul>
-<li>Faster, cheaper and more diverse experiments.</li>
-</ul>
-<blockquote>
-<p>A two order of magnitude increase in number of experiments run on supply chain three years’ time.</p>
-</blockquote>
+<p>As a result, our focus was on how to speed up the process of experiments, increase the diversity of experiments that we can do, and keep the experiments price as low as possible.</p>
+<p>The faster the innovation fly-wheel can be iterated, then the quicker we can ask about different parts of the supply chain, and the better we can tailor systems to answering those questions.</p>
+<p>As a result our objective became a two-order magnitude increase in number of experiments run across a five year period.</p>
 <!--Duke of York Effect -->
 <h2 id="operations-research-control-econometrics-statistics-and-machine-learning">Operations Research, Control, Econometrics, Statistics and Machine Learning</h2>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/or-control-econometrics-statistics-ml.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/or-control-econometrics-statistics-ml.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
-<p><span class="math inline">data + model</span> is not new, it dates back to Laplace and Gauss. Gauss fitted the orbit of Ceres using Keplers laws of planetary motion to generate his basis functions, and Laplace’s insights on the error function and uncertainty <span class="citation" data-cites="Stigler:table99">(Stigler 1999)</span>. Different fields such as Operations Research, Control, Econometrics, Statistics, Machine Learning and now Data Science and AI all rely on <span class="math inline">data + model</span>. Under a Popperian view of science, and equating experiment to data, one could argue that all science has <span class="math inline">data + model</span> underpinning it.</p>
-<p>Different academic fields are born in different eras, driven by different motivations and arrive at different solutions. For example, both Operations Research and Control emerged from the Second World War. Operations Research, the science of decision making, driven by the need for improved logistics and supply chain. Control emerged from cybernetics, a field that was driven in the by researchers who had been involved in radar and decryption <span class="citation" data-cites="Wiener:cybernetics48 Husband:mechanicalmind08">(Wiener 1948; Husband, Holland, and Wheeler 2008)</span>. The UK artificial intelligence community had similar origins <span class="citation" data-cites="Copeland:colossus06">(Copeland 2006)</span>.</p>
+<p><span class="math inline">\(\text{data} + \text{model}\)</span> is not new, it dates back to Laplace and Gauss. Gauss fitted the orbit of Ceres using Keplers laws of planetary motion to generate his basis functions, and Laplace’s insights on the error function and uncertainty <span class="citation" data-cites="Stigler:table99">(Stigler, 1999)</span>. Different fields such as Operations Research, Control, Econometrics, Statistics, Machine Learning and now Data Science and AI all rely on <span class="math inline">\(\text{data} + \text{model}\)</span>. Under a Popperian view of science, and equating experiment to data, one could argue that all science has <span class="math inline">\(\text{data} + \text{model}\)</span> underpinning it.</p>
+<p>Different academic fields are born in different eras, driven by different motivations and arrive at different solutions. For example, both Operations Research and Control emerged from the Second World War. Operations Research, the science of decision making, driven by the need for improved logistics and supply chain. Control emerged from cybernetics, a field that was driven in the by researchers who had been involved in radar and decryption <span class="citation" data-cites="Wiener:cybernetics48 Husband:mechanicalmind08">(Husband et al., 2008; Wiener, 1948)</span>. The UK artificial intelligence community had similar origins <span class="citation" data-cites="Copeland:colossus06">(Copeland, 2006)</span>.</p>
 <p>The separation between these fields has almost become tribal, and from one perspective this can be very helpful. Each tribe can agree on a common language, a common set of goals and a shared understanding of the approach they’ve chose for those goals. This ensures that best practice can be developed and shared and as a result, quality standards can rise.</p>
 <p>This is the nature of our <em>professions</em>. Medics, lawyers, engineers and accountants all have a system of shared best practice that they deploy efficiently in the resolution of a roughly standardized set of problems where they deploy (broken leg, defending a libel trial, bridging a river, ensuring finances are correct).</p>
 <p>Control, statistics, economics, operations research are all established professions. Techniques are established, often at undergraduate level, and graduation to the profession is regulated by professional bodies. This system works well as long as the problems we are easily categorized and mapped onto the existing set of known problems.</p>
@@ -246,7 +386,7 @@ $$</span><br /></p>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-readiness-levels.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-readiness-levels.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
 <h3 id="data-readiness-levels-1">Data Readiness Levels</h3>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-readiness-levels-short.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-readiness-levels-short.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
-<p><a href="http://inverseprobability.com/2017/01/12/data-readiness-levels">Data Readiness Levels</a> <span class="citation" data-cites="Lawrence:drl17">(Lawrence 2017)</span> are an attempt to develop a language around data quality that can bridge the gap between technical solutions and decision makers such as managers and project planners. They are inspired by Technology Readiness Levels which attempt to quantify the readiness of technologies for deployment.</p>
+<p><a href="http://inverseprobability.com/2017/01/12/data-readiness-levels">Data Readiness Levels</a> <span class="citation" data-cites="Lawrence:drl17">(Lawrence, 2017)</span> are an attempt to develop a language around data quality that can bridge the gap between technical solutions and decision makers such as managers and project planners. They are inspired by Technology Readiness Levels which attempt to quantify the readiness of technologies for deployment.</p>
 <p>See this blog post on <a href="http://inverseprobability.com/2017/01/12/data-readiness-levels">Data Readiness Levels</a>.</p>
 <h3 id="three-grades-of-data-readiness">Three Grades of Data Readiness</h3>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/three-grades-of-data-readiness.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/three-grades-of-data-readiness.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
@@ -262,13 +402,13 @@ $$</span><br /></p>
 </ul></li>
 <li>Grade A - usability</li>
 </ul>
-<p>The important definitions are at the transition. The move from Grade C data to Grade B data is delimited by the <em>electronic availability</em> of the data. The move from Grade B to Grade A data is delimited by posing a question or task to the data <span class="citation" data-cites="Lawrence:drl17">(Lawrence 2017)</span>.</p>
+<p>The important definitions are at the transition. The move from Grade C data to Grade B data is delimited by the <em>electronic availability</em> of the data. The move from Grade B to Grade A data is delimited by posing a question or task to the data <span class="citation" data-cites="Lawrence:drl17">(Lawrence, 2017)</span>.</p>
 <h2 id="accessibility-grade-c">Accessibility: Grade C</h2>
 <p>The first grade refers to the accessibility of data. Most data science practitioners will be used to working with data-providers who, perhaps having had little experience of data-science before, state that they “have the data”. More often than not, they have not verified this. A convenient term for this is “Hearsay Data”, someone has <em>heard</em> that they have the data so they <em>say</em> they have it. This is the lowest grade of data readiness.</p>
 <p>Progressing through Grade C involves ensuring that this data is accessible. Not just in terms of digital accessiblity, but also for regulatory, ethical and intellectual property reasons.</p>
 <h2 id="validity-grade-b">Validity: Grade B</h2>
 <p>Data transits from Grade C to Grade B once we can begin digital analysis on the computer. Once the challenges of access to the data have been resolved, we can make the data available either via API, or for direct loading into analysis software (such as Python, R, Matlab, Mathematica or SPSS). Once this has occured the data is at B4 level. Grade B involves the <em>validity</em> of the data. Does the data really represent what it purports to? There are challenges such as missing values, outliers, record duplication. Each of these needs to be investigated.</p>
-<p>Grade B and C are important as if the work done in these grades is documented well, it can be reused in other projects. Reuse of this labour is key to reducing the costs of data-driven automated decision making. There is a strong overlap between the work required in this grade and the statistical field of <a href="https://en.wikipedia.org/wiki/Exploratory_data_analysis"><em>exploratory data analysis</em></a> <span class="citation" data-cites="Tukey:exploratory77">(Tukey 1977)</span>.</p>
+<p>Grade B and C are important as if the work done in these grades is documented well, it can be reused in other projects. Reuse of this labour is key to reducing the costs of data-driven automated decision making. There is a strong overlap between the work required in this grade and the statistical field of <a href="https://en.wikipedia.org/wiki/Exploratory_data_analysis"><em>exploratory data analysis</em></a> <span class="citation" data-cites="Tukey:exploratory77">(Tukey, 1977)</span>.</p>
 <p>The need for Grade B emerges due to the fundamental change in the availability of data. Classically, the scientific question came first, and the data came later. This is still the approach in a randomized control trial, e.g. in A/B testing or clinical trials for drugs. Today data is being laid down by happenstance, and the question we wish to ask about the data often comes after the data has been created. The Grade B of data readiness ensures thought can be put into data quality <em>before</em> the question is defined. It is this work that is reusable across multiple teams. It is these processes that the team which is <em>standing up</em> the data must deliver.</p>
 <h2 id="usability-grade-a">Usability: Grade A</h2>
 <p>Once the validity of the data is determined, the data set can be considered for use in a particular task. This stage of data readiness is more akin to what machine learning scientists are used to doing in Universities. Bringing an algorithm to bear on a well understood data set.</p>
@@ -280,8 +420,10 @@ $$</span><br /></p>
 <p>Throughout the data preparation pipeline, it is important to have close interaction between data scientists and application domain experts. Decisions on data preparation taken outside the context of application have dangerous downstream consequences. This provides an additional burden on the data scientist as they are required for each project, but it should also be seen as a learning and familiarization exercise for the domain expert. Long term, just as biologists have found it necessary to assimilate the skills of the bioinformatician to be effective in their science, most domains will also require a familiarity with the nature of data driven decision making and its application. Working closely with data-scientists on data preparation is one way to begin this sharing of best practice.</p>
 <p>The processes involved in Grade C and B are often badly taught in courses on data science. Perhaps not due to a lack of interest in the areas, but maybe more due to a lack of access to real world examples where data quality is poor.</p>
 <p>These stages of data science are also ridden with ambiguity. In the long term they could do with more formalization, and automation, but best practice needs to be understood by a wider community before that can happen.</p>
+<p>For assessing the data maturity of an organization, its departments and teams. (See DELVE Report)</p>
 <!--include{_ml/includes/shiny-bike-model.md}-->
 <h1 id="introduction">Introduction</h1>
+<p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/data-quality.mdtmp.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/data-quality.mdtmp.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
 <h2 id="conclusions">Conclusions</h2>
 <ul>
 <li>Data is modern software</li>
@@ -298,28 +440,31 @@ $$</span><br /></p>
 <h1 class="unnumbered" id="references">References</h1>
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-Cooper:transformation91">
-<p>Cooper, Brian. 1991. <em>Transformation of a Valley: Derbyshire Derwent</em>. Scarthin Books.</p>
+<p>Cooper, B., 1991. Transformation of a valley: Derbyshire derwent. Scarthin Books.</p>
 </div>
 <div id="ref-Copeland:colossus06">
-<p>Copeland, B. Jack, ed. 2006. <em>Colossus: The Secrets of Bletchley Park’s Code-Breaking Computers</em>. Oxford University Press.</p>
+<p>Copeland, B.J. (Ed.), 2006. Colossus: The secrets of Bletchley park’s code-breaking computers. Oxford University Press.</p>
 </div>
 <div id="ref-Husband:mechanicalmind08">
-<p>Husband, Phil, Owen Holland, and Michael Wheeler, eds. 2008. <em>The Mechanical Mind in History</em>. mit.</p>
+<p>Husband, P., Holland, O., Wheeler, M. (Eds.), 2008. The mechanical mind in history. mit.</p>
 </div>
 <div id="ref-Krizhevsky:imagenet12">
-<p>Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. n.d. “ImageNet Classification with Deep Convolutional Neural Networks.” In, 1097–1105.</p>
+<p>Krizhevsky, A., Sutskever, I., Hinton, G.E., n.d. ImageNet classification with deep convolutional neural networks, in:. pp. 1097–1105.</p>
 </div>
 <div id="ref-Lawrence:drl17">
-<p>Lawrence, Neil D. 2017. “Data Readiness Levels.” arXiv.</p>
+<p>Lawrence, N.D., 2017. Data readiness levels. arXiv.</p>
+</div>
+<div id="ref-Lawrence:dsa15">
+<p>Lawrence, N.D., 2015. How Africa can benefit from the data revolution.</p>
 </div>
 <div id="ref-Stigler:table99">
-<p>Stigler, Stephen M. 1999. <em>Statistics on the Table: The History of Statistical Concepts and Methods</em>. Cambridge, MA: harvard.</p>
+<p>Stigler, S.M., 1999. Statistics on the table: The history of statistical concepts and methods. harvard, Cambridge, MA.</p>
 </div>
 <div id="ref-Tukey:exploratory77">
-<p>Tukey, John W. 1977. <em>Exploratory Data Analysis</em>. Addison-Wesley.</p>
+<p>Tukey, J.W., 1977. Exploratory data analysis. Addison-Wesley.</p>
 </div>
 <div id="ref-Wiener:cybernetics48">
-<p>Wiener, Norbert. 1948. <em>Cybernetics: Control and Communication in the Animal and the Machine</em>. Cambridge, MA: MIT Press.</p>
+<p>Wiener, N., 1948. Cybernetics: Control and communication in the animal and the machine. MIT Press, Cambridge, MA.</p>
 </div>
 </div>
 

@@ -8,10 +8,13 @@ author:
   institute: 
   twitter: lawrennd
   gscholar: r3SJcvoAAAAJ
-  orchid: 
+  orcid: 0000-0001-9258-1030
+edit_url: https://github.com/lawrennd/talks/edit/gh-pages/_execed/the-new-world.md
 week: 0
 session: 1
 reveal: 01-the-new-world.slides.html
+pptx: 01-the-new-world.pptx
+edit_url: https://github.com/lawrennd/talks/edit/gh-pages/_execed/the-new-world.md
 layout: lecture
 categories:
 - notes
@@ -37,6 +40,8 @@ categories:
 <p>Better mediation of this flow actually requires a better understanding of human-computer interaction. This in turn involves understanding our own intelligence better, what its cognitive biases are and how these might mislead us.</p>
 <p>For further thoughts see Guardian article on <a href="https://www.theguardian.com/media-network/2015/jul/23/data-driven-economy-marketing">marketing in the internet era</a> from 2015.</p>
 <p>You can also check my blog post on <a href="http://inverseprobability.com/2015/12/04/what-kind-of-ai">System Zero</a>..</p>
+<h2 id="new-flow-of-information">New Flow of Information</h2>
+<p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/new-flow-of-information.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/new-flow-of-information.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
 <div class="figure">
 <div id="trinity-human-data-computer-figure" class="figure-frame">
 <object class="svgplot " data="../slides/diagrams/data-science/new-flow-of-information002.svg" width="50%" style=" ">
@@ -71,10 +76,10 @@ categories:
 compute
 </td>
 <td align="center">
-<br /><span class="math display"> ≈ 100 gigaflops</span><br />
+<span class="math display">\[\approx 100 \text{ gigaflops}\]</span>
 </td>
 <td align="center">
-<br /><span class="math display"> ≈ 16 petaflops</span><br />
+<span class="math display">\[\approx 16 \text{ petaflops}\]</span>
 </td>
 </tr>
 <tr>
@@ -82,10 +87,10 @@ compute
 communicate
 </td>
 <td align="center">
-<br /><span class="math display">1 gigbit/s</span><br />
+<span class="math display">\[1 \text{ gigbit/s}\]</span>
 </td>
 <td align="center">
-<br /><span class="math display">100 bit/s</span><br />
+<span class="math display">\[100 \text{ bit/s}\]</span>
 </td>
 </tr>
 <tr>
@@ -93,18 +98,19 @@ communicate
 (compute/communicate)
 </td>
 <td align="center">
-<br /><span class="math display">10<sup>4</sup></span><br />
+<span class="math display">\[10^{4}\]</span>
 </td>
 <td align="center">
-<br /><span class="math display">10<sup>14</sup></span><br />
+<span class="math display">\[10^{14}\]</span>
 </td>
 </tr>
 </table>
+<p>See <a href="https://arxiv.org/abs/1705.07996" target="_blank" >“Living Together: Mind and Machine Intelligence” <span class="citation" data-cites="Lawrence:embodiment17">Lawrence (2017)</span></a></p>
 <p>There is a fundamental limit placed on our intelligence based on our ability to communicate. Claude Shannon founded the field of information theory. The clever part of this theory is it allows us to separate our measurement of information from what the information pertains to<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 <p>Shannon measured information in bits. One bit of information is the amount of information I pass to you when I give you the result of a coin toss. Shannon was also interested in the amount of information in the English language. He estimated that on average a word in the English language contains 12 bits of information.</p>
-<p>Given typical speaking rates, that gives us an estimate of our ability to communicate of around 100 bits per second <span class="citation" data-cites="Reed-information98">(Reed and Durlach 1998)</span>. Computers on the other hand can communicate much more rapidly. Current wired network speeds are around a billion bits per second, ten million times faster.</p>
+<p>Given typical speaking rates, that gives us an estimate of our ability to communicate of around 100 bits per second <span class="citation" data-cites="Reed-information98">(Reed and Durlach, 1998)</span>. Computers on the other hand can communicate much more rapidly. Current wired network speeds are around a billion bits per second, ten million times faster.</p>
 <p>When it comes to compute though, our best estimates indicate our computers are slower. A typical modern computer can process make around 100 billion floating point operations per second, each floating point operation involves a 64 bit number. So the computer is processing around 6,400 billion bits per second.</p>
-<p>It’s difficult to get similar estimates for humans, but by some estimates the amount of compute we would require to <em>simulate</em> a human brain is equivalent to that in the UK’s fastest computer <span class="citation" data-cites="Ananthanarayanan-cat09">(Ananthanarayanan et al. 2009)</span>, the MET office machine in Exeter, which in 2018 ranks as the 11th fastest computer in the world. That machine simulates the world’s weather each morning, and then simulates the world’s climate in the afternoon. It is a 16 petaflop machine, processing around 1,000 <em>trillion</em> bits per second.</p>
+<p>It’s difficult to get similar estimates for humans, but by some estimates the amount of compute we would require to <em>simulate</em> a human brain is equivalent to that in the UK’s fastest computer <span class="citation" data-cites="Ananthanarayanan-cat09">(Ananthanarayanan et al., 2009)</span>, the MET office machine in Exeter, which in 2018 ranks as the 11th fastest computer in the world. That machine simulates the world’s weather each morning, and then simulates the world’s climate in the afternoon. It is a 16 petaflop machine, processing around 1,000 <em>trillion</em> bits per second.</p>
 <div class="figure">
 <div id="lotus-49-figure" class="figure-frame">
 <div class="centered centered" style="">
@@ -183,7 +189,7 @@ communicate
 </div>
 </div>
 <p>James Watt’s steam engine contained an early machine learning device. In the same way that modern systems are component based, his engine was composed of components. One of which is a speed regulator sometimes known as <em>Watt’s governor</em>. The two balls in the center of the image, when spun fast, rise, and through a linkage mechanism.</p>
-<p>The centrifugal governor was made famous by Boulton and Watt when it was deployed in the steam engine. Studying stability in the governor is the main subject of James Clerk Maxwell’s paper on the theoretical analysis of governors <span class="citation" data-cites="Maxwell:governors1867">(Maxwell 1867)</span>. This paper is a founding paper of control theory. In an acknowledgment of its influence, Wiener used the name <a href="https://en.wikipedia.org/wiki/Cybernetics"><em>cybernetics</em></a> to describe the field of control and communication in animals and the machine <span class="citation" data-cites="Wiener:cybernetics48">(Wiener 1948)</span>. Cybernetics is the Greek word for governor, which comes from the latin for helmsman.</p>
+<p>The centrifugal governor was made famous by Boulton and Watt when it was deployed in the steam engine. Studying stability in the governor is the main subject of James Clerk Maxwell’s paper on the theoretical analysis of governors <span class="citation" data-cites="Maxwell:governors1867">(Maxwell, 1867)</span>. This paper is a founding paper of control theory. In an acknowledgment of its influence, Wiener used the name <a href="https://en.wikipedia.org/wiki/Cybernetics"><em>cybernetics</em></a> to describe the field of control and communication in animals and the machine <span class="citation" data-cites="Wiener:cybernetics48">(Wiener, 1948)</span>. Cybernetics is the Greek word for governor, which comes from the latin for helmsman.</p>
 <p>A governor is one of the simplest artificial intelligence systems. It senses the speed of an engine, and acts to change the position of the valve on the engine to slow it down.</p>
 <p>Although it’s a mechanical system a governor can be seen as automating a role that a human would have traditionally played. It is an early example of artificial intelligence.</p>
 <p>The centrifugal governor has several parameters, the weight of the balls used, the length of the linkages and the limits on the balls movement.</p>
@@ -210,7 +216,7 @@ communicate
 <h2 id="what-is-machine-learning">What is Machine Learning?</h2>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-2.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-2.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
 <p>Machine learning allows us to extract knowledge from data to form a prediction.</p>
-<p><br /><span class="math display">$$\text{data} + \text{model} \stackrel{\text{compute}}{\rightarrow} \text{prediction}$$</span><br /></p>
+<p><span class="math display">\[\text{data} + \text{model} \stackrel{\text{compute}}{\rightarrow} \text{prediction}\]</span></p>
 <p>A machine learning prediction is made by combining a model with data to form the prediction. The manner in which this is done gives us the machine learning <em>algorithm</em>.</p>
 <p>Machine learning models are <em>mathematical models</em> which make weak assumptions about data, e.g. smoothness assumptions. By combining these assumptions with the data, we observe we can interpolate between data points or, occasionally, extrapolate into the future.</p>
 <p>Machine learning is a technology which strongly overlaps with the methodology of statistics. From a historical/philosophical view point, machine learning differs from statistics in that the focus in the machine learning community has been primarily on accuracy of prediction, whereas the focus in statistics is typically on the interpretability of a model and/or validating a hypothesis through data collection.</p>
@@ -245,10 +251,10 @@ communicate
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="deep-face-caption" class="caption-frame">
-<p>Figure: The DeepFace architecture <span class="citation" data-cites="Taigman:deepface14">(Taigman et al. 2014)</span>, visualized through colors to represent the functional mappings at each layer. There are 120 million parameters in the model.</p>
+<p>Figure: The DeepFace architecture <span class="citation" data-cites="Taigman:deepface14">(Taigman et al., 2014)</span>, visualized through colors to represent the functional mappings at each layer. There are 120 million parameters in the model.</p>
 </div>
 </div>
-<p>The DeepFace architecture <span class="citation" data-cites="Taigman:deepface14">(Taigman et al. 2014)</span> consists of layers that deal with <em>translation</em> and <em>rotational</em> invariances. These layers are followed by three locally-connected layers and two fully-connected layers. Color illustrates feature maps produced at each layer. The neural network includes more than 120 million parameters, where more than 95% come from the local and fully connected layers.</p>
+<p>The DeepFace architecture <span class="citation" data-cites="Taigman:deepface14">(Taigman et al., 2014)</span> consists of layers that deal with <em>translation</em> and <em>rotational</em> invariances. These layers are followed by three locally-connected layers and two fully-connected layers. Color illustrates feature maps produced at each layer. The neural network includes more than 120 million parameters, where more than 95% come from the local and fully connected layers.</p>
 <h3 id="deep-learning-as-pinball">Deep Learning as Pinball</h3>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/deep-learning-as-pinball.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/deep-learning-as-pinball.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
 <div class="figure">
@@ -320,7 +326,7 @@ communicate
 <h2 id="human-communication">Human Communication</h2>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/conversation.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/conversation.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
 <p>For human conversation to work, we require an internal model of who we are speaking to. We model each other, and combine our sense of who they are, who they think we are, and what has been said. This is our approach to dealing with the limited bandwidth connection we have. Empathy and understanding of intent. Mental dispositional concepts are used to augment our limited communication bandwidth.</p>
-<p>Fritz Heider referred to the important point of a conversation as being that they are happenings that are “<em>psychologically represented</em> in each of the participants” (his emphasis) <span class="citation" data-cites="Heider:interpersonal58">(Heider 1958)</span></p>
+<p>Fritz Heider referred to the important point of a conversation as being that they are happenings that are “<em>psychologically represented</em> in each of the participants” (his emphasis) <span class="citation" data-cites="Heider:interpersonal58">(Heider, 1958)</span>.</p>
 <h3 id="bandwidth-constrained-conversations">Bandwidth Constrained Conversations</h3>
 <div class="figure">
 <div id="anne-bob-conversation-civil-figure" class="figure-frame">
@@ -373,7 +379,7 @@ For sale: baby shoes, never worn
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/heider-simmel.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/heider-simmel.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
 <div class="figure">
 <div id="heider-simmel-shapes-figure" class="figure-frame">
-<iframe width="800" height="600" src="https://www.youtube.com/embed/8FIEZXMUM2I?start=7" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/8FIEZXMUM2I?start=7" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 </iframe>
 </div>
 <div id="heider-simmel-shapes-magnify" class="magnify" onclick="magnifyFigure(&#39;heider-simmel-shapes&#39;)">
@@ -383,7 +389,8 @@ For sale: baby shoes, never worn
 <p>Figure: Fritz Heider and Marianne Simmel’s video of shapes from <span class="citation" data-cites="Heider:experimental44">Heider and Simmel (1944)</span>.</p>
 </div>
 </div>
-<p><a href="https://en.wikipedia.org/wiki/Fritz_Heider">Fritz Heider</a> and <a href="https://en.wikipedia.org/wiki/Marianne_Simmel">Marianne Simmel</a>’s experiments with animated shapes from 1944 <span class="citation" data-cites="Heider:experimental44">(Heider and Simmel 1944)</span>. Our interpretation of these objects as showing motives and even emotion is a combination of our desire for narrative, a need for understanding of each other, and our ability to empathise. At one level, these are crudely drawn objects, but in another key way, the animator has communicated a story through simple facets such as their relative motions, their sizes and their actions. We apply our psychological representations to these faceless shapes in an effort to interpret their actions.</p>
+<p><a href="https://en.wikipedia.org/wiki/Fritz_Heider">Fritz Heider</a> and <a href="https://en.wikipedia.org/wiki/Marianne_Simmel">Marianne Simmel</a>’s experiments with animated shapes from 1944 <span class="citation" data-cites="Heider:experimental44">(Heider and Simmel, 1944)</span>. Our interpretation of these objects as showing motives and even emotion is a combination of our desire for narrative, a need for understanding of each other, and our ability to empathise. At one level, these are crudely drawn objects, but in another key way, the animator has communicated a story through simple facets such as their relative motions, their sizes and their actions. We apply our psychological representations to these faceless shapes in an effort to interpret their actions.</p>
+<p>See also a recent review paper on Human Cooperation by <span class="citation" data-cites="Joseph-origins21">Henrich and Muthukrishna (2021)</span>.</p>
 <h2 id="computer-conversations">Computer Conversations</h2>
 <p><span style="text-align:right"><span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/conversation-computer.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/conversation-computer.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span></span></p>
 <div class="figure">
@@ -422,25 +429,31 @@ For sale: baby shoes, never worn
 <p>The real danger is that computers don’t anthropomorphize. They’ll make decisions in isolation from us without our supervision, because they can’t communicate truly and deeply with us.</p>
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-Ananthanarayanan-cat09">
-<p>Ananthanarayanan, Rajagopal, Steven K. Esser, Horst D. Simon, and Dharmendra S. Modha. 2009. “The Cat Is Out of the Bag: Cortical Simulations with <span class="math inline">10<sup>9</sup></span> Neurons, <span class="math inline">10<sup>13</sup></span> Synapses.” In <em>Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis - Sc ’09</em>. <a href="https://doi.org/10.1145/1654059.1654124">https://doi.org/10.1145/1654059.1654124</a>.</p>
+<p>Ananthanarayanan, R., Esser, S.K., Simon, H.D., Modha, D.S., 2009. The cat is out of the bag: Cortical simulations with <span class="math inline">\(10^9\)</span> neurons, <span class="math inline">\(10^{13}\)</span> synapses, in: Proceedings of the Conference on High Performance Computing Networking, Storage and Analysis - Sc ’09. <a href="https://doi.org/10.1145/1654059.1654124">https://doi.org/10.1145/1654059.1654124</a></p>
 </div>
 <div id="ref-Heider:interpersonal58">
-<p>Heider, Fritz. 1958. <em>The Psychology of Interpersonal Relations</em>. John Wiley.</p>
+<p>Heider, F., 1958. The psychology of interpersonal relations. John Wiley.</p>
 </div>
 <div id="ref-Heider:experimental44">
-<p>Heider, F., and M. Simmel. 1944. “An Experimental Study of Apparent Behavior.” <em>The American Journal of Psychology</em> 57: 243–59.</p>
+<p>Heider, F., Simmel, M., 1944. An experimental study of apparent behavior. The American Journal of Psychology 57, 243–259.</p>
+</div>
+<div id="ref-Joseph-origins21">
+<p>Henrich, J., Muthukrishna, M., 2021. The origins and psychology of human cooperation. Annual Review of Psychology 72, 207–240. <a href="https://doi.org/10.1146/annurev-psych-081920-042106">https://doi.org/10.1146/annurev-psych-081920-042106</a></p>
+</div>
+<div id="ref-Lawrence:embodiment17">
+<p>Lawrence, N.D., 2017. Living together: Mind and machine intelligence. arXiv.</p>
 </div>
 <div id="ref-Maxwell:governors1867">
-<p>Maxwell, James Clerk. 1867. “On Governors.” <em>Proceedings of the Royal Society of London</em> 16: 270–83. <a href="http://www.jstor.org/stable/112510">http://www.jstor.org/stable/112510</a>.</p>
+<p>Maxwell, J.C., 1867. On governors. Proceedings of the Royal Society of London 16, 270–283.</p>
 </div>
 <div id="ref-Reed-information98">
-<p>Reed, Charlotte, and Nathaniel I. Durlach. 1998. “Note on Information Transfer Rates in Human Communication.” <em>Presence Teleoperators &amp; Virtual Environments</em> 7 (5): 509–18. <a href="https://doi.org/10.1162/105474698565893">https://doi.org/10.1162/105474698565893</a>.</p>
+<p>Reed, C., Durlach, N.I., 1998. Note on information transfer rates in human communication. Presence Teleoperators &amp; Virtual Environments 7, 509–518. <a href="https://doi.org/10.1162/105474698565893">https://doi.org/10.1162/105474698565893</a></p>
 </div>
 <div id="ref-Taigman:deepface14">
-<p>Taigman, Yaniv, Ming Yang, Marc’Aurelio Ranzato, and Lior Wolf. 2014. “DeepFace: Closing the Gap to Human-Level Performance in Face Verification.” In <em>Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition</em>. <a href="https://doi.org/10.1109/CVPR.2014.220">https://doi.org/10.1109/CVPR.2014.220</a>.</p>
+<p>Taigman, Y., Yang, M., Ranzato, M., Wolf, L., 2014. DeepFace: Closing the gap to human-level performance in face verification, in: Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition. <a href="https://doi.org/10.1109/CVPR.2014.220">https://doi.org/10.1109/CVPR.2014.220</a></p>
 </div>
 <div id="ref-Wiener:cybernetics48">
-<p>Wiener, Norbert. 1948. <em>Cybernetics: Control and Communication in the Animal and the Machine</em>. Cambridge, MA: MIT Press.</p>
+<p>Wiener, N., 1948. Cybernetics: Control and communication in the animal and the machine. MIT Press, Cambridge, MA.</p>
 </div>
 </div>
 <section class="footnotes" role="doc-endnotes">
