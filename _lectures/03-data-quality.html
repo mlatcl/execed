@@ -476,12 +476,96 @@ Morine Amutorine
 <p>Throughout the data preparation pipeline, it is important to have close interaction between data scientists and application domain experts. Decisions on data preparation taken outside the context of application have dangerous downstream consequences. This provides an additional burden on the data scientist as they are required for each project, but it should also be seen as a learning and familiarization exercise for the domain expert. Long term, just as biologists have found it necessary to assimilate the skills of the bioinformatician to be effective in their science, most domains will also require a familiarity with the nature of data driven decision making and its application. Working closely with data-scientists on data preparation is one way to begin this sharing of best practice.</p>
 <p>The processes involved in Grade C and B are often badly taught in courses on data science. Perhaps not due to a lack of interest in the areas, but maybe more due to a lack of access to real world examples where data quality is poor.</p>
 <p>These stages of data science are also ridden with ambiguity. In the long term they could do with more formalization, and automation, but best practice needs to be understood by a wider community before that can happen.</p>
-<p>For assessing the data maturity of an organization, its departments and teams. (See DELVE Report)</p>
+<h1 id="data-maturity-assessment">Data Maturity Assessment</h1>
+<div style="text-align:right">
+<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_business/includes/data-maturity-assessment.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_business/includes/data-maturity-assessment.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+</div>
+<p>As part of the work for DELVE on Data Readiness in an Emergency <span class="citation" data-cites="Delve-data20">(The DELVE Initiative, 2020)</span>, we made recommendations around assessing data maturity, <span class="citation" data-cites="Lawrence-maturity20">(Lawrence et al., 2020)</span>. These recommendations were part of a range of suggestions for government to adopt to improve data driven decision making.</p>
+<h2 id="characterising-data-maturity">Characterising Data Maturity</h2>
+<p>Diferent organisations differ in their ability to handle data. A data maturity assessment reviews the ways in which best practice in data management and use is embedded in teams, departments, and business processes. These indicators are themed according to the maturity level. These characteristics would be reviewed in aggregate to give a holistic picture of data management across an organisation.</p>
+<h3 id="reactive">1. Reactive</h3>
+<p><em>Data sharing is not possible or ad-hoc at best.</em></p>
+<ol type="a">
+<li><p>It is difficult to identify relevant data sets and their owners.</p></li>
+<li><p>It is possible to access data, but this may take significant time, energy and personal connections.</p></li>
+<li><p>Data is most commonly shared via ad hoc means, like attaching it to an email.</p></li>
+<li><p>The quality of data available means that it is often incorrect or incomplete.</p></li>
+</ol>
+<h3 id="repeatable">2. Repeatable</h3>
+<p><em>Some limited data service provision is possible and expected, in particular between neighboring teams. Some limited data provision to distinct teams may also be possible.</em></p>
+<ol type="a">
+<li><p>Data analysis and documentation is of sufficient quality to enable its replication one year later.</p></li>
+<li><p>There are standards for documentation that ensure that data is usable across teams.</p></li>
+<li><p>The time and effort involved in data preparation are commonly understood.</p></li>
+<li><p>Data is used to inform decision-making, though not always routinely.</p></li>
+</ol>
+<h3 id="managed-and-integrated">3. Managed and Integrated</h3>
+<p><em>Data is available through published APIs; corrections to requested data are monitored and API service quality is discussed within the team. Data security protocols are partially automated ensuring electronic access for the data is possible.</em></p>
+<ol type="a">
+<li><p>Within the organisation, teams publish and share data as a supported output.</p></li>
+<li><p>Documentation is of sufficient quality to enable teams across the organisation that were not involved in its collection to use it directly.</p></li>
+<li><p>Procedures for data access are documented for other teams, and there is a way to obtain secure access to data.</p></li>
+</ol>
+<h3 id="optimized">4. Optimized</h3>
+<p><em>Teams provide reliable data services to other teams. The security and privacy implications of data sharing are automatically handled through privacy and security aware ecosystems.</em></p>
+<ol type="a">
+<li><p>Within teams, data quality is constantly monitored, for instance through a dashboard. Errors could be flagged for correction.</p></li>
+<li><p>There are well-established processes to allow easy sharing of high-quality data across teams and track how the same datasets are used by multiple teams across the organisation.</p></li>
+<li><p>Data API access is streamlined by an approval process for joining digital security groups.</p></li>
+</ol>
+<h3 id="transparent">5. Transparent</h3>
+<p><em>Internal organizational data is available to external organizations with appropriate privacy and security policies. Decision making across the organisation is data-enabled, with transparent metrics that could be audited through organisational data logs. If appropriate governance frameworks are agreed, data dependent services (including AI systems) could be rapidly and securely redeployed on company data in the service of national emergencies.</em></p>
+<ol type="a">
+<li><p>Data from APIs are combined in a transparent way to enable decision-making, which could be fully automated or through the organizationâs management.</p></li>
+<li><p>Data generated by teams within the organisation can be used by people outside of the organization.</p></li>
+</ol>
+<h2 id="example-data-maturity-questions">Example Data Maturity Questions</h2>
+<p>Below is a set of questions that could be used in an organisation for assessing data maturity. The questions are targeted at individuals in roles where the decisions are data driven.</p>
+<ol type="1">
+<li>I regularly use data to make decisions in my job.</li>
+<li>I don’t always know what data is available, or what data is best for my needs.</li>
+<li>It is easy to obtain access to the data I need.</li>
+<li>I document the processes I apply to render data usable for my department.</li>
+<li>To access the data I need from my department I need to email or talk to my colleagues.</li>
+<li>The data I would like to use is too difficult to obtain due to security restrictions.</li>
+<li>When dealing with a new data set, I can assess whether it is fit for my purposes in less than two hours.</li>
+<li>My co-workers appreciate the time and difficulty involved in preparing data for a task</li>
+<li>My management appreciates the time and difficulty involved in preparing data for a task.</li>
+<li>I can repeat data analysis I created greater than 6 months ago.</li>
+<li>I can repeat data analysis my team created from greater than 6 months ago.</li>
+<li>To repeat a data analysis from another member of my team I need to speak to that person directly.</li>
+<li>The data my team owns is documented well enough to enable people outside the team to use it directly.</li>
+<li>My team monitors the quality of the data it owns through the use of issue tracking (e.g. trouble tickets).</li>
+<li>The data my team generates is used by other teams inside my department.</li>
+<li>The data my team generates is used by other teams outside my department.</li>
+<li>The data my team generates is used by other teams, though I’m not sure who.</li>
+<li>The data my team generates is used by people outside of the organization.</li>
+<li>I am unable to access the data I need due to technical challenges.</li>
+<li>The quality of the data I commonly access is always complete and correct.</li>
+<li>The quality of the data I commonly access is complete, but not always correct.</li>
+<li>The quality of the data I commonly access is often incorrect or incomplete.</li>
+<li>When seeking data, I find it hard to find the data owner and request access.</li>
+<li>When seeking data, I am normally able to directly access the data in its original location</li>
+<li>Poor documentation is a major problem for me when using data from outside my team.</li>
+<li>My team has a formal process for identifying and correcting errors in our data.</li>
+<li>In my team it is easy to obtain resource for making clean data available to other teams.</li>
+<li>For projects analyzing data my team owns, the majority of our time is spent on understanding data provenance.</li>
+<li>For projects analyzing data other teams own, the majority of our time is spent on understanding data provenance.</li>
+<li>My team views data wrangling as a specialized role and resources it accordingly.</li>
+<li>My team can account for each data set they manage.</li>
+<li>When a colleague requests data, the easiest way to share it is to attach it to an email.</li>
+<li>My team’s main approach to analysis is to view the data in a spreadsheet program.</li>
+<li>My team has goals that are centred around improving data quality.</li>
+<li>The easiest way for me to share data outside the team is to provide a link to a document that explains how our data access APIs work.</li>
+<li>I find it easy to find data scientists outside my team who have attempted similar analyses to those I’m interested in.</li>
+<li>For data outside my team, corrupt data is the largest obstacle I face when performing a data analysis.</li>
+<li>My team understands the importance of meta-data and makes it available to other teams.</li>
+<li>Data I use from outside my team comes with meta-data for assessing its completeness and accuracy.</li>
+<li>I regularly create dashboards for monitoring data quality.</li>
+<li>My team uses metrics to assess our data quality.</li>
+</ol>
 <!--include{_ml/includes/shiny-bike-model.md}-->
 <h1 id="introduction">Introduction</h1>
-<div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/data-quality.gpp.markdown" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/data-quality.gpp.markdown', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
-</div>
 <h2 id="conclusions">Conclusions</h2>
 <ul>
 <li>Data is modern software</li>
