@@ -7,22 +7,34 @@ author:
   orcid: 0000-0001-9258-1030
   url: http://inverseprobability.com
 layout: lecture
-pptx: True
-potx: ../_includes/judge-exec-reference.potx
+room:
+venue:
 talkcss: https://inverseprobability.com/assets/css/talks.css
-postsdir: ../../../mlatcl/execed/_lectures/
-slidesdir: ../../../mlatcl/execed/slides/
-notesdir: ../../../mlatcl/execed/_notes/
-notebooksdir: ../../../mlatcl/execed/_notebooks/
+bibdir: $HOME/lawrennd/bibliography
+postsdir: ../_lectures/
+slidesdir: ../slides/
+notesdir: ../_notes/
+notebooksdir: ../_notebooks/
+practicalsdir: ../_practicals/
+snippetsdir: $HOME/lawrennd/snippets
 writediagramsdir: .
-scriptsdir: ../scripts/
+scriptsdir: ./scripts/
 diagramsdir: ./slides/diagrams/
-transition: None
+posts: True
+docx: False
+notespdf: False
+slidesipynb: False
+pptx: True
+pdf: False
+assignment: False
+ipynb: False
+reveal: False
+potx: judge-exec-reference.potx
 baseurl: "execed/" # the subpath of your site, e.g. /blog/
 url: "https://mlatcl.github.io/" # the base hostname & protocol for your site
-transition: None
 ghub:
-- organization: lawrennd
-  repository: talks
+- organization: mlatcl
+  repository: mlphysical
   branch: gh-pages
   directory: _execed
+transition: None

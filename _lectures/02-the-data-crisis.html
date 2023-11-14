@@ -1,12 +1,10 @@
 ---
 title: "The Data Crisis"
-abstract: "<p>In this talk we consider data readiness levels and how they may be deployed.</p>"
-edit_url: https://github.com/lawrennd/talks/edit/gh-pages/_execed/the-data-crisis.md
-week: 0
+abstract: "<p>In this talk we consider data readiness levels and how
+they may be deployed.</p>"
+edit_url: https://github.com/mlatcl/mlphysical/edit/gh-pages/_execed/the-data-crisis.md
 session: 2
-reveal: 02-the-data-crisis.slides.html
 pptx: 02-the-data-crisis.pptx
-edit_url: https://github.com/lawrennd/talks/edit/gh-pages/_execed/the-data-crisis.md
 layout: lecture
 categories:
 - notes
@@ -24,127 +22,347 @@ categories:
 -->
 <h2 id="the-data-crisis">The Data Crisis</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/the-data-crisis.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/the-data-crisis.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/includes/the-data-crisis.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_data-science/includes/the-data-crisis.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>Anecdotally, talking to data modelling scientists. Most say they spend 80% of their time acquiring and cleaning data. This is precipitating what I refer to as the “data crisis.” This is an analogy with software. The “software crisis” was the phenomenon of inability to deliver software solutions due to increasing complexity of implementation. There was no single shot solution for the software crisis, it involved better practice (scrum, test orientated development, sprints, code review), improved programming paradigms (object orientated, functional) and better tools (CVS, then SVN, then git).</p>
-<p>However, these challenges aren’t new, they are merely taking a different form. From the computer’s perspective software <em>is</em> data. The first wave of the data crisis was known as the <em>software crisis</em>.</p>
+<p>Anecdotally, talking to data modelling scientists. Most say they
+spend 80% of their time acquiring and cleaning data. This is
+precipitating what I refer to as the “data crisis”. This is an analogy
+with software. The “software crisis” was the phenomenon of inability to
+deliver software solutions due to increasing complexity of
+implementation. There was no single shot solution for the software
+crisis, it involved better practice (scrum, test orientated development,
+sprints, code review), improved programming paradigms (object
+orientated, functional) and better tools (CVS, then SVN, then git).</p>
+<p>However, these challenges aren’t new, they are merely taking a
+different form. From the computer’s perspective software <em>is</em>
+data. The first wave of the data crisis was known as the <em>software
+crisis</em>.</p>
 <h3 id="the-software-crisis">The Software Crisis</h3>
-<p>In the late sixties early software programmers made note of the increasing costs of software development and termed the challenges associated with it as the “<a href="https://en.wikipedia.org/wiki/Software_crisis">Software Crisis</a>.” Edsger Dijkstra referred to the crisis in his 1972 Turing Award winner’s address.</p>
+<p>In the late sixties early software programmers made note of the
+increasing costs of software development and termed the challenges
+associated with it as the “<a
+href="https://en.wikipedia.org/wiki/Software_crisis">Software
+Crisis</a>”. Edsger Dijkstra referred to the crisis in his 1972 Turing
+Award winner’s address.</p>
 <blockquote>
-<p>The major cause of the software crisis is that the machines have become several orders of magnitude more powerful! To put it quite bluntly: as long as there were no machines, programming was no problem at all; when we had a few weak computers, programming became a mild problem, and now we have gigantic computers, programming has become an equally gigantic problem.</p>
+<p>The major cause of the software crisis is that the machines have
+become several orders of magnitude more powerful! To put it quite
+bluntly: as long as there were no machines, programming was no problem
+at all; when we had a few weak computers, programming became a mild
+problem, and now we have gigantic computers, programming has become an
+equally gigantic problem.</p>
 <p>Edsger Dijkstra (1930-2002), The Humble Programmer</p>
 </blockquote>
 <blockquote>
-<p>The major cause of the data crisis is that machines have become more interconnected than ever before. Data access is therefore cheap, but data quality is often poor. What we need is cheap high-quality data. That implies that we develop processes for improving and verifying data quality that are efficient.</p>
-<p>There would seem to be two ways for improving efficiency. Firstly, we should not duplicate work. Secondly, where possible we should automate work.</p>
+<p>The major cause of the data crisis is that machines have become more
+interconnected than ever before. Data access is therefore cheap, but
+data quality is often poor. What we need is cheap high-quality data.
+That implies that we develop processes for improving and verifying data
+quality that are efficient.</p>
+<p>There would seem to be two ways for improving efficiency. Firstly, we
+should not duplicate work. Secondly, where possible we should automate
+work.</p>
 </blockquote>
-<p>What I term “The Data Crisis” is the modern equivalent of this problem. The quantity of modern data, and the lack of attention paid to data as it is initially “laid down” and the costs of data cleaning are bringing about a crisis in data-driven decision making. This crisis is at the core of the challenge of <em>technical debt</em> in machine learning <span class="citation" data-cites="Sculley:debt15">(Sculley et al., 2015)</span>.</p>
-<p>Just as with software, the crisis is most correctly addressed by ‘scaling’ the manner in which we process our data. Duplication of work occurs because the value of data cleaning is not correctly recognised in management decision making processes. Automation of work is increasingly possible through techniques in “artificial intelligence,” but this will also require better management of the data science pipeline so that data about data science (meta-data science) can be correctly assimilated and processed. The Alan Turing institute has a program focussed on this area, <a href="https://www.turing.ac.uk/research_projects/artificial-intelligence-data-analytics/">AI for Data Analytics</a>.</p>
+<p>What I term “The Data Crisis” is the modern equivalent of this
+problem. The quantity of modern data, and the lack of attention paid to
+data as it is initially “laid down” and the costs of data cleaning are
+bringing about a crisis in data-driven decision making. This crisis is
+at the core of the challenge of <em>technical debt</em> in machine
+learning <span class="citation" data-cites="Sculley:debt15">(Sculley et
+al., 2015)</span>.</p>
+<p>Just as with software, the crisis is most correctly addressed by
+‘scaling’ the manner in which we process our data. Duplication of work
+occurs because the value of data cleaning is not correctly recognised in
+management decision making processes. Automation of work is increasingly
+possible through techniques in “artificial intelligence”, but this will
+also require better management of the data science pipeline so that data
+about data science (meta-data science) can be correctly assimilated and
+processed. The Alan Turing institute has a program focussed on this
+area, <a
+href="https://www.turing.ac.uk/research_projects/artificial-intelligence-data-analytics/">AI
+for Data Analytics</a>.</p>
 <h2 id="lies-and-damned-lies">Lies and Damned Lies</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/lies-damned-lies.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/lies-damned-lies.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/includes/lies-damned-lies.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_data-science/includes/lies-damned-lies.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
 <blockquote>
 <p>There are three types of lies: lies, damned lies and statistics</p>
-<p>Benjamin Disraeli 1804-1881</p>
+<p>Arthur Balfour 1848-1930</p>
 </blockquote>
-<p>Benjamin Disraeli said<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> that there three types of lies: lies, damned lies and statistics. Disraeli died in 1881, 30 years before the first academic department of applied statistics was founded at UCL. If Disraeli were alive today, it is likely that he’d rephrase his quote:</p>
+<p>Arthur Balfour was quoting the lawyer James Munro<a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+when he said that there three types of lies: lies, damned lies and
+statistics in 1892. This is 20 years before the first academic
+department of applied statistics was founded at UCL. If Balfour were
+alive today, it is likely that he’d rephrase his quote:</p>
 <blockquote>
-<p>There are three types of lies, lies damned lies and <em>big data</em>.</p>
+<p>There are three types of lies, lies damned lies and <em>big
+data</em>.</p>
 </blockquote>
-<p>Why? Because the challenges of understanding and interpreting big data today are similar to those that Disraeli faced in governing an empire through statistics in the latter part of the 19th century.</p>
-<p>The quote lies, damned lies and statistics was credited to Benjamin Disraeli by Mark Twain in his autobiography. It characterizes the idea that statistic can be made to prove anything. But Disraeli died in 1881 and Mark Twain died in 1910. The important breakthrough in overcoming our tendency to overinterpet data came with the formalization of the field through the development of <em>mathematical statistics</em>.</p>
-<p>Data has an elusive quality, it promises so much but can deliver little, it can mislead and misrepresent. To harness it, it must be tamed. In Disraeli’s time during the second half of the 19th century, numbers and data were being accumulated, the social sciences were being developed. There was a large scale collection of data for the purposes of government.</p>
-<p>The modern ‘big data era’ is on the verge of delivering the same sense of frustration that Disraeli experienced, the early promise of big data as a panacea is evolving to demands for delivery. For me, personally, peak-hype coincided with an email I received inviting collaboration on a project to deploy “<em>Big Data</em> and <em>Internet of Things</em> in an <em>Industry 4.0</em> environment.” Further questioning revealed that the actual project was optimization of the efficiency of a manufacturing production line, a far more tangible and <em>realizable</em> goal.</p>
-<p>The antidote to this verbage is found in increasing awareness. When dealing with data the first trap to avoid is the games of buzzword bingo that we are wont to play. The first goal is to quantify what challenges can be addressed and what techniques are required. Behind the hype fundamentals are changing. The phenomenon is about the increasing access we have to data. The manner in which customers information is recorded and processes are codified and digitized with little overhead. Internet of things is about the increasing number of cheap sensors that can be easily interconnected through our modern network structures. But businesses are about making money, and these phenomena need to be recast in those terms before their value can be realized.</p>
+<p>Why? Because the challenges of understanding and interpreting big
+data today are similar to those that Balfour (who was a Conservative
+politician and statesman and would later become Prime Minister) faced in
+governing an empire through statistics in the latter part of the 19th
+century.</p>
+<p>The quote lies, damned lies and statistics was also credited to
+Benjamin Disraeli by Mark Twain in Twain’s autobiography.<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> It
+characterizes the idea that statistic can be made to prove anything. But
+Disraeli died in 1881 and Mark Twain died in 1910. The important
+breakthrough in overcoming our tendency to over-interpet data came with
+the formalization of the field through the development of
+<em>mathematical statistics</em>.</p>
+<p>Data has an elusive quality, it promises so much but can deliver
+little, it can mislead and misrepresent. To harness it, it must be
+tamed. In Balfour and Disraeli’s time during the second half of the 19th
+century, numbers and data were being accumulated, the social sciences
+were being developed. There was a large-scale collection of data for the
+purposes of government.</p>
+<p>The modern ‘big data era’ is on the verge of delivering the same
+sense of frustration that Balfour experienced, the early promise of big
+data as a panacea is evolving to demands for delivery. For me,
+personally, peak-hype coincided with an email I received inviting
+collaboration on a project to deploy “<em>Big Data</em> and <em>Internet
+of Things</em> in an <em>Industry 4.0</em> environment”. Further
+questioning revealed that the actual project was optimization of the
+efficiency of a manufacturing production line, a far more tangible and
+<em>realizable</em> goal.</p>
+<p>The antidote to this verbiage is found in increasing awareness. When
+dealing with data the first trap to avoid is the games of buzzword bingo
+that we are wont to play. The first goal is to quantify what challenges
+can be addressed and what techniques are required. Behind the hype
+fundamentals are changing. The phenomenon is about the increasing access
+we have to data. The way customers’ information is recorded and
+processes are codified and digitized with little overhead. Internet of
+things is about the increasing number of cheap sensors that can be
+easily interconnected through our modern network structures. But
+businesses are about making money, and these phenomena need to be recast
+in those terms before their value can be realized.</p>
+<p>For more thoughts on the challenges that statistics brings see
+Chapter 8 of <span class="citation"
+data-cites="Lawrence-atomic24">Lawrence (2024)</span>.</p>
 <h2 id="mathematical-statistics"><em>Mathematical</em> Statistics</h2>
-<p><a href="https://en.wikipedia.org/wiki/Karl_Pearson">Karl Pearson</a> (1857-1936), <a href="https://en.wikipedia.org/wiki/Ronald_Fisher">Ronald Fisher</a> (1890-1962) and others considered the question of what conclusions can truly be drawn from data. Their mathematical studies act as a restraint on our tendency to over-interpret and see patterns where there are none. They introduced concepts such as randomized control trials that form a mainstay of the our decision making today, from government, to clinicians to large scale A/B testing that determines the nature of the web interfaces we interact with on social media and shopping.</p>
+<p><a href="https://en.wikipedia.org/wiki/Karl_Pearson">Karl Pearson</a>
+(1857-1936), <a
+href="https://en.wikipedia.org/wiki/Ronald_Fisher">Ronald Fisher</a>
+(1890-1962) and others considered the question of what conclusions can
+truly be drawn from data. Their mathematical studies act as a restraint
+on our tendency to over-interpret and see patterns where there are none.
+They introduced concepts such as randomized control trials that form a
+mainstay of our decision making today, from government, to clinicians to
+large scale A/B testing that determines the nature of the web interfaces
+we interact with on social media and shopping.</p>
 <div class="figure">
 <div id="portrait-of-karl-pearson-figure" class="figure-frame">
-<div class="centered centered" style="">
+<div class="centered" style="">
 <img class="" src="https://mlatcl.github.io/execed/./slides/diagrams//Portrait_of_Karl_Pearson.jpg" width="30%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
 </div>
 </div>
-<div id="portrait-of-karl-pearson-magnify" class="magnify" onclick="magnifyFigure(&#39;portrait-of-karl-pearson&#39;)">
+<div id="portrait-of-karl-pearson-magnify" class="magnify"
+onclick="magnifyFigure(&#39;portrait-of-karl-pearson&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="portrait-of-karl-pearson-caption" class="caption-frame">
-<p>Figure: Karl Pearson (1857-1936), one of the founders of Mathematical Statistics.</p>
+<p>Figure: Karl Pearson (1857-1936), one of the founders of Mathematical
+Statistics.</p>
 </div>
 </div>
-<p>Their movement did the most to put statistics to rights, to eradicate the ‘damned lies.’ It was known as <a href="https://en.wikipedia.org/wiki/Mathematical_statistics">‘mathematical statistics’</a>. Today I believe we should look to the emerging field of <em>data science</em> to provide the same role. Data science is an amalgam of statistics, data mining, computer systems, databases, computation, machine learning and artificial intelligence. Spread across these fields are the tools we need to realize data’s potential. For many businesses this might be thought of as the challenge of ‘converting bits into atoms.’ Bits: the data stored on computer, atoms: the physical manifestation of what we do; the transfer of goods, the delivery of service. From fungible to tangible. When solving a challenge through data there are a series of obstacles that need to be addressed.</p>
-<p>Firstly, data awareness: what data you have and where its stored. Sometimes this includes changing your conception of what data is and how it can be obtained. From automated production lines to apps on employee smart phones. Often data is locked away: manual log books, confidential data, personal data. For increasing awareness an internal audit can help. The website <a href="https://data.gov.uk/">data.gov.uk</a> hosts data made available by the UK government. To create this website the government’s departments went through an audit of what data they each hold and what data they could make available. Similarly, within private buisnesses this type of audit could be useful for understanding their internal digital landscape: after all the key to any successful campaign is a good map.</p>
-<p>Secondly, availability. How well are the data sources interconnected? How well curated are they? The curse of Disraeli was associated with unreliable data and <em>unreliable statistics</em>. The misrepresentations this leads to are worse than the absence of data as they give a false sense of confidence to decision making. Understanding how to avoid these pitfalls involves an improved sense of data and its value, one that needs to permeate the organization.</p>
-<p>The final challenge is analysis, the accumulation of the necessary expertise to digest what the data tells us. Data requires intepretation, and interpretation requires experience. Analysis is providing a bottleneck due to a skill shortage, a skill shortage made more acute by the fact that, ideally, analysis should be carried out by individuals not only skilled in data science but also equipped with the domain knowledge to understand the implications in a given application, and to see opportunities for improvements in efficiency.</p>
+<p>Their movement did the most to put statistics to rights, to eradicate
+the ‘damned lies’. It was known as <a
+href="https://en.wikipedia.org/wiki/Mathematical_statistics">‘mathematical
+statistics’</a>. Today I believe we should look to the emerging field of
+<em>data science</em> to provide the same role. Data science is an
+amalgam of statistics, data mining, computer systems, databases,
+computation, machine learning and artificial intelligence. Spread across
+these fields are the tools we need to realize data’s potential. For many
+businesses this might be thought of as the challenge of ‘converting bits
+into atoms’. Bits: the data stored on computer, atoms: the physical
+manifestation of what we do; the transfer of goods, the delivery of
+service. From fungible to tangible. When solving a challenge through
+data there are a series of obstacles that need to be addressed.</p>
+<p>Firstly, data awareness: what data you have and where its stored.
+Sometimes this includes changing your conception of what data is and how
+it can be obtained. From automated production lines to apps on employee
+smart phones. Often data is locked away: manual logbooks, confidential
+data, personal data. For increasing awareness an internal audit can
+help. The website <a href="https://data.gov.uk/">data.gov.uk</a> hosts
+data made available by the UK government. To create this website the
+government’s departments went through an audit of what data they each
+hold and what data they could make available. Similarly, within private
+businesses this type of audit could be useful for understanding their
+internal digital landscape: after all the key to any successful campaign
+is a good map.</p>
+<p>Secondly, availability. How well are the data sources interconnected?
+How well curated are they? The curse of Disraeli was associated with
+unreliable data and <em>unreliable statistics</em>. The
+misrepresentations this leads to are worse than the absence of data as
+they give a false sense of confidence to decision making. Understanding
+how to avoid these pitfalls involves an improved sense of data and its
+value, one that needs to permeate the organization.</p>
+<p>The final challenge is analysis, the accumulation of the necessary
+expertise to digest what the data tells us. Data requires
+interpretation, and interpretation requires experience. Analysis is
+providing a bottleneck due to a skill shortage, a skill shortage made
+more acute by the fact that, ideally, analysis should be carried out by
+individuals not only skilled in data science but also equipped with the
+domain knowledge to understand the implications in a given application,
+and to see opportunities for improvements in efficiency.</p>
 <h2 id="mathematical-data-science">‘Mathematical Data Science’</h2>
-<p>As a term ‘big data’ promises much and delivers little, to get true value from data, it needs to be curated and evaluated. The three stages of awareness, availability and analysis provide a broad framework through which organizations should be assessing the potential in the data they hold. Hand waving about big data solutions will not do, it will only lead to self-deception. The castles we build on our data landscapes must be based on firm foundations, process and scientific analysis. If we do things right, those are the foundations that will be provided by the new field of data science.</p>
-<p>Today the statement “There are three types of lies: lies, damned lies and ‘big data’” may be more apt. We are revisiting many of the mistakes made in interpreting data from the 19th century. Big data is laid down by happenstance, rather than actively collected with a particular question in mind. That means it needs to be treated with care when conclusions are being drawn. For data science to succede it needs the same form of rigour that Pearson and Fisher brought to statistics, a “mathematical data science” is needed.</p>
-<p>You can also check my blog post on <a href="http://inverseprobability.com/2016/11/19/lies-damned-lies-big-data">Lies, Damned Lies and Big Data</a>.</p>
-<h1 id="quantifying-the-value-of-data">Quantifying the Value of Data</h1>
+<p>As a term ‘big data’ promises much and delivers little, to get true
+value from data, it needs to be curated and evaluated. The three stages
+of awareness, availability and analysis provide a broad framework
+through which organizations should be assessing the potential in the
+data they hold. Hand waving about big data solutions will not do, it
+will only lead to self-deception. The castles we build on our data
+landscapes must be based on firm foundations, process and scientific
+analysis. If we do things right, those are the foundations that will be
+provided by the new field of data science.</p>
+<p>Today the statement “There are three types of lies: lies, damned lies
+and ‘big data’” may be more apt. We are revisiting many of the mistakes
+made in interpreting data from the 19th century. Big data is laid down
+by happenstance, rather than actively collected with a particular
+question in mind. That means it needs to be treated with care when
+conclusions are being drawn. For data science to succeed it needs the
+same form of rigor that Pearson and Fisher brought to statistics, a
+“mathematical data science” is needed.</p>
+<p>You can also check my blog post on <a
+href="http://inverseprobability.com/2016/11/19/lies-damned-lies-big-data">Lies,
+Damned Lies and Big Data</a>.</p>
+<h1 id="quantifying-the-value-of-data">Quantifying the Value of
+Data</h1>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/value-of-data.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/value-of-data.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/includes/value-of-data.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_data-science/includes/value-of-data.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>The situation is reminiscent of a thirsty castaway, set adrift. There is a sea of data, but it is not fit to drink. We need some form of data desalination before it can be consumed. But like real desalination, this is a non trivial process, particularly if we want to achieve it at scale.</p>
+<p>The situation is reminiscent of a thirsty castaway, set adrift. There
+is a sea of data, but it is not fit to drink. We need some form of data
+desalination before it can be consumed. But like real desalination, this
+is a non-trivial process, particularly if we want to achieve it at
+scale.</p>
 <p>There’s a sea of data, but most of it is undrinkable.</p>
 <div class="figure">
 <div id="sea-water-ocean-waves-figure" class="figure-frame">
-<div class="centered centered" style="">
+<div class="centered" style="">
 <img class="" src="https://mlatcl.github.io/execed/./slides/diagrams//sea-water-ocean-waves.jpg" width="50%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
 </div>
 </div>
-<div id="sea-water-ocean-waves-magnify" class="magnify" onclick="magnifyFigure(&#39;sea-water-ocean-waves&#39;)">
+<div id="sea-water-ocean-waves-magnify" class="magnify"
+onclick="magnifyFigure(&#39;sea-water-ocean-waves&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="sea-water-ocean-waves-caption" class="caption-frame">
-<p>Figure: The abundance of uncurated data is reminiscent of the abundance of undrinkable water for those cast adrift at sea.</p>
+<p>Figure: The abundance of uncurated data is reminiscent of the
+abundance of undrinkable water for those cast adrift at sea.</p>
 </div>
 </div>
 <p>We require data-desalination before it can be consumed!</p>
-<p>I spoke about the challenges in data science at the NIPS 2016 Workshop on Machine Learning for Health. NIPS mainly focuses on machine learning methodologies, and many of the speakers were doing so. But before my talk, I listened to some of the other speakers talk about the challenges they had with data preparation.</p>
+<p>I spoke about the challenges in data science at the NIPS 2016
+Workshop on Machine Learning for Health. NIPS mainly focuses on machine
+learning methodologies, and many of the speakers were doing so. But
+before my talk, I listened to some of the other speakers talk about the
+challenges they had with data preparation.</p>
 <ul>
-<li>90% of our time is spent on validation and integration (Leo Anthony Celi)</li>
+<li>90% of our time is spent on validation and integration (Leo Anthony
+Celi)</li>
 <li>“The Dirty Work We Don’t Want to Think About” (Eric Xing)</li>
 <li>“Voodoo to get it decompressed” (Francisco Giminez)</li>
 </ul>
-<p>A further challenge in healthcare is that the data is collected by clinicians, often at great inconvenience to both themselves and the patient, but the control of the data is sometimes used to steer the direction of research.</p>
-<p>The fact that we put so much effort into processing the data, but so little into allocating credit for this work is a major challenge for realizing the benefit in the data we have.</p>
-<p>This type of work is somewhat thankless, with the exception of the clinicians’ control of the data, which probably takes things too far, those that collate and correct data sets gain little credit. In the domain of <em>reinforcement learning</em> the aim is to take a series of actions to achieve a stated goal and gain a reward. The <em>credit assignment problem</em> is the challenge in the learning algorithm of distributing credit to each of the actions which brought about the reward. We also experience this problem in society, we use proxies such as monetary reward to incentivise intermediate steps in our economy. Modern society functions because we agree to make basic expenditure on infrastructure, such as roads, which we all make use of. Our data-society is not sufficiently mature to be correctly crediting and rewarding those that undertake this work.</p>
-<p>This situation is no better in industry than in academia. Many companies have been persuaded to accumulate all their data centrally in a so-called “data lake.” This attractive idea is problematic, because data is added to the “lake” without thought to its quality. As a result, a better name for these resources would be data swamps. Because the quality of data in them is often dubious. Data scientists when working with these sources often need to develop their own processes for checking the quality of the data before it is used. Unfortunately, the quality improvements they make are rarely fed back into the ecosystem, meaning the same purification work needs to be done repeatedly.</p>
-<p>We need to properly incetivize the sharing and production of clean data sets, we need to correctly quantify the value in the contribution of each actor, otherwise there won’t be enough clean data to satiate the thirst of our decision making processes.</p>
+<p>A further challenge in healthcare is that the data is collected by
+clinicians, often at great inconvenience to both themselves and the
+patient, but the control of the data is sometimes used to steer the
+direction of research.</p>
+<p>The fact that we put so much effort into processing the data, but so
+little into allocating credit for this work is a major challenge for
+realizing the benefit in the data we have.</p>
+<p>This type of work is somewhat thankless, with the exception of the
+clinicians’ control of the data, which probably takes things too far,
+those that collate and correct data sets gain little credit. In the
+domain of <em>reinforcement learning</em> the aim is to take a series of
+actions to achieve a stated goal and gain a reward. The <em>credit
+assignment problem</em> is the challenge in the learning algorithm of
+distributing credit to each of the actions which brought about the
+reward. We also experience this problem in society, we use proxies such
+as monetary reward to incentivise intermediate steps in our economy.
+Modern society functions because we agree to make basic expenditure on
+infrastructure, such as roads, which we all make use of. Our
+data-society is not sufficiently mature to be correctly crediting and
+rewarding those that undertake this work.</p>
+<p>This situation is no better in industry than in academia. Many
+companies have been persuaded to accumulate all their data centrally in
+a so-called “data lake”. This attractive idea is problematic, because
+data is added to the “lake” without thought to its quality. As a result,
+a better name for these resources would be data swamps. Because the
+quality of data in them is often dubious. Data scientists when working
+with these sources often need to develop their own processes for
+checking the quality of the data before it is used. Unfortunately, the
+quality improvements they make are rarely fed back into the ecosystem,
+meaning the same purification work needs to be done repeatedly.</p>
+<p>We need to properly incentivize the sharing and production of clean
+data sets, we need to correctly quantify the value in the contribution
+of each actor, otherwise there won’t be enough clean data to satiate the
+thirst of our decision-making processes.</p>
 <div class="figure">
 <div id="pomdp-credit-assignment-figure" class="figure-frame">
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//pomdp004.svg" width="80%" style=" ">
 </object>
 </div>
-<div id="pomdp-credit-assignment-magnify" class="magnify" onclick="magnifyFigure(&#39;pomdp-credit-assignment&#39;)">
+<div id="pomdp-credit-assignment-magnify" class="magnify"
+onclick="magnifyFigure(&#39;pomdp-credit-assignment&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="pomdp-credit-assignment-caption" class="caption-frame">
-<p>Figure: Partially observable Markov decision process observing reward as actions are taken in different states</p>
+<p>Figure: Partially observable Markov decision process observing reward
+as actions are taken in different states</p>
 </div>
 </div>
-<p>The value of shared data infrastructures in computational biology was recognized by the 2010 joint statement from the Wellcome Trust and other funders of research at the “Foggy Bottom” meeting. They recognised three key benefits to sharing of health data:</p>
+<p>The value of shared data infrastructures in computational biology was
+recognized by the 2010 joint statement from the Wellcome Trust and other
+funders of research at the “Foggy Bottom” meeting. They recognised three
+key benefits to sharing of health data:</p>
 <ul>
 <li>faster progress in improving health</li>
 <li>better value for money</li>
 <li>higher quality science</li>
 </ul>
-<p>But incentivising sharing requires incentivising collection and collation of data, and the associated credit allocation models.</p>
+<p>But incentivising sharing requires incentivising collection and
+collation of data, and the associated credit allocation models.</p>
 <h2 id="data-readiness-levels">Data Readiness Levels</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-readiness-levels.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-readiness-levels.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/includes/data-readiness-levels.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_data-science/includes/data-readiness-levels.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
 <h3 id="data-readiness-levels-1">Data Readiness Levels</h3>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-readiness-levels-short.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-readiness-levels-short.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/includes/data-readiness-levels-short.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_data-science/includes/data-readiness-levels-short.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p><a href="http://inverseprobability.com/2017/01/12/data-readiness-levels">Data Readiness Levels</a> <span class="citation" data-cites="Lawrence-drl17">(Lawrence, 2017)</span> are an attempt to develop a language around data quality that can bridge the gap between technical solutions and decision makers such as managers and project planners. They are inspired by Technology Readiness Levels which attempt to quantify the readiness of technologies for deployment.</p>
-<p>See this blog post on <a href="http://inverseprobability.com/2017/01/12/data-readiness-levels">Data Readiness Levels</a>.</p>
-<h3 id="three-grades-of-data-readiness">Three Grades of Data Readiness</h3>
+<p><a
+href="http://inverseprobability.com/2017/01/12/data-readiness-levels">Data
+Readiness Levels</a> <span class="citation"
+data-cites="Lawrence-drl17">(Lawrence, 2017)</span> are an attempt to
+develop a language around data quality that can bridge the gap between
+technical solutions and decision makers such as managers and project
+planners. They are inspired by Technology Readiness Levels which attempt
+to quantify the readiness of technologies for deployment.</p>
+<p>See this blog post on <a
+href="http://inverseprobability.com/2017/01/12/data-readiness-levels">Data
+Readiness Levels</a>.</p>
+<h3 id="three-grades-of-data-readiness">Three Grades of Data
+Readiness</h3>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/three-grades-of-data-readiness.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/three-grades-of-data-readiness.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/includes/three-grades-of-data-readiness.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_data-science/includes/three-grades-of-data-readiness.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>Data-readiness describes, at its coarsest level, three separate stages of data graduation.</p>
+<p>Data-readiness describes, at its coarsest level, three separate
+stages of data graduation.</p>
 <ul>
 <li>Grade C - accessibility
 <ul>
@@ -156,79 +374,255 @@ categories:
 </ul></li>
 <li>Grade A - usability</li>
 </ul>
-<p>The important definitions are at the transition. The move from Grade C data to Grade B data is delimited by the <em>electronic availability</em> of the data. The move from Grade B to Grade A data is delimited by posing a question or task to the data <span class="citation" data-cites="Lawrence:drl17">(<strong>Lawrence:drl17?</strong>)</span>.</p>
+<p>The important definitions are at the transition. The move from Grade
+C data to Grade B data is delimited by the <em>electronic
+availability</em> of the data. The move from Grade B to Grade A data is
+delimited by posing a question or task to the data <span
+class="citation" data-cites="Lawrence-drl17">(Lawrence,
+2017)</span>.</p>
 <h2 id="accessibility-grade-c">Accessibility: Grade C</h2>
-<p>The first grade refers to the accessibility of data. Most data science practitioners will be used to working with data-providers who, perhaps having had little experience of data-science before, state that they “have the data.” More often than not, they have not verified this. A convenient term for this is “Hearsay Data,” someone has <em>heard</em> that they have the data so they <em>say</em> they have it. This is the lowest grade of data readiness.</p>
-<p>Progressing through Grade C involves ensuring that this data is accessible. Not just in terms of digital accessiblity, but also for regulatory, ethical and intellectual property reasons.</p>
+<p>The first grade refers to the accessibility of data. Most data
+science practitioners will be used to working with data-providers who,
+perhaps having had little experience of data-science before, state that
+they “have the data”. More often than not, they have not verified this.
+A convenient term for this is “Hearsay Data”, someone has <em>heard</em>
+that they have the data so they <em>say</em> they have it. This is the
+lowest grade of data readiness.</p>
+<p>Progressing through Grade C involves ensuring that this data is
+accessible. Not just in terms of digital accessiblity, but also for
+regulatory, ethical and intellectual property reasons.</p>
 <h2 id="validity-grade-b">Validity: Grade B</h2>
-<p>Data transits from Grade C to Grade B once we can begin digital analysis on the computer. Once the challenges of access to the data have been resolved, we can make the data available either via API, or for direct loading into analysis software (such as Python, R, Matlab, Mathematica or SPSS). Once this has occured the data is at B4 level. Grade B involves the <em>validity</em> of the data. Does the data really represent what it purports to? There are challenges such as missing values, outliers, record duplication. Each of these needs to be investigated.</p>
-<p>Grade B and C are important as if the work done in these grades is documented well, it can be reused in other projects. Reuse of this labour is key to reducing the costs of data-driven automated decision making. There is a strong overlap between the work required in this grade and the statistical field of <a href="https://en.wikipedia.org/wiki/Exploratory_data_analysis"><em>exploratory data analysis</em></a> <span class="citation" data-cites="Tukey:exploratory77">(Tukey, 1977)</span>.</p>
-<p>The need for Grade B emerges due to the fundamental change in the availability of data. Classically, the scientific question came first, and the data came later. This is still the approach in a randomized control trial, e.g. in A/B testing or clinical trials for drugs. Today data is being laid down by happenstance, and the question we wish to ask about the data often comes after the data has been created. The Grade B of data readiness ensures thought can be put into data quality <em>before</em> the question is defined. It is this work that is reusable across multiple teams. It is these processes that the team which is <em>standing up</em> the data must deliver.</p>
+<p>Data transits from Grade C to Grade B once we can begin digital
+analysis on the computer. Once the challenges of access to the data have
+been resolved, we can make the data available either via API, or for
+direct loading into analysis software (such as Python, R, Matlab,
+Mathematica or SPSS). Once this has occured the data is at B4 level.
+Grade B involves the <em>validity</em> of the data. Does the data really
+represent what it purports to? There are challenges such as missing
+values, outliers, record duplication. Each of these needs to be
+investigated.</p>
+<p>Grade B and C are important as if the work done in these grades is
+documented well, it can be reused in other projects. Reuse of this
+labour is key to reducing the costs of data-driven automated decision
+making. There is a strong overlap between the work required in this
+grade and the statistical field of <a
+href="https://en.wikipedia.org/wiki/Exploratory_data_analysis"><em>exploratory
+data analysis</em></a> <span class="citation"
+data-cites="Tukey:exploratory77">(Tukey, 1977)</span>.</p>
+<p>The need for Grade B emerges due to the fundamental change in the
+availability of data. Classically, the scientific question came first,
+and the data came later. This is still the approach in a randomized
+control trial, e.g. in A/B testing or clinical trials for drugs. Today
+data is being laid down by happenstance, and the question we wish to ask
+about the data often comes after the data has been created. The Grade B
+of data readiness ensures thought can be put into data quality
+<em>before</em> the question is defined. It is this work that is
+reusable across multiple teams. It is these processes that the team
+which is <em>standing up</em> the data must deliver.</p>
 <h2 id="usability-grade-a">Usability: Grade A</h2>
-<p>Once the validity of the data is determined, the data set can be considered for use in a particular task. This stage of data readiness is more akin to what machine learning scientists are used to doing in Universities. Bringing an algorithm to bear on a well understood data set.</p>
-<p>In Grade A we are concerned about the utility of the data given a particular task. Grade A may involve additional data collection (experimental design in statistics) to ensure that the task is fulfilled.</p>
-<p>This is the stage where the data and the model are brought together, so expertise in learning algorithms and their application is key. Further ethical considerations, such as the fairness of the resulting predictions are required at this stage. At the end of this stage a prototype model is ready for deployment.</p>
-<p>Deployment and maintenance of machine learning models in production is another important issue which Data Readiness Levels are only a part of the solution for.</p>
+<p>Once the validity of the data is determined, the data set can be
+considered for use in a particular task. This stage of data readiness is
+more akin to what machine learning scientists are used to doing in
+universities. Bringing an algorithm to bear on a well understood data
+set.</p>
+<p>In Grade A we are concerned about the utility of the data given a
+particular task. Grade A may involve additional data collection
+(experimental design in statistics) to ensure that the task is
+fulfilled.</p>
+<p>This is the stage where the data and the model are brought together,
+so expertise in learning algorithms and their application is key.
+Further ethical considerations, such as the fairness of the resulting
+predictions are required at this stage. At the end of this stage a
+prototype model is ready for deployment.</p>
+<p>Deployment and maintenance of machine learning models in production
+is another important issue which Data Readiness Levels are only a part
+of the solution for.</p>
 <h2 id="recursive-effects">Recursive Effects</h2>
-<p>To find out more, or to contribute ideas go to <a href="http://data-readiness.org" class="uri">http://data-readiness.org</a></p>
-<p>Throughout the data preparation pipeline, it is important to have close interaction between data scientists and application domain experts. Decisions on data preparation taken outside the context of application have dangerous downstream consequences. This provides an additional burden on the data scientist as they are required for each project, but it should also be seen as a learning and familiarization exercise for the domain expert. Long term, just as biologists have found it necessary to assimilate the skills of the bioinformatician to be effective in their science, most domains will also require a familiarity with the nature of data driven decision making and its application. Working closely with data-scientists on data preparation is one way to begin this sharing of best practice.</p>
-<p>The processes involved in Grade C and B are often badly taught in courses on data science. Perhaps not due to a lack of interest in the areas, but maybe more due to a lack of access to real world examples where data quality is poor.</p>
-<p>These stages of data science are also ridden with ambiguity. In the long term they could do with more formalization, and automation, but best practice needs to be understood by a wider community before that can happen.</p>
-<h1 id="assessing-the-organizations-readiness">Assessing the Organizations Readiness</h1>
+<p>To find out more, or to contribute ideas go to <a
+href="http://data-readiness.org"
+class="uri">http://data-readiness.org</a></p>
+<p>Throughout the data preparation pipeline, it is important to have
+close interaction between data scientists and application domain
+experts. Decisions on data preparation taken outside the context of
+application have dangerous downstream consequences. This provides an
+additional burden on the data scientist as they are required for each
+project, but it should also be seen as a learning and familiarization
+exercise for the domain expert. Long term, just as biologists have found
+it necessary to assimilate the skills of the bioinformatician to be
+effective in their science, most domains will also require a familiarity
+with the nature of data driven decision making and its application.
+Working closely with data-scientists on data preparation is one way to
+begin this sharing of best practice.</p>
+<p>The processes involved in Grade C and B are often badly taught in
+courses on data science. Perhaps not due to a lack of interest in the
+areas, but maybe more due to a lack of access to real world examples
+where data quality is poor.</p>
+<p>These stages of data science are also ridden with ambiguity. In the
+long term they could do with more formalization, and automation, but
+best practice needs to be understood by a wider community before that
+can happen.</p>
+<h1 id="assessing-the-organizations-readiness">Assessing the
+Organizations Readiness</h1>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-joel-tests.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-joel-tests.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/includes/data-joel-tests.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_data-science/includes/data-joel-tests.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>Assessing the readiness of data for analysis is one action that can be taken, but assessing teams that need to assimilate the information in the data is the other side of the coin. With this in mind both <a href="https://medium.com/@damoncivin/the-joel-test-for-data-readiness-4882aae64753">Damon Civin</a> and <a href="https://blog.dominodatalab.com/joel-test-data-science/">Nick Elprin</a> have independently proposed the idea of a “Data Joel Test.” A “<a href="https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/">Joel Test</a>” is a short questionaire to establish the ability of a team to handle software engineering tasks. It is designed as a rough and ready capability assessment. A “Data Joel Test” is similar, but for assessing the capability of a team in performing data science.</p>
+<p>Assessing the readiness of data for analysis is one action that can
+be taken, but assessing teams that need to assimilate the information in
+the data is the other side of the coin. With this in mind both <a
+href="https://medium.com/@damoncivin/the-joel-test-for-data-readiness-4882aae64753">Damon
+Civin</a> and <a
+href="https://blog.dominodatalab.com/joel-test-data-science/">Nick
+Elprin</a> have independently proposed the idea of a “Data Joel Test”. A
+“<a
+href="https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/">Joel
+Test</a>” is a short questionnaire to establish the ability of a team to
+handle software engineering tasks. It is designed as a rough and ready
+capability assessment. A “Data Joel Test” is similar, but for assessing
+the capability of a team in performing data science.</p>
 <h2 id="data-science-as-debugging">Data Science as Debugging</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-science-as-debugging.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_data-science/includes/data-science-as-debugging.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/includes/data-science-as-debugging.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_data-science/includes/data-science-as-debugging.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>One challenge for existing information technology professionals is realizing the extent to which a software ecosystem based on data differs from a classical ecosystem. In particular, by ingesting data we bring unknowns/uncontrollables into our decision-making system. This presents opportunity for adversarial exploitation and unforeseen operation.</p>
-<p>blog post on <a href="http://inverseprobability.com/2017/03/14/data-science-as-debugging">Data Science as Debugging</a>.</p>
-<p>Starting with the analysis of a data set, the nature of data science is somewhat difference from classical software engineering.</p>
-<p>One analogy I find helpful for understanding the depth of change we need is the following. Imagine as a software engineer, you find a USB stick on the ground. And for some reason you <em>know</em> that on that USB stick is a particular API call that will enable you to make a significant positive difference on a business problem. You don’t know which of the many library functions on the USB stick are the ones that will help. And it could be that some of those library functions will hinder, perhaps because they are just inappropriate or perhaps because they have been placed there maliciously. The most secure thing to do would be to <em>not</em> introduce this code into your production system at all. But what if your manager told you to do so, how would you go about incorporating this code base?</p>
-<p>The answer is <em>very</em> carefully. You would have to engage in a process more akin to debugging than regular software engineering. As you understood the code base, for your work to be reproducible, you should be documenting it, not just what you discovered, but how you discovered it. In the end, you typically find a single API call that is the one that most benefits your system. But more thought has been placed into this line of code than any line of code you have written before.</p>
-<p>An enormous amount of debugging would be required. As the nature of the code base is understood, software tests to verify it also need to be constructed. At the end of all your work, the lines of software you write to actually interact with the software on the USB stick are likely to be minimal. But more thought would be put into those lines than perhaps any other lines of code in the system.</p>
-<p>Even then, when your API code is introduced into your production system, it needs to be deployed in an environment that monitors it. We cannot rely on an individual’s decision making to ensure the quality of all our systems. We need to create an environment that includes quality controls, checks and bounds, tests, all designed to ensure that assumptions made about this foreign code base are remaining valid.</p>
-<p>This situation is akin to what we are doing when we incorporate data in our production systems. When we are consuming data from others, we cannot assume that it has been produced in alignment with our goals for our own systems. Worst case, it may have been adversarially produced. A further challenge is that data is dynamic. So, in effect, the code on the USB stick is evolving over time.</p>
-<p>It might see that this process is easy to formalize now, we simply need to check what the formal software engineering process is for debugging, because that is the current software engineering activity that data science is closest to. But when we look for a formalization of debugging, we find that there is none. Indeed, modern software engineering mainly focusses on ensuring that code is written without bugs in the first place.</p>
+<p>One challenge for existing information technology professionals is
+realizing the extent to which a software ecosystem based on data differs
+from a classical ecosystem. In particular, by ingesting data we bring
+unknowns/uncontrollables into our decision-making system. This presents
+opportunity for adversarial exploitation and unforeseen operation.</p>
+<p>blog post on <a
+href="http://inverseprobability.com/2017/03/14/data-science-as-debugging">Data
+Science as Debugging</a>.</p>
+<p>Starting with the analysis of a data set, the nature of data science
+is somewhat difference from classical software engineering.</p>
+<p>One analogy I find helpful for understanding the depth of change we
+need is the following. Imagine as a software engineer, you find a USB
+stick on the ground. And for some reason you <em>know</em> that on that
+USB stick is a particular API call that will enable you to make a
+significant positive difference on a business problem. You don’t know
+which of the many library functions on the USB stick are the ones that
+will help. And it could be that some of those library functions will
+hinder, perhaps because they are just inappropriate or perhaps because
+they have been placed there maliciously. The most secure thing to do
+would be to <em>not</em> introduce this code into your production system
+at all. But what if your manager told you to do so, how would you go
+about incorporating this code base?</p>
+<p>The answer is <em>very</em> carefully. You would have to engage in a
+process more akin to debugging than regular software engineering. As you
+understood the code base, for your work to be reproducible, you should
+be documenting it, not just what you discovered, but how you discovered
+it. In the end, you typically find a single API call that is the one
+that most benefits your system. But more thought has been placed into
+this line of code than any line of code you have written before.</p>
+<p>An enormous amount of debugging would be required. As the nature of
+the code base is understood, software tests to verify it also need to be
+constructed. At the end of all your work, the lines of software you
+write to interact with the software on the USB stick are likely to be
+minimal. But more thought would be put into those lines than perhaps any
+other lines of code in the system.</p>
+<p>Even then, when your API code is introduced into your production
+system, it needs to be deployed in an environment that monitors it. We
+cannot rely on an individual’s decision making to ensure the quality of
+all our systems. We need to create an environment that includes quality
+controls, checks, and bounds, tests, all designed to ensure that
+assumptions made about this foreign code base are remaining valid.</p>
+<p>This situation is akin to what we are doing when we incorporate data
+in our production systems. When we are consuming data from others, we
+cannot assume that it has been produced in alignment with our goals for
+our own systems. Worst case, it may have been adversarially produced. A
+further challenge is that data is dynamic. So, in effect, the code on
+the USB stick is evolving over time.</p>
+<p>It might see that this process is easy to formalize now, we simply
+need to check what the formal software engineering process is for
+debugging, because that is the current software engineering activity
+that data science is closest to. But when we look for a formalization of
+debugging, we find that there is none. Indeed, modern software
+engineering mainly focusses on ensuring that code is written without
+bugs in the first place.</p>
 <h3 id="lessons">Lessons</h3>
 <ol type="1">
 <li>When you begin an analysis, behave as a debugger.</li>
 </ol>
 <ul>
-<li>Write test code as you go. Document those tests and ensure they are accessible by others.</li>
-<li>Understand the landscape of your data. Be prepared to try several different approaches to the data set.</li>
+<li>Write test code as you go. Document those tests and ensure they are
+accessible by others.</li>
+<li>Understand the landscape of your data. Be prepared to try several
+different approaches to the data set.</li>
 <li>Be constantly skeptical.</li>
-<li>Use the best tools available, develop a deep understand how they work.</li>
-<li>Share your experience of what challenges you’re facing. Have others (software engineers, fellow data analysts, your manager) review your work.</li>
-<li>Never go straight for the goal: you’d never try and write the API call straight away on the discarded hard drive, so why are you launching your classification algorithm before visualising the data?</li>
-<li>Ensure your analysis is documented and accessible. If your code does go wrong in production you’ll need to be able to retrace to where the error crept in.</li>
+<li>Use the best tools available, develop a deep understand how they
+work.</li>
+<li>Share your experience of what challenges you’re facing. Have others
+(software engineers, fellow data analysts, your manager) review your
+work.</li>
+<li>Never go straight for the goal: you’d never try and write the API
+call straight away on the discarded hard drive, so why are you launching
+your classification algorithm before visualizing the data?</li>
+<li>Ensure your analysis is documented and accessible. If your code does
+go wrong in production, you’ll need to be able to retrace to where the
+error crept in.</li>
 </ul>
 <ol start="2" type="1">
-<li>When managing the data science process, don’t treat it as standard code development.</li>
+<li>When managing the data science process, don’t treat it as standard
+code development.</li>
 </ol>
 <ul>
-<li>Don’t deploy a traditional agile development pipeline and expect it to work the same way it does for standard code development. Think about how you handle bugs, think about how you would handle very many bugs.</li>
+<li>Don’t deploy a traditional agile development pipeline and expect it
+to work the same way it does for standard code development. Think about
+how you handle bugs, think about how you would handle very many
+bugs.</li>
 <li>Don’t leave the data scientist alone to wade through the mess.</li>
-<li>Integrate the data analysis with your other team activities. Have the software engineers and domain experts work closely with the data scientists. This is vital for providing the data scientists with the technical support they need, but also managing the expectations of the engineers in terms of when and how the data will be able to deliver.</li>
+<li>Integrate the data analysis with your other team activities. Have
+the software engineers and domain experts work closely with the data
+scientists. This is vital for providing the data scientists with the
+technical support they need, but also managing the expectations of the
+engineers in terms of when and how the data will be able to
+deliver.</li>
 </ul>
-<p><strong>Recommendation</strong>: Anecdotally, resolving a machine learning challenge requires 80% of the resource to be focused on the data and perhaps 20% to be focused on the model. But many companies are too keen to employ machine learning engineers who focus on the models, not the data. We should change our hiring priorities and training. Universities cannot provide the understanding of how to data-wrangle. Companies must fill this gap.</p>
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-Lawrence-drl17" class="csl-entry" role="doc-biblioentry">
+<p><strong>Recommendation</strong>: Anecdotally, resolving a machine
+learning challenge requires 80% of the resource to be focused on the
+data and perhaps 20% to be focused on the model. But many companies are
+too keen to employ machine learning engineers who focus on the models,
+not the data. We should change our hiring priorities and training.
+Universities cannot provide the understanding of how to data-wrangle.
+Companies must fill this gap.</p>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-Lawrence-atomic24" class="csl-entry" role="listitem">
+Lawrence, N.D., 2024. The atomic human: Understanding ourselves in the
+age of AI. Allen Lane.
+</div>
+<div id="ref-Lawrence-drl17" class="csl-entry" role="listitem">
 Lawrence, N.D., 2017. Data readiness levels. ArXiv.
 </div>
-<div id="ref-Sculley:debt15" class="csl-entry" role="doc-biblioentry">
-Sculley, D., Holt, G., Golovin, D., Davydov, E., Phillips, T., Ebner, D., Chaudhary, V., Young, M., Crespo, J.-F., Dennison, D., 2015. Hidden technical debt in machine learning systems, in: Cortes, C., Lawrence, N.D., Lee, D.D., Sugiyama, M., Garnett, R. (Eds.), Advances in Neural Information Processing Systems 28. Curran Associates, Inc., pp. 2503–2511.
+<div id="ref-Sculley:debt15" class="csl-entry" role="listitem">
+Sculley, D., Holt, G., Golovin, D., Davydov, E., Phillips, T., Ebner,
+D., Chaudhary, V., Young, M., Crespo, J.-F., Dennison, D., 2015. <a
+href="http://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf">Hidden
+technical debt in machine learning systems</a>, in: Cortes, C.,
+Lawrence, N.D., Lee, D.D., Sugiyama, M., Garnett, R. (Eds.), Advances in
+Neural Information Processing Systems 28. Curran Associates, Inc., pp.
+2503–2511.
 </div>
-<div id="ref-Tukey:exploratory77" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Tukey:exploratory77" class="csl-entry" role="listitem">
 Tukey, J.W., 1977. Exploratory data analysis. Addison-Wesley.
 </div>
 </div>
-<section class="footnotes" role="doc-endnotes">
+<aside id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p><a href="https://en.wikipedia.org/wiki/Lies,_damned_lies,_and_statistics">Disraeli is attributed this quote by Mark Twain</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>The quote is reported in the <em>Manchester
+Guardian</em> on 29th June 1892. See also <a
+href="https://www.york.ac.uk/depts/maths/histstat/lies.htm"
+class="uri">https://www.york.ac.uk/depts/maths/histstat/lies.htm</a>.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Although Twain attributes Disraeli in this way there’s
+<a
+href="https://en.wikipedia.org/wiki/Lies,_damned_lies,_and_statistics">no
+record of him having said this.</a>.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section>
+</aside>
 
