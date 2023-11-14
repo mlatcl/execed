@@ -1,0 +1,28 @@
+author:
+- given: Neil D.
+  family: Lawrence
+  institution: University of Cambridge
+  gscholar: r3SJcvoAAAAJ
+  twitter: lawrennd
+  orcid: 0000-0001-9258-1030
+  url: http://inverseprobability.com
+layout: lecture
+pptx: True
+potx: ../_includes/judge-exec-reference.potx
+talkcss: https://inverseprobability.com/assets/css/talks.css
+postsdir: ../../../mlatcl/execed/_lectures/
+slidesdir: ../../../mlatcl/execed/slides/
+notesdir: ../../../mlatcl/execed/_notes/
+notebooksdir: ../../../mlatcl/execed/_notebooks/
+writediagramsdir: .
+scriptsdir: ../scripts/
+diagramsdir: ./slides/diagrams/
+transition: None
+baseurl: "execed/" # the subpath of your site, e.g. /blog/
+url: "https://mlatcl.github.io/" # the base hostname & protocol for your site
+transition: None
+ghub:
+- organization: lawrennd
+  repository: talks
+  branch: gh-pages
+  directory: _execed
