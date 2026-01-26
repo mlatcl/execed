@@ -1,11 +1,13 @@
 ---
 layout: lecture
 featured_image: slides/diagrams/atomic-human/Atomic_H_1_Gods_Robots.png
+week: 1
 session: 1
 title: "The AI Moment: Decisions, Information, and the Atomic Human"
 abstract: >
   This session reframes AI for leaders: the “AI moment” as a shift in information flow and scaled decision-making,
   grounded in *The Atomic Human* and updated for the post‑2024 landscape (LLMs, agents, and new failure modes).
+transition: None
 ---
 
 \section{The AI moment}
