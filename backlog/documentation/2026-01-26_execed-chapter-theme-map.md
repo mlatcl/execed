@@ -1,14 +1,19 @@
 ---
-id: "2026-01-26_execed-chapter-theme-map"
-title: "Extract chapter themes from The Atomic Human chapters (1–2 sentences each)"
-status: "In Progress"
-priority: "Medium"
-created: "2026-01-26"
-last_updated: "2026-01-26"
-owner: "Neil D. Lawrence"
-related_cips: ["0001"]
-related_requirements: ["0001", "0003"]
-tags: ["execed", "atomic-human", "chapters", "themes"]
+category: documentation
+created: '2026-01-26'
+id: 2026-01-26_execed-chapter-theme-map
+last_updated: '2026-01-26'
+owner: Neil D. Lawrence
+priority: Medium
+related_cips:
+- '0001'
+status: In Progress
+tags:
+- execed
+- atomic-human
+- chapters
+- themes
+title: Extract chapter themes from The Atomic Human chapters (1–2 sentences each)
 ---
 
 # Task: Extract chapter themes from *The Atomic Human*
@@ -85,4 +90,3 @@ Re-centres the problem as institutional: without strong governance, the tech+inc
 - [x] Prologue, Chapters 1–12, and Epilogue have a 1–2 sentence “what this contributes”.
 - [x] Summaries call out the executive-relevant angle.
 - [x] Summaries reference learning-outcome themes.
-

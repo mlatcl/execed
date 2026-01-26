@@ -1,14 +1,19 @@
 ---
-id: "2026-01-26_execed-learning-outcomes"
-title: "Consolidate Atomic Human chapter takeaways into exec learning outcomes"
-status: "Proposed"  # Proposed, Ready, In Progress, Completed, Abandoned
-priority: "High"
-created: "2026-01-26"
-last_updated: "2026-01-26"
-owner: "Neil D. Lawrence"
-related_cips: ["0001"]
-related_requirements: ["0001", "0002", "0003"]
-tags: ["execed", "atomic-human", "outcomes", "curriculum"]
+category: documentation
+created: '2026-01-26'
+id: 2026-01-26_execed-learning-outcomes
+last_updated: '2026-01-26'
+owner: Neil D. Lawrence
+priority: High
+related_cips:
+- '0001'
+status: Proposed
+tags:
+- execed
+- atomic-human
+- outcomes
+- curriculum
+title: Consolidate Atomic Human chapter takeaways into exec learning outcomes
 ---
 
 # Task: Consolidate *The Atomic Human* takeaways into exec learning outcomes
@@ -82,4 +87,3 @@ Participants should be able to:
 - **human-capability-is-the-advantage**: outcomes 8, 9
 
 Next: tighten outcome wording, confirm chapter-theme mapping, and mark acceptance criteria items off as they become precise artefacts.
-

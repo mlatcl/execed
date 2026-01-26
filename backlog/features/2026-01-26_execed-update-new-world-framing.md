@@ -1,14 +1,21 @@
 ---
-id: "2026-01-26_execed-update-new-world-framing"
-title: "Update/replace 'The New World' lecture framing based on course re-architecture"
-status: "In Progress"
-priority: "High"
-created: "2026-01-26"
-last_updated: "2026-01-26"
-owner: "Neil D. Lawrence"
-related_cips: ["0001"]
-related_requirements: ["0001", "0002"]
-tags: ["execed", "lecture", "framing", "atomic-human", "agents", "llm"]
+category: features
+created: '2026-01-26'
+id: 2026-01-26_execed-update-new-world-framing
+last_updated: '2026-01-26'
+owner: Neil D. Lawrence
+priority: High
+related_cips:
+- '0001'
+status: In Progress
+tags:
+- execed
+- lecture
+- framing
+- atomic-human
+- agents
+- llm
+title: Update/replace 'The New World' lecture framing based on course re-architecture
 ---
 
 # Task: Update/replace the “The New World” lecture framing
@@ -95,4 +102,3 @@ Use these as anchor inclusions (exact selection to be refined during editing):
 - [ ] Covers: capability vs entity, uncertainty, trust/accountability, and human–agent interaction.
 - [ ] Links clearly into the rest of the proposed course structure.
 - [ ] Builds successfully via `execed/_lamd/compile.sh`.
-

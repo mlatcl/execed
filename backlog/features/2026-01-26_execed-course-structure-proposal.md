@@ -1,14 +1,21 @@
 ---
-id: "2026-01-26_execed-course-structure-proposal"
-title: "Draft execed course structure proposal (core pathway + extended chapter series)"
-status: "In Progress"
-priority: "High"
-created: "2026-01-26"
-last_updated: "2026-01-26"
-owner: "Neil D. Lawrence"
-related_cips: ["0001"]
-related_requirements: ["0001", "0002"]
-tags: ["execed", "curriculum", "structure", "atomic-human", "agents", "llm"]
+category: features
+created: '2026-01-26'
+id: 2026-01-26_execed-course-structure-proposal
+last_updated: '2026-01-26'
+owner: Neil D. Lawrence
+priority: High
+related_cips:
+- '0001'
+status: In Progress
+tags:
+- execed
+- curriculum
+- structure
+- atomic-human
+- agents
+- llm
+title: Draft execed course structure proposal (core pathway + extended chapter series)
 ---
 
 # Task: Draft course structure proposal (core + extended)
@@ -158,4 +165,3 @@ Current lectures in `execed/_lamd/lectures.csv`:
 - [x] A proposed extended pathway exists (draft).
 - [x] Explicit placement for LLMs/agents is defined.
 - [x] A migration note exists (draft mapping from current lectures).
-

@@ -1,14 +1,21 @@
 ---
-id: "2026-01-26_execed-tenet-outcome-lecture-crosswalk"
-title: "Create tenet ↔ outcome ↔ lecture ↔ snippet crosswalk for execed"
-status: "In Progress"
-priority: "High"
-created: "2026-01-26"
-last_updated: "2026-01-26"
-owner: "Neil D. Lawrence"
-related_cips: ["0001"]
-related_requirements: ["0001", "0003"]
-tags: ["execed", "tenets", "outcomes", "lectures", "snippets", "traceability"]
+category: documentation
+created: '2026-01-26'
+id: 2026-01-26_execed-tenet-outcome-lecture-crosswalk
+last_updated: '2026-01-26'
+owner: Neil D. Lawrence
+priority: High
+related_cips:
+- '0001'
+status: In Progress
+tags:
+- execed
+- tenets
+- outcomes
+- lectures
+- snippets
+- traceability
+title: Create tenet ↔ outcome ↔ lecture ↔ snippet crosswalk for execed
 ---
 
 # Task: Tenet ↔ outcome ↔ lecture ↔ snippet crosswalk
@@ -140,4 +147,3 @@ This is a *first pass* mapping for coherence. It should be revised once the cour
 - [x] Draft mapping exists for each tenet and outcome.
 - [ ] Refine mapping after the course structure proposal (rename/merge/split decisions).
 - [ ] Explicitly identify where LLM/agent interaction is taught *and* assessed in the final structure.
-

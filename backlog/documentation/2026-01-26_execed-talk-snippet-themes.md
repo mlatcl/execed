@@ -1,14 +1,21 @@
 ---
-id: "2026-01-26_execed-talk-snippet-themes"
-title: "Summarise post-2024 talks and the snippet spines they use (exec-relevant)"
-status: "In Progress"
-priority: "Medium"
-created: "2026-01-26"
-last_updated: "2026-01-26"
-owner: "Neil D. Lawrence"
-related_cips: ["0001"]
-related_requirements: ["0001"]
-tags: ["execed", "talks", "snippets", "themes", "agents", "llm"]
+category: documentation
+created: '2026-01-26'
+id: 2026-01-26_execed-talk-snippet-themes
+last_updated: '2026-01-26'
+owner: Neil D. Lawrence
+priority: Medium
+related_cips:
+- '0001'
+status: In Progress
+tags:
+- execed
+- talks
+- snippets
+- themes
+- agents
+- llm
+title: Summarise post-2024 talks and the snippet spines they use (exec-relevant)
 ---
 
 # Task: Summarise post-2024 talks and snippet spines (exec-relevant)
@@ -108,4 +115,3 @@ Examples of talk files that typically carry the above spines (use as source refe
 - [x] A short list of recurring snippet spines exists.
 - [x] Canonical snippet filenames are listed (with relative strength via counts).
 - [ ] Add 2–3 representative talk filenames per spine (with links/paths) for quick reference during rewriting.
-
