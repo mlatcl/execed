@@ -7,7 +7,7 @@ owner: Neil D. Lawrence
 priority: High
 related_cips:
 - '0001'
-status: Proposed
+status: In Progress
 tags:
 - execed
 - atomic-human
@@ -15,7 +15,6 @@ tags:
 - curriculum
 title: Consolidate Atomic Human chapter takeaways into exec learning outcomes
 ---
-
 # Task: Consolidate *The Atomic Human* takeaways into exec learning outcomes
 
 ## Description

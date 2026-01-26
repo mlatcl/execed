@@ -7,7 +7,7 @@ owner: Neil D. Lawrence
 priority: High
 related_cips:
 - '0001'
-status: In Progress
+status: Completed
 tags:
 - execed
 - lecture
@@ -22,7 +22,7 @@ title: Update/replace 'The New World' lecture framing based on course re-archite
 
 ## Description
 
-Once the learning outcomes and course structure proposal are agreed, update the first lecture (currently `execed/_lamd/the-new-world.md`) to set the new narrative spine:
+Once the learning outcomes and course structure proposal are agreed, update the first lecture (now `execed/_lamd/the-ai-moment.md`, previously `execed/_lamd/the-new-world.md`) to set the new narrative spine:
 
 - book-complete framing (*The Atomic Human*)
 - post‑2024 landscape (LLMs, coding agents, human–agent interaction)
@@ -32,20 +32,23 @@ This task may include **renaming** the lecture and/or changing its included snip
 
 ## Acceptance Criteria
 
-- [ ] The lecture (or its renamed replacement) introduces the course’s key themes in executive language.
-- [ ] Explicitly covers: capability vs entity, uncertainty, trust/accountability, and human–agent interaction.
-- [ ] Links clearly into the rest of the course structure (core pathway and/or extended series).
-- [ ] Builds successfully via `execed/_lamd/compile.sh`.
+- [x] The lecture (or its renamed replacement) introduces the course’s key themes in executive language.
+- [x] Explicitly covers: capability vs entity, uncertainty, trust/accountability, and human–agent interaction.
+- [x] Links clearly into the rest of the course structure (core pathway and/or extended series).
+- [x] Builds successfully via `execed/_lamd/compile.sh`.
 
 ## Related
 
 - **CIP**: `cip/cip0001.md`
-- **Lecture source**: `execed/_lamd/the-new-world.md`
+- **Lecture source**: `execed/_lamd/the-ai-moment.md`
 
 ## Progress Updates
 
 ### 2026-01-26
 Status updated to **In Progress**. Drafted proposed rename and lecture outline aligned to the new core pathway.
+
+### 2026-01-26
+Implemented the renamed first lecture as `execed/_lamd/the-ai-moment.md` and rebuilt lecture + slides outputs.
 
 ## Proposed rename (draft)
 

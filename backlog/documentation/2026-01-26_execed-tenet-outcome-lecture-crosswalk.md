@@ -78,7 +78,7 @@ From `backlog/documentation/2026-01-26_execed-learning-outcomes.md`:
 
 From `execed/_lamd/lectures.csv` (titles may be renamed):
 
-- `the-new-world`
+- `the-ai-moment` (renamed from `the-new-world`)
 - `the-data-crisis`
 - `data-quality`
 - `intellectual-debt`
@@ -92,7 +92,7 @@ This is a *first pass* mapping for coherence. It should be revised once the cour
 
 ### Lecture → outcomes → tenets → canonical snippet spines
 
-- **`the-new-world`** (framing lecture; likely to be renamed)
+- **`the-ai-moment`** (framing lecture; renamed from `the-new-world`)
   - **Outcomes**: 1, 2, 3, 9, 10
   - **Tenets**: strategy-before-tools; measure-decision-quality; automation-with-accountability
   - **Canonical snippet spines to draw from**:

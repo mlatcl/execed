@@ -151,7 +151,7 @@ Recommended format: seminar series (13 sessions) with pre-reading and discussion
 
 Current lectures in `execed/_lamd/lectures.csv`:
 
-- `the-new-world` → Module 0–1 (framing + new flow of information); likely rename
+- `the-ai-moment` → Module 0–1 (framing + new flow of information); renamed from `the-new-world`
 - `the-data-crisis` → Module 2 (incentives/adversaries) and Module 4 (governance), depending on emphasis
 - `data-quality` → Module 3 (uncertainty + decision thresholds)
 - `intellectual-debt` → Module 5 (operating model, maintainability, responsibility)
