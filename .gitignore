@@ -1,0 +1,84 @@
+
+# VibeSafe System Files (Auto-added during installation)
+# These are VibeSafe infrastructure - not your project content
+
+# VibeSafe virtual environment
+.venv-vibesafe/
+
+# Backlog system files
+backlog/README.md
+backlog/task_template.md
+backlog/update_index.py
+backlog/index.md
+
+# CIP system files  
+cip/README.md
+cip/cip_template.md
+
+# AI assistant context files (VibeSafe-managed, CIP-0012)
+.cursor/rules/
+.cursor/rules/project_tenet_*.mdc
+.github/copilot-instructions.md
+CLAUDE.md
+AGENTS.md
+
+# VibeSafe scripts and tools
+scripts/whats_next.py
+install-whats-next.sh
+whats-next
+
+# VibeSafe templates directory (source files for VibeSafe development)
+templates/
+
+# AI-Requirements framework (VibeSafe-managed)
+ai-requirements/README.md
+ai-requirements/requirement_template.md
+ai-requirements/prompts/
+ai-requirements/patterns/
+ai-requirements/integrations/
+ai-requirements/examples/
+ai-requirements/guidance/
+
+# Tenets system files
+tenets/README.md
+tenets/tenet_template.md
+tenets/combine_tenets.py
+
+# VibeSafe documentation (system files)
+docs/whats_next_script.md
+docs/yaml_frontmatter_examples.md
+
+# -------------------------------------------------------------------
+# ExecEd local build artefacts (do not commit)
+# -------------------------------------------------------------------
+
+# Jekyll build output + caches
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/bundle/
+
+# Local Python virtualenv + caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# LAMd build intermediates and logs (sources live in _lamd/*.md)
+_lamd/*.gpp.markdown
+_lamd/*.posts.html
+_lamd/*.posts.html.markdown
+_lamd/*.slides.html
+_lamd/*.slides.html.markdown
+_lamd/*.slides.pptx.markdown
+_lamd/*.notes.ipynb.markdown
+_lamd/*.ipynb
+_lamd/makefile
+_lamd/talk-people.gpp
+_lamd/lynguine.log
+
+# Misc local outputs
+lynguine.log
+execed.code-workspace
+execed.code-workspace~
+.DS_Store
