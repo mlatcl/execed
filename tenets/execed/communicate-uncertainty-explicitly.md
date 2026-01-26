@@ -37,3 +37,8 @@ tags:
 **Conflicts**:
 - Can conflict with a desire for decisiveness (“just give me the number”).
 - Resolution: Pair uncertainty with clear decision options and recommended action, including what to monitor and when to revisit.
+
+## Alignment with *The Atomic Human* takeaways
+
+- **Chapter 6 (Gremlin of uncertainty)**: uncertainty is not optional; demand calibrated risk and contingency planning.
+- **Chapter 11 (HAM fragility)**: confident errors are a predictable failure mode; build “pause when unsure” behaviours and escalation paths.

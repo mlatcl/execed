@@ -28,6 +28,7 @@ tags:
 - Track: who uses the tool, how often, what decisions it influenced, and what changed as a result.
 - Use leading indicators (cycle time, rework, exception rates) alongside lagging outcomes (revenue, cost, risk events).
 - Audit “decision override” patterns to detect misalignment, bias, or incentives problems.
+ - For LLMs/agents: track delegation patterns, human review rates, error recovery, and where “automation complacency” appears.
 
 **Counter-examples**:
 - Celebrating high AUC/accuracy while frontline teams ignore outputs or work around the system.
@@ -37,3 +38,8 @@ tags:
 **Conflicts**:
 - Can conflict with **strategy-before-tools** if teams pick easy-to-measure metrics instead of strategic outcomes.
 - Resolution: Start with the strategic decision and define a balanced scorecard (outcome + adoption + risk).
+
+## Alignment with *The Atomic Human* takeaways
+
+- **Prologue**: the business question is decision automation + responsibility, not “is the model smart?”
+- **Chapter 12 (Trust)**: accountability must remain human; measurement must include harms, overrides, and governance signals.

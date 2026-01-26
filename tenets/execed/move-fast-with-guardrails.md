@@ -38,3 +38,8 @@ tags:
 **Conflicts**:
 - Potential conflict with **strategy-before-tools** when speed is mistaken for progress.
 - Resolution: Guardrails must include a minimal strategy/value check (decision, owner, value hypothesis) in addition to risk controls.
+
+## Alignment with *The Atomic Human* takeaways
+
+- **Chapter 4 (Persistence)**: engineered systems need guardrails when deployed into the wild; assume novelty and attack.
+- **Chapter 7 (High-stakes ops)**: “mission control” practices—clear roles, escalation, simulation—are guardrails that enable speed.

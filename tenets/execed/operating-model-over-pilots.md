@@ -38,3 +38,8 @@ tags:
 **Conflicts**:
 - Potential conflict with **move-fast-with-guardrails** when speed pressures bypass operating model design.
 - Resolution: Keep pilots small, but require a minimal operating model artifact (RACI, KPIs, monitoring plan) before scaling.
+
+## Alignment with *The Atomic Human* takeaways
+
+- **Chapter 2 (Automatons)**: decomposition/production lines scale, but can hide systemic failure—operating model makes responsibility visible.
+- **Chapter 7 (Mission control)**: reliability is a coordinated system with practiced handoffs, not a demo.

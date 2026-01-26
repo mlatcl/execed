@@ -37,3 +37,8 @@ tags:
 **Conflicts**:
 - Potential conflict with **move-fast-with-guardrails** when time pressure pushes “just ship something”.
 - Resolution: Use a minimal “strategy check” (decision, owner, value hypothesis, risk) as the entry ticket to any pilot.
+
+## Alignment with *The Atomic Human* takeaways
+
+- **Prologue + Chapter 2–3**: hype and tooling are distractions; the real question is what decision is being automated and who bears the downside.
+- **Chapter 8 (System Zero)**: incentives dominate outcomes; a system optimises what you reward, not what you intend.

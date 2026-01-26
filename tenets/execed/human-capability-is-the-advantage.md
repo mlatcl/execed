@@ -7,6 +7,7 @@ last_reviewed: "2026-01-26"
 review_frequency: "Annual"
 conflicts_with:
   - "automation-with-accountability"
+  - "measure-decision-quality"
 tags:
   - tenet
   - execed
@@ -36,5 +37,10 @@ tags:
 - Delegating capability building to HR without linking it to operating model, governance, and strategy.
 
 **Conflicts**:
-- Potential conflict with **automation-with-accountability** when the organisation over-optimises for automation at the expense of capability.
+- Potential conflict with **measure-decision-quality** when automation optimises local metrics while degrading judgment, trust, or adoption.
 - Resolution: Use “augmentation-first” designs and require an explicit capability outcome (skills, routines, decision quality) for each automation.
+
+## Alignment with *The Atomic Human* takeaways
+
+- **Chapter 7 (Mission control, “feel”)**: durable performance comes from trained systems, roles, and interfaces—not heroics.
+- **Chapter 11–12 (HAMs, Trust)**: do not outsource judgment; accountability remains organisational and human.

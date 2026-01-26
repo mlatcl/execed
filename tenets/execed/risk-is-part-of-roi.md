@@ -38,3 +38,8 @@ tags:
 **Conflicts**:
 - Potential conflict with **move-fast-with-guardrails** if risk review becomes slow or vague.
 - Resolution: Standardise risk tiers and self-serve mitigations so speed improves *without* skipping risk.
+
+## Alignment with *The Atomic Human* takeaways
+
+- **Chapter 8 (System Zero)**: scaled manipulation and single points of failure are “business model risks,” not just technical risks.
+- **Chapter 12 (Trust)**: treat AI like fire—containment, norms, and competent stewardship are part of value creation.
