@@ -27,6 +27,9 @@
   <!--[if lt IE 9]>
   <script src="https://unpkg.com/reveal.js@3.9.2/lib/js/html5shiv.js"></script>
   <![endif]-->
+   <!-- Mermaid -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG" type="text/javascript"></script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -35,7 +38,29 @@
       }
     });
   </script>
-  <script src="../assets/js/figure-animate.js"></script>
+  <script src="https://inverseprobability.com/assets/js/figure-animate.js"></script>
+   <!-- Initialize Mermaid after Reveal is loaded -->
+<script>
+  Reveal.addEventListener('ready', event => {
+    // Initialize mermaid
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'base',
+      // These are the same theme variables we used above
+      themeVariables: {
+          primaryColor: '#4a90e2',
+          primaryTextColor: '#fff',
+          primaryBorderColor: '#357abd',
+          lineColor: '#67b246',
+          fontSize: '30px',
+          fontFamily: 'arial',
+	  edgeLabelBackground: 'transparent',
+	  tertiaryColor: 'transparent'
+      }
+    });
+  });
+</script>
+   
 </head>
 <body>
   <div class="reveal">
@@ -72,9 +97,10 @@ Since the machine learning field was rebranded as AI, done public understanding,
 <section id="artificial-vs-natural-systems" class="slide level2">
 <h2>Artificial vs Natural Systems</h2>
 <ul>
-<li>Consider natural intelligence, or natural <em>systems</em></li>
-<li>Contrast between an artificial <em>system</em> and an natural system.</li>
+<li>First rule of a natural system: don’t fail</li>
+<li>Artificial systems tend to optimise performance under some criterion</li>
 <li>The key difference between the two is that artificial systems are <em>designed</em> whereas natural systems are <em>evolved</em>.</li>
+<li></li>
 </ul>
 </section>
 <section id="natural-systems-are-evolved" class="slide level2">
@@ -114,7 +140,7 @@ Since the machine learning field was rebranded as AI, done public understanding,
 </div>
 </div>
 <aside class="notes">
-The Mythical Man-month <span class="citation" data-cites="Brooks:mythical75">(Brooks, n.d.)</span> is a 1975 book focussed on the challenges of software project coordination.
+The Mythical Man-month <span class="citation" data-cites="Brooks-mythical75">(Brooks, n.d.)</span> is a 1975 book focussed on the challenges of software project coordination.
 </aside>
 </section>
 <section id="technical-consequence" class="slide level2">
@@ -203,7 +229,7 @@ Our current AI systems are composed of components that often have machine learni
 </div>
 </div>
 <aside class="notes">
-A peppercorn is a system design failure which is not a bug, but a conformance to design specification that causes problems when the system is deployed in the real world with mischevious and adversarial actors.
+A peppercorn is a system design failure which is not a bug, but a conformance to design specification that causes problems when the system is deployed in the real world with mischievous and adversarial actors.
 </aside>
 </section>
 <section id="section" class="slide level2">
@@ -246,9 +272,9 @@ Experiment, analyze and design is a flywheel of knowledge that is the dual of th
 <section id="data-oriented-architectures" class="slide level2">
 <h2>Data Oriented Architectures</h2>
 <ul>
-<li>Convert data to a <em>first-class citizen</em>.</li>
-<li>View system as operations on <em>data streams</em>.</li>
-<li>Expose data operations in a programmatic way.</li>
+<li>View data to a <em>first-class citizen</em>.</li>
+<li>Prioritise decentralisation.</li>
+<li>Openness</li>
 </ul>
 </section>
 <section id="data-orientated-architectures" class="slide level2">
@@ -260,31 +286,22 @@ Experiment, analyze and design is a flywheel of knowledge that is the dual of th
 </ul></li>
 <li>Move from
 <ol type="1">
-<li>service orientated architectures</li>
-<li><em>data orientated architectures</em></li>
+<li>service oriented architectures</li>
+<li><em>data oriented architectures</em></li>
 </ol></li>
 </ul>
 </section>
-<section id="streaming-system" class="slide level2">
-<h2>Streaming System</h2>
-<ul>
-<li>Move from pull updates to push updates.</li>
-<li>Operate on rows rather than columns.</li>
-<li>Lead to stateless logic: persistence handled by system.</li>
-<li>Example Apache Kafka + Apache Flink</li>
-</ul>
-</section>
-<section id="streaming-architectures" class="slide level2">
-<h2>Streaming Architectures</h2>
-<ul>
-<li>AWS Kinesis, Apache Kafka</li>
-<li>Not just about streaming
-<ul>
-<li>Nodes in the architecture are <em>stateless</em></li>
-<li>They persist through storing state on <em>streams</em></li>
-</ul></li>
-<li>This brings the data <em>inside out</em></li>
-</ul>
+<section id="data-oriented-principles" class="slide level2">
+<h2>Data Oriented Principles</h2>
+<div class="figure">
+<div id="data-oriented-principles-figure" class="figure-frame">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//software/data-oriented-principles.svg" width="80%" style=" ">
+</object>
+</div>
+</div>
+<aside class="notes">
+For an overview of data oriented principles see <span class="citation" data-cites="Cabrera-realworld23">Cabrera et al. (2023)</span>.
+</aside>
 </section>
 <section id="apache-flink" class="slide level2">
 <h2>Apache Flink</h2>
@@ -312,30 +329,7 @@ Experiment, analyze and design is a flywheel of knowledge that is the dual of th
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
-<div class="centered" style="">
-<svg viewBox="0 0 200 200" style="width:15%">
-<defs> <clipPath id="clip0">
-<style>
-circle {
-  fill: black;
-}
-</style>
-<circle cx="100" cy="100" r="100"/> </clipPath> </defs>
-<title>
-Tom Borchert
-</title>
-<image preserveAspectRatio="xMinYMin slice" width="100%" xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/tom-borchert.jpg" clip-path="url(#clip0)"/>
-</svg>
-</div>
-<blockquote>
-<p>Milan has three components:</p>
-<ol type="1">
-<li><p>A general-purpose stream algebra that encodes relationships between data streams (the Milan Intermediate Language or Milan IL)</p></li>
-<li><p>A Scala library for building programs in that algebra.</p></li>
-<li><p>A compiler that takes programs expressed in Milan IL and produces a Flink application that executes the program.</p></li>
-</ol>
-<p>Component (2) can be extended to support interfaces in additional languages, and component (3) can be extended to support additional runtime targets. Considering just the multiple interfaces and the multiple runtimes, Milan looks a lot like the much more mature Apache Beam. The difference lies in (1), Milan’s general-purpose stream algebra. }</p>
-</blockquote>
+<div class="centered " style="">
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
@@ -535,7 +529,7 @@ Service oriented architecture. The data access is buried in the cost allocation 
 </div>
 </div>
 <aside class="notes">
-Data oriented architecture. Now the joins and the updates are exposed within the streaming ecosystem. We can programatically determine the factor graph which gives the thread through the model.
+Data oriented architecture. Now the joins and the updates are exposed within the streaming ecosystem. We can programmatically determine the factor graph which gives the thread through the model.
 </aside>
 </section>
 <section id="ride-sharing-hypothetical" class="slide level2">
@@ -563,8 +557,10 @@ Data-oriented programing. There is a requirement for an estimate of the driver a
 <section id="thanks" class="slide level2 scrollable">
 <h2 class="scrollable">Thanks!</h2>
 <ul>
+<li><p>company: <a href="https://trent.ai">Trent AI</a></p></li>
+<li><p>book: <a href="https://www.penguin.co.uk/books/455130/the-atomic-human-by-lawrence-neil-d/9780241625248">The Atomic Human</a></p></li>
 <li><p>twitter: <a href="https://twitter.com/lawrennd">@lawrennd</a></p></li>
-<li><p>podcast: <a href="http://thetalkingmachines.com">The Talking Machines</a></p></li>
+<li><p><a href="https://the-atomic-human.ai">The Atomic Human</a> pages natural vs artificial systems 102-103 .</p></li>
 <li><p>newspaper: <a href="http://www.theguardian.com/profile/neil-lawrence">Guardian Profile Page</a></p></li>
 <li><p>blog posts:</p>
 <p><a href="http://inverseprobability.com/2018/02/06/natural-and-artificial-intelligence">Natural and Artificial Intelligence</a></p>
@@ -572,8 +568,11 @@ Data-oriented programing. There is a requirement for an estimate of the driver a
 <p><a href="http://inverseprobability.com/2018/02/06/natural-and-artificial-intelligence">Natural vs Artifical Intelligence</a></p></li>
 </ul>
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-Brooks:mythical75" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Brooks-mythical75" class="csl-entry" role="doc-biblioentry">
 Brooks, F., n.d. The mythical man-month. Addison-Wesley.
+</div>
+<div id="ref-Cabrera-realworld23" class="csl-entry" role="doc-biblioentry">
+Cabrera, C., Paleyes, A., Thodoroff, P., Lawrence, N.D., 2023. Real-world machine learning systems: A survey from a data-oriented architecture perspective.
 </div>
 </div>
 </section>

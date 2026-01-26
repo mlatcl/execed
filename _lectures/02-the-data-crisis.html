@@ -2,7 +2,7 @@
 title: "The Data Crisis"
 abstract: "<p>In this talk we consider data readiness levels and how
 they may be deployed.</p>"
-edit_url: https://github.com/mlatcl/mlphysical/edit/gh-pages/_execed/the-data-crisis.md
+edit_url: https://github.com/mlatcl/execed/edit/gh-pages/_lamd/the-data-crisis.md
 session: 2
 pptx: 02-the-data-crisis.pptx
 layout: lecture
@@ -97,8 +97,9 @@ style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/i
 class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
 when he said that there three types of lies: lies, damned lies and
 statistics in 1892. This is 20 years before the first academic
-department of applied statistics was founded at UCL. If Balfour were
-alive today, it is likely that he’d rephrase his quote:</p>
+department of applied statistics was founded at UCL.</p>
+<p>If Balfour were alive today, it is likely that he’d rephrase his
+quote:</p>
 <blockquote>
 <p>There are three types of lies, lies damned lies and <em>big
 data</em>.</p>
@@ -146,6 +147,11 @@ in those terms before their value can be realized.</p>
 Chapter 8 of <span class="citation"
 data-cites="Lawrence-atomic24">Lawrence (2024)</span>.</p>
 <h2 id="mathematical-statistics"><em>Mathematical</em> Statistics</h2>
+<div style="text-align:right">
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_statistics/includes/mathematical-statistics.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_statistics/includes/mathematical-statistics.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+</div>
 <p><a href="https://en.wikipedia.org/wiki/Karl_Pearson">Karl Pearson</a>
 (1857-1936), <a
 href="https://en.wikipedia.org/wiki/Ronald_Fisher">Ronald Fisher</a>
@@ -542,44 +548,44 @@ debugging, we find that there is none. Indeed, modern software
 engineering mainly focusses on ensuring that code is written without
 bugs in the first place.</p>
 <h3 id="lessons">Lessons</h3>
-<ol type="1">
-<li>When you begin an analysis, behave as a debugger.</li>
-</ol>
-<ul>
-<li>Write test code as you go. Document those tests and ensure they are
-accessible by others.</li>
-<li>Understand the landscape of your data. Be prepared to try several
-different approaches to the data set.</li>
-<li>Be constantly skeptical.</li>
-<li>Use the best tools available, develop a deep understand how they
-work.</li>
-<li>Share your experience of what challenges you’re facing. Have others
-(software engineers, fellow data analysts, your manager) review your
-work.</li>
-<li>Never go straight for the goal: you’d never try and write the API
-call straight away on the discarded hard drive, so why are you launching
-your classification algorithm before visualizing the data?</li>
-<li>Ensure your analysis is documented and accessible. If your code does
-go wrong in production, you’ll need to be able to retrace to where the
-error crept in.</li>
-</ul>
-<ol start="2" type="1">
-<li>When managing the data science process, don’t treat it as standard
-code development.</li>
-</ol>
-<ul>
-<li>Don’t deploy a traditional agile development pipeline and expect it
-to work the same way it does for standard code development. Think about
-how you handle bugs, think about how you would handle very many
-bugs.</li>
-<li>Don’t leave the data scientist alone to wade through the mess.</li>
-<li>Integrate the data analysis with your other team activities. Have
-the software engineers and domain experts work closely with the data
-scientists. This is vital for providing the data scientists with the
-technical support they need, but also managing the expectations of the
-engineers in terms of when and how the data will be able to
-deliver.</li>
-</ul>
+<p>When you begin a data analysis approach it with the mindset of a
+debugger: write test code continuously as you go through your analysis,
+ensure that the tests are documented and accessible to those who need to
+review or build upon your work.</p>
+<p>Take time to thouroughly understand the context of your data before
+diving in. Expore multiple approaches and continually revisit your
+initial assumptions. Maintain a healtky skepticism about your results
+through the process and proactively explore potential issues or
+inconsistencies in the data.</p>
+<p>Leverage the best tools available and develop a deep understanding of
+how they work. Don’t just treat the tools as black boxes, develop your
+understanding of tehri strengths, limmitations and appropriate use.
+Share challenges you are facing and progress you are making with
+colleagues. Seek regular views from business stakholders, software
+engineers, fellow data scientists and managers. Bringing in their
+different perspectives can help identify potential issues early.</p>
+<p>Don’t rush to implementing your end-solution. Just as you wouldn’t
+immediately write an API call for unknown code you’ve found on a
+discarded USB code, you shouldn’t jump straght into running complex
+classsification algorithms before gaining an intuition for your data
+through some basic visualisation and ohter tests. The documentation of
+the analysis process should be such that if issues do arise in
+production the documentation can be used to support tracing back to
+where the problems have originated and rapidly rectifying them.</p>
+<p>Always remember that the data science process differs fundamentally
+from standard software development, so traditional agile development
+pipelines may not be appropriate. You have to adapt your processes to
+handle inherrent uncertainty and accomidate the iterative and recursive
+nature of data science work. Think carefully about how you will handle
+not just individual bugs but systematic issues that may emerge from your
+data.</p>
+<p>Don’t work in isolation, the complexity of data work means that close
+collaboration with domain experts, software engineers and other data
+scientists is essention. The collaboration serves multiple purposes: it
+provides you with the necessary technical support, helps maintain
+realistic expectations among stakeholders in terms of both outcome and
+delivery time lines. And it ensures that the solutions developed
+actually address the underlying business problem.</p>
 <p><strong>Recommendation</strong>: Anecdotally, resolving a machine
 learning challenge requires 80% of the resource to be focused on the
 data and perhaps 20% to be focused on the model. But many companies are
@@ -590,8 +596,9 @@ Companies must fill this gap.</p>
 <div id="refs" class="references csl-bib-body hanging-indent"
 role="list">
 <div id="ref-Lawrence-atomic24" class="csl-entry" role="listitem">
-Lawrence, N.D., 2024. The atomic human: Understanding ourselves in the
-age of AI. Allen Lane.
+Lawrence, N.D., 2024. <a
+href="https://www.penguin.co.uk/books/455130/the-atomic-human-by-lawrence-neil-d/9780241625248">The
+atomic human: Understanding ourselves in the age of AI</a>. Allen Lane.
 </div>
 <div id="ref-Lawrence-drl17" class="csl-entry" role="listitem">
 Lawrence, N.D., 2017. Data readiness levels. ArXiv.

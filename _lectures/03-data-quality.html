@@ -2,7 +2,7 @@
 title: "Data Quality and Data Readiness Levels"
 abstract: "<p>In this talk we consider data readiness levels and how
 they may be deployed.</p>"
-edit_url: https://github.com/mlatcl/mlphysical/edit/gh-pages/_execed/data-quality.md
+edit_url: https://github.com/mlatcl/execed/edit/gh-pages/_lamd/data-quality.md
 session: 3
 pptx: 03-data-quality.pptx
 layout: lecture
@@ -62,7 +62,7 @@ class="editsection"
 style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/includes/gartner-hype-cycle-base.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_data-science/includes/gartner-hype-cycle-base.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
 <div class="sourceCode" id="cb1"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pytrends</span></code></pre></div>
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> importlib.util</span></code></pre></div>
 <div class="figure">
 <div id="ai-bd-dm-dl-ml-gartner-hype-cycle-google-trends-figure"
 class="figure-frame">
@@ -400,10 +400,11 @@ onclick="magnifyFigure(&#39;data-science-africa&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="data-science-africa-caption" class="caption-frame">
-<p>Figure: Data Science Africa <a href="http://datascienceafrica.org"
-class="uri">http://datascienceafrica.org</a> is a ground up initiative
-for capacity building around data science, machine learning and
-artificial intelligence on the African continent.</p>
+<p>Figure: Data Science Africa <a
+href="https://www.datascienceafrica.org/">https://datascienceafrica.org</a>
+is a ground up initiative for capacity building around data science,
+machine learning and artificial intelligence on the African
+continent.</p>
 </div>
 </div>
 <div class="figure">
@@ -422,17 +423,33 @@ onclick="magnifyFigure(&#39;dsa-events-october-2021&#39;)">
 <p>Data Science Africa is a bottom up initiative for capacity building
 in data science, machine learning and artificial intelligence on the
 African continent.</p>
-<p>As of May 2023 there have been eleven workshops and schools, located
-in seven different countries: Nyeri, Kenya (twice); Kampala, Uganda;
-Arusha, Tanzania; Abuja, Nigeria; Addis Ababa, Ethiopia; Accra, Ghana;
-Kampala, Uganda and Kimberley, South Africa (virtual), and in Kigali,
-Rwanda.</p>
+<p>As of June 2025 there have been thirteen workshops and schools,
+located in seven different countries: Nyeri, Kenya (three times);
+Kampala, Uganda; Arusha, Tanzania (twice); Abuja, Nigeria; Addis Ababa,
+Ethiopia; Accra, Ghana; Kampala, Uganda and Kimberley, South Africa
+(virtual), Kigali, Rwanda and Ibadan, Nigeria.</p>
+<h2 id="dsa-ibadan-nigeria">DSA Ibadan, Nigeria</h2>
+<div class="figure">
+<div id="dsa-ibadan-2025-figure" class="figure-frame">
+<video width="30%" height controls preload="none">
+<source src="https://mlatcl.github.io/execed/./slides/diagrams//dsa/dsa-ibadan-2025" type="video/mp4"/>
+</video>
+</div>
+<div id="dsa-ibadan-2025-magnify" class="magnify"
+onclick="magnifyFigure(&#39;dsa-ibadan-2025&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="dsa-ibadan-2025-caption" class="caption-frame">
+<p>Figure: Organiser’s video from Data Science Africa held in Ibadan,
+Nigeria from 2nd to 6th June 2025</p>
+</div>
+</div>
 <p>The main notion is <em>end-to-end</em> data science. For example,
 going from data collection in the farmer’s field to decision making in
 the Ministry of Agriculture. Or going from malaria disease counts in
 health centers to medicine distribution.</p>
 <p>The philosophy is laid out in <span class="citation"
-data-cites="Lawrence:dsa15">(Lawrence, 2015)</span>. The key idea is
+data-cites="Lawrence-dsa15">(Lawrence, 2015)</span>. The key idea is
 that the modern <em>information infrastructure</em> presents new
 solutions to old problems. Modes of development change because less
 capital investment is required to take advantage of this infrastructure.
@@ -445,7 +462,7 @@ scientists and academics based on the African continent.</p>
 <div class="figure">
 <div id="africa-benefit-data-revolution-figure" class="figure-frame">
 <div class="centered" style="">
-<img class="" src="https://mlatcl.github.io/execed/./slides/diagrams//data-science/africa-benefit-data-revolution.png" width="70%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+<img class="" src="https://mlatcl.github.io/execed/./slides/diagrams//data-science/africa-benefit-data-revolution-2024.png" width="70%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
 </div>
 </div>
 <div id="africa-benefit-data-revolution-magnify" class="magnify"
@@ -472,7 +489,7 @@ style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/i
 </div>
 <div class="centered" style="">
 <svg viewBox="0 0 200 200" style="width:15%">
-<defs> <clipPath id="clip0">
+<defs> <clipPath id="clip61">
 <style>
 circle {
   fill: black;
@@ -482,7 +499,8 @@ circle {
 <title>
 Ernest Mwebaze
 </title>
-<image preserveAspectRatio="xMinYMin slice" width="100%" xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/ernest-mwebaze.png" clip-path="url(#clip0)"/>
+<image preserveAspectRatio="xMinYMin slice" width="100%"
+       xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/ernest-mwebaze.png" clip-path="url(#clip61)"/>
 </svg>
 </div>
 <div class="figure">
@@ -507,7 +525,7 @@ style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/i
 </div>
 <div class="centered" style="">
 <svg viewBox="0 0 200 200" style="width:15%">
-<defs> <clipPath id="clip1">
+<defs> <clipPath id="clip62">
 <style>
 circle {
   fill: black;
@@ -517,7 +535,8 @@ circle {
 <title>
 Martin Mubangizi
 </title>
-<image preserveAspectRatio="xMinYMin slice" width="100%" xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/martin-mubangizi.png" clip-path="url(#clip1)"/>
+<image preserveAspectRatio="xMinYMin slice" width="100%"
+       xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/martin-mubangizi.png" clip-path="url(#clip62)"/>
 </svg>
 </div>
 <div class="figure">
@@ -544,7 +563,7 @@ style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/i
 </div>
 <div class="centered" style="">
 <svg viewBox="0 0 200 200" style="width:15%">
-<defs> <clipPath id="clip2">
+<defs> <clipPath id="clip63">
 <style>
 circle {
   fill: black;
@@ -554,7 +573,8 @@ circle {
 <title>
 Morine Amutorine
 </title>
-<image preserveAspectRatio="xMinYMin slice" width="100%" xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/morine-amutorine.png" clip-path="url(#clip2)"/>
+<image preserveAspectRatio="xMinYMin slice" width="100%"
+       xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/morine-amutorine.png" clip-path="url(#clip63)"/>
 </svg>
 </div>
 <div class="figure">
@@ -699,12 +719,16 @@ can tailor systems to answering those questions.</p>
 need better ecosystems for experimentation. This has led us to focus on
 the software frameworks we’re using to develop machine learning systems
 including data oriented architectures (<span class="citation"
-data-cites="Borchert-dataoriented20">Borchert (2020)</span>;<span
-class="citation" data-cites="Lawrence-dop19">Lawrence
-(2019)</span>;<span class="citation"
-data-cites="Vorhemus-doa17">Vorhemus and Schikuta (2017)</span>;<span
-class="citation" data-cites="Joshi-doa07">Joshi (2007)</span>), data
-maturity assessments (<span class="citation"
+data-cites="Cabrera-realworld23">Cabrera et al. (2023)</span>,<span
+class="citation" data-cites="Paleyes-challenges22">Paleyes et al.
+(2022b)</span>,<span class="citation"
+data-cites="Paleyes-flow22">Paleyes et al. (2022a)</span>,<span
+class="citation" data-cites="Borchert-dataoriented20">Borchert
+(2020)</span>;<span class="citation"
+data-cites="Lawrence-dop19">Lawrence (2019)</span>;<span
+class="citation" data-cites="Vorhemus-doa17">Vorhemus and Schikuta
+(2017)</span>;<span class="citation" data-cites="Joshi-doa07">Joshi
+(2007)</span>), data maturity assessments (<span class="citation"
 data-cites="Lawrence-maturity20">Lawrence et al. (2020)</span>) and data
 readiness levels (See this blog post on <a
 href="http://inverseprobability.com/2017/01/12/data-readiness-levels">Data
@@ -727,14 +751,14 @@ style=""><a href="https://github.com/lawrennd/snippets/edit/main/_ml/includes/or
 not new, it dates back to Laplace and Gauss. Gauss fitted the orbit of
 Ceres using Keplers laws of planetary motion to generate his basis
 functions, and Laplace’s insights on the error function and uncertainty
-<span class="citation" data-cites="Stigler:table99">(Stigler,
-1999)</span>. Different fields such as Operations Research, Control,
-Econometrics, Statistics, Machine Learning and now Data Science and AI
-all rely on <span class="math inline">\(\text{data} +
-\text{model}\)</span>. Under a Popperian view of science, and equating
-experiment to data, one could argue that all science has <span
-class="math inline">\(\text{data} + \text{model}\)</span> underpinning
-it.</p>
+<span class="citation"
+data-cites="Stigler-table99">(<strong>Stigler-table99?</strong>)</span>.
+Different fields such as Operations Research, Control, Econometrics,
+Statistics, Machine Learning and now Data Science and AI all rely on
+<span class="math inline">\(\text{data} + \text{model}\)</span>. Under a
+Popperian view of science, and equating experiment to data, one could
+argue that all science has <span class="math inline">\(\text{data} +
+\text{model}\)</span> underpinning it.</p>
 <p>Different academic fields are born in different eras, driven by
 different motivations and arrive at different solutions. For example,
 both Operations Research and Control emerged from the Second World War.
@@ -742,10 +766,10 @@ Operations Research, the science of decision making, driven by the need
 for improved logistics and supply chain. Control emerged from
 cybernetics, a field that was driven in the by researchers who had been
 involved in radar and decryption <span class="citation"
-data-cites="Wiener:cybernetics48 Husband:mechanicalmind08">(Husband et
+data-cites="Wiener-cybernetics48 Husband-mechanicalmind08">(Husband et
 al., 2008; Wiener, 1948)</span>. The UK artificial intelligence
 community had similar origins <span class="citation"
-data-cites="Copeland:colossus06">(Copeland, 2006)</span>.</p>
+data-cites="Copeland-colossus06">(Copeland, 2006)</span>.</p>
 <p>The separation between these fields has almost become tribal, and
 from one perspective this can be very helpful. Each tribe can agree on a
 common language, a common set of goals and a shared understanding of the
@@ -1120,6 +1144,10 @@ context.</li>
 <p>For more information on these subjects and more you might want to
 check the following resources.</p>
 <ul>
+<li>company: <a href="https://trent.ai">Trent AI</a></li>
+<li>book: <a
+href="https://www.penguin.co.uk/books/455130/the-atomic-human-by-lawrence-neil-d/9780241625248">The
+Atomic Human</a></li>
 <li>twitter: <a href="https://twitter.com/lawrennd">@lawrennd</a></li>
 <li>podcast: <a href="http://thetalkingmachines.com">The Talking
 Machines</a></li>
@@ -1137,16 +1165,21 @@ Borchert, T., 2020. <a
 href="https://tborchertblog.wordpress.com/2020/02/13/28/">Milan: An
 evolution of data-oriented programming</a>.
 </div>
+<div id="ref-Cabrera-realworld23" class="csl-entry" role="listitem">
+Cabrera, C., Paleyes, A., Thodoroff, P., Lawrence, N.D., 2023. <a
+href="https://arxiv.org/abs/2302.04810">Real-world machine learning
+systems: A survey from a data-oriented architecture perspective</a>.
+</div>
 <div id="ref-Cooper:transformation91" class="csl-entry" role="listitem">
 Cooper, B., 1991. Transformation of a valley: Derbyshire derwent.
 Scarthin Books.
 </div>
-<div id="ref-Copeland:colossus06" class="csl-entry" role="listitem">
+<div id="ref-Copeland-colossus06" class="csl-entry" role="listitem">
 Copeland, B.J. (Ed.), 2006. Colossus: The secrets of
 <span>B</span>letchley park’s code-breaking computers. Oxford University
 Press.
 </div>
-<div id="ref-Husband:mechanicalmind08" class="csl-entry"
+<div id="ref-Husband-mechanicalmind08" class="csl-entry"
 role="listitem">
 Husband, P., Holland, O., Wheeler, M. (Eds.), 2008. The mechanical mind
 in history. mit.
@@ -1168,7 +1201,7 @@ data oriented programming</a>.
 <div id="ref-Lawrence-drl17" class="csl-entry" role="listitem">
 Lawrence, N.D., 2017. Data readiness levels. ArXiv.
 </div>
-<div id="ref-Lawrence:dsa15" class="csl-entry" role="listitem">
+<div id="ref-Lawrence-dsa15" class="csl-entry" role="listitem">
 Lawrence, N.D., 2015. <a
 href="https://www.theguardian.com/media-network/2015/aug/25/africa-benefit-data-science-information">How
 <span>A</span>frica can benefit from the data revolution</a>.
@@ -1178,9 +1211,18 @@ Lawrence, N.D., Montgomery, J., Paquet, U., 2020. <a
 href="https://rs-delve.github.io/addenda/2020/11/24/organizational-data-maturity.html">Organisational
 data maturity</a>. The Royal Society.
 </div>
-<div id="ref-Stigler:table99" class="csl-entry" role="listitem">
-Stigler, S.M., 1999. Statistics on the table: The history of statistical
-concepts and methods. harvard, Cambridge, MA.
+<div id="ref-Paleyes-flow22" class="csl-entry" role="listitem">
+Paleyes, A., Cabrera, C., Lawrence, N.D., 2022a. <a
+href="https:///publications/an-empirical-evaluation-of-flow-based-programming-in-the-machine-learning-deployment-context.html">An
+empirical evaluation of flow based programming in the machine learning
+deployment context</a>, in: 1st International Conference on AI
+Engineering – Software Engineering for AI.
+</div>
+<div id="ref-Paleyes-challenges22" class="csl-entry" role="listitem">
+Paleyes, A., Urma, R.-G., Lawrence, N.D., 2022b. <a
+href="https:///publications/challenges-in-machine-learning-deployment.html">Challenges
+in machine learning deployment: A survey of case studies</a>. ACM
+Comput. Surv.
 </div>
 <div id="ref-Delve-data20" class="csl-entry" role="listitem">
 The DELVE Initiative, 2020. <a
@@ -1198,9 +1240,9 @@ Applications &amp; Services, iiWAS ’17. Association for Computing
 Machinery, New York, NY, USA, pp. 472–481. <a
 href="https://doi.org/10.1145/3151759.3151770">https://doi.org/10.1145/3151759.3151770</a>
 </div>
-<div id="ref-Wiener:cybernetics48" class="csl-entry" role="listitem">
+<div id="ref-Wiener-cybernetics48" class="csl-entry" role="listitem">
 Wiener, N., 1948. Cybernetics: Control and communication in the animal
-and the machine. MIT Press, Cambridge, MA.
+and the machine. mitp, Cambridge, MA.
 </div>
 </div>
 

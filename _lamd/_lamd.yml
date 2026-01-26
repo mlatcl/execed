@@ -1,40 +1,51 @@
+# Author information - update with your details
 author:
-- given: Neil D.
-  family: Lawrence
-  institution: University of Cambridge
-  gscholar: r3SJcvoAAAAJ
-  twitter: lawrennd
-  orcid: 0000-0001-9258-1030
-  url: http://inverseprobability.com
-layout: lecture
-room:
-venue:
-talkcss: https://inverseprobability.com/assets/css/talks.css
-bibdir: $HOME/lawrennd/bibliography
-postsdir: ../_lectures/
-slidesdir: ../slides/
-notesdir: ../_notes/
-notebooksdir: ../_notebooks/
-practicalsdir: ../_practicals/
-snippetsdir: $HOME/lawrennd/snippets
-writediagramsdir: .
-scriptsdir: ./scripts/
-diagramsdir: ./slides/diagrams/
-posts: True
-docx: False
-notespdf: False
-slidesipynb: False
-pptx: True
-pdf: False
-assignment: False
-ipynb: False
-reveal: False
-potx: judge-exec-reference.potx
-baseurl: "execed/" # the subpath of your site, e.g. /blog/
+  - given: Your
+    family: Name
+    institution: Your Institution
+    url: http://example.com
+# Directory paths
+macrosdir: macros # Macro directory
+bibdir: $HOME/lawrennd/bibliography # Bibliography directory
+postsdir: ../_lectures/ # Where compiled lecture HTML files go
+slidesdir: ../slides/ # Where compiled slides go
+notesdir: ../_notes/ # Where compiled notes go
+notebooksdir: ../_notebooks/ # Where compiled notebooks go
+practicalsdir: ../_practicals/ # Where compiled practicals go
+snippetsdir: $HOME/lawrennd/snippets # Directory for reusable content snippets
+writediagramsdir: . # Where to write generated diagrams
+scriptsdir: ../scripts/ # Directory for scripts
+diagramsdir: ./slides/diagrams/ # Directory for diagrams
+# Layout and styling
+slidesheader: slides-header.html
+notation: talk-notation.tex
+layout: lecture # Default layout for lectures
+# Output format settings (True/False)
+posts: True # Generate HTML lecture pages
+docx: False # Generate Word documents
+notespdf: False # Generate PDF notes
+slidesipynb: False # Generate Jupyter notebooks for slides
+pptx: False # Generate PowerPoint presentations
+pdf: False # Generate PDF lectures
+assignment: False # Generate assignment format
+ipynb: True # Generate Jupyter notebooks
+reveal: True # Use reveal.js for slides
+# Website configuration
 url: "https://mlatcl.github.io/" # the base hostname & protocol for your site
+baseurl: execed/
+talkcss: https://inverseprobability.com/assets/css/talks.css
+people: ../_people/people.yml
+macrosdir: $HOME/lawrennd/lamd/lamd/macros
+# Slide transition effect
+transition: None # Options: None, fade, slide, convex, concave, zoom
+potx: custom-reference.potx 
+dotx: custom-reference.dotx
+venue: LUISS, Rome
+# GitHub Pages configuration
 ghub:
-- organization: mlatcl
-  repository: mlphysical
-  branch: gh-pages
-  directory: _execed
-transition: None
+  - organization: mlatcl # Your GitHub username or organization
+    repository: execed # Repository name
+    branch: gh-pages # Branch for GitHub Pages
+    directory: _lamd # Directory containing source files 
+
+

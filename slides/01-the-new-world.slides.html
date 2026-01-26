@@ -27,6 +27,9 @@
   <!--[if lt IE 9]>
   <script src="https://unpkg.com/reveal.js@3.9.2/lib/js/html5shiv.js"></script>
   <![endif]-->
+   <!-- Mermaid -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG" type="text/javascript"></script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -35,7 +38,29 @@
       }
     });
   </script>
-  <script src="../assets/js/figure-animate.js"></script>
+  <script src="https://inverseprobability.com/assets/js/figure-animate.js"></script>
+   <!-- Initialize Mermaid after Reveal is loaded -->
+<script>
+  Reveal.addEventListener('ready', event => {
+    // Initialize mermaid
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'base',
+      // These are the same theme variables we used above
+      themeVariables: {
+          primaryColor: '#4a90e2',
+          primaryTextColor: '#fff',
+          primaryBorderColor: '#357abd',
+          lineColor: '#67b246',
+          fontSize: '30px',
+          fontFamily: 'arial',
+	  edgeLabelBackground: 'transparent',
+	  tertiaryColor: 'transparent'
+      }
+    });
+  });
+</script>
+   
 </head>
 <body>
   <div class="reveal">
@@ -53,8 +78,7 @@
 <!-- The last names to be defined. Should be defined entirely in terms of macros from above-->
 <!-- SECTION Evolved Relationship with Information -->
 </section>
-<section id="evolved-relationship-with-information"
-class="slide level2">
+<section id="evolved-relationship-with-information" class="slide level2">
 <h2>Evolved Relationship with Information</h2>
 </section>
 <section id="new-flow-of-information" class="slide level2">
@@ -62,6 +86,17 @@ class="slide level2">
 <div class="figure">
 <div id="new-flow-of-information-1-figure" class="figure-frame">
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//data-science/new-flow-of-information001.svg" width="70%" style=" ">
+</object>
+</div>
+</div>
+<aside class="notes">
+</aside>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="figure">
+<div id="new-flow-of-information-1a-figure" class="figure-frame">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//data-science/new-flow-of-information001a.svg" width="70%" style=" ">
 </object>
 </div>
 </div>
@@ -88,14 +123,7 @@ class="slide level2">
 </div>
 </div>
 <aside class="notes">
-The trinity of human, data and computer, and highlights the modern
-phenomenon. The communication channel between computer and data now has
-an extremely high bandwidth. The channel between human and computer and
-the channel between data and human is narrow. New direction of
-information flow, information is reaching us mediated by the computer.
-The focus on classical statistics reflected the importance of the direct
-communication between human and data. The modern challenges of data
-science emerge when that relationship is being mediated by the machine.
+The trinity of human, data, and computer, and highlights the modern phenomenon. The communication channel between computer and data now has an extremely high bandwidth. The channel between human and computer and the channel between data and human is narrow. New direction of information flow, information is reaching us mediated by the computer. The focus on classical statistics reflected the importance of the direct communication between human and data. The modern challenges of data science emerge when that relationship is being mediated by the machine.
 </aside>
 </section>
 <section id="embodiment-factors" class="slide level2">
@@ -107,7 +135,7 @@ science emerge when that relationship is being mediated by the machine.
 <td>
 </td>
 <td align="center">
-<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//computer.svg" width="60%" style=" ">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//ai/processor.svg" width="15%" style=" ">
 </object>
 </td>
 <td align="center">
@@ -128,7 +156,7 @@ billions
 </tr>
 <tr>
 <td>
-billion<br>calculations/s
+billion <br>calculations/s
 </td>
 <td align="center">
 ~100
@@ -152,17 +180,10 @@ embodiment
 </div>
 </div>
 <aside class="notes">
-Embodiment factors are the ratio between our ability to compute and our
-ability to communicate. Relative to the machine we are also locked in.
-In the table we represent embodiment as the length of time it would take
-to communicate one second’s worth of computation. For computers it is a
-matter of minutes, but for a human, it is a matter of thousands of
-millions of years. See also “Living Together: Mind and Machine
-Intelligence” <span class="citation"
-data-cites="Lawrence:embodiment17">Lawrence (2017)</span>
+Embodiment factors are the ratio between our ability to compute and our ability to communicate. Relative to the machine we are also locked in. In the table we represent embodiment as the length of time it would take to communicate one second’s worth of computation. For computers it is a matter of minutes, but for a human, it is a matter of thousands of millions of years. See also “Living Together: Mind and Machine Intelligence” <span class="citation" data-cites="Lawrence:embodiment17">(<strong>Lawrence:embodiment17?</strong>)</span>
 </aside>
 </section>
-<section id="section" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="lotus-49-figure" class="figure-frame">
@@ -172,11 +193,10 @@ data-cites="Lawrence:embodiment17">Lawrence (2017)</span>
 </div>
 </div>
 <aside class="notes">
-The Lotus 49, view from the rear. The Lotus 49 was one of the last
-Formula One cars before the introduction of aerodynamic aids.
+The Lotus 49, view from the rear. The Lotus 49 was one of the last Formula One cars before the introduction of aerodynamic aids.
 </aside>
 </section>
-<section id="section-1" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="marcel-renault-figure" class="figure-frame">
@@ -186,13 +206,10 @@ Formula One cars before the introduction of aerodynamic aids.
 </div>
 </div>
 <aside class="notes">
-Marcel Renault races a Renault 40 cv during the Paris-Madrid race, an
-early Grand Prix, in 1903. Marcel died later in the race after missing a
-warning flag for a sharp corner at Couhé Vérac, likely due to dust
-reducing visibility.
+Marcel Renault races a Renault 40 cv during the Paris-Madrid race, an early Grand Prix, in 1903. Marcel died later in the race after missing a warning flag for a sharp corner at Couhé Vérac, likely due to dust reducing visibility.
 </aside>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="caleb-mcduff-figure" class="figure-frame">
@@ -205,7 +222,7 @@ reducing visibility.
 Caleb McDuff driving for WIX Silence Racing.
 </aside>
 </section>
-<section id="section-3" class="slide level2">
+<section id="section-4" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="science-holborn-viaduct-figure" class="figure-frame">
@@ -220,10 +237,9 @@ Centrifugal governor as held by “Science” on Holborn Viaduct
 <div class="caption" style="">
 Figure: Science on Holborn Viaduct, cradling the Centrifugal Governor.
 </div>
-<p><a href="http://www.maths.ed.ac.uk/~v1ranick/papers/maxwell1.pdf">On
-Governors</a>, James Clerk Maxwell 1868</p>
+<p><a href="http://www.maths.ed.ac.uk/~v1ranick/papers/maxwell1.pdf">On Governors</a>, James Clerk Maxwell 1868</p>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="steam-engine-boulton-watt-figure" class="figure-frame">
@@ -236,7 +252,7 @@ Governors</a>, James Clerk Maxwell 1868</p>
 Watt’s Steam Engine which made Steam Power Efficient and Practical.
 </aside>
 </section>
-<section id="section-5" class="slide level2">
+<section id="section-6" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="centrifugal-governor-figure" class="figure-frame">
@@ -246,22 +262,17 @@ Watt’s Steam Engine which made Steam Power Efficient and Practical.
 </div>
 </div>
 <aside class="notes">
-The centrifugal governor, an early example of a decision making system.
-The parameters of the governor include the lengths of the linkages
-(which effect how far the throttle opens in response to movement in the
-balls), the weight of the balls (which effects inertia) and the limits
-of to which the balls can rise.
+The centrifugal governor, an early example of a decision-making system. The parameters of the governor include the lengths of the linkages (which effect how far the throttle opens in response to movement in the balls), the weight of the balls (which effects inertia) and the limits of to which the balls can rise.
 </aside>
 </section>
-<section id="section-6" class="slide level2">
+<section id="section-7" class="slide level2">
 <h2></h2>
-<p><span class="math display">\[\text{data} + \text{model}
-\stackrel{\text{compute}}{\rightarrow} \text{prediction}\]</span></p>
+<p><span class="math display">\[\text{data} + \text{model} \stackrel{\text{compute}}{\rightarrow} \text{prediction}\]</span></p>
 </section>
 <section id="from-model-to-decision" class="slide level2">
 <h2>From Model to Decision</h2>
 </section>
-<section id="section-7" class="slide level2">
+<section id="section-8" class="slide level2">
 <h2></h2>
 <table>
 <tr>
@@ -271,8 +282,7 @@ of to which the balls can rise.
 </div>
 </td>
 <td width="45%">
-<span class="math display">\[\text{data} + \text{model}
-\stackrel{\text{compute}}{\rightarrow} \text{prediction}\]</span>
+<span class="math display">\[\text{data} + \text{model} \stackrel{\text{compute}}{\rightarrow} \text{prediction}\]</span>
 </td>
 <td width="20%">
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//ai/1969018.svg" width="100%" style="center ">
@@ -281,8 +291,7 @@ of to which the balls can rise.
 </tr>
 </table>
 </section>
-<section id="artificial-intelligence-and-data-science"
-class="slide level2">
+<section id="artificial-intelligence-and-data-science" class="slide level2">
 <h2>Artificial Intelligence and Data Science</h2>
 <ul>
 <li>AI aims to equip computers with human capabilities
@@ -303,9 +312,7 @@ class="slide level2">
 <li>Generate large labelled data set from humans.</li>
 <li>Use <em>supervised learning</em> to emulate that data.
 <ul>
-<li><em>E.g.</em> <a href="www.image-net.org">ImageNet</a> <span
-class="citation" data-cites="Russakovsky-imagenet15">Russakovsky et al.
-(2015)</span></li>
+<li><em>E.g.</em> <a href="www.image-net.org">ImageNet</a> <span class="citation" data-cites="Russakovsky-imagenet15">Russakovsky et al. (2015)</span></li>
 </ul></li>
 </ul></li>
 <li>Significant advances due to <em>deep learning</em>
@@ -318,8 +325,7 @@ class="citation" data-cites="Russakovsky-imagenet15">Russakovsky et al.
 <h2>Data Science</h2>
 <ul>
 <li>Arises from <em>happenstance data</em>.</li>
-<li>Differs from statistics in that the question comes <em>after</em>
-data collection.</li>
+<li>Differs from statistics in that the question comes <em>after</em> data collection.</li>
 </ul>
 <!-- SECTION Deep Learning -->
 </section>
@@ -327,15 +333,9 @@ data collection.</li>
 <h2>Deep Learning</h2>
 <!-- No slide titles in this context -->
 </section>
-<section id="section-8" class="slide level2">
+<section id="section-9" class="slide level2">
 <h2></h2>
-<p><span class="fragment fade-in"><small>Outline of the DeepFace
-architecture. A front-end of a single convolution-pooling-convolution
-filtering on the rectified input, followed by three locally-connected
-layers and two fully-connected layers. Color illustrates feature maps
-produced at each layer. The net includes more than 120 million
-parameters, where more than 95% come from the local and fully
-connected.</small></span></p>
+<p><span class="fragment fade-in"><small>Outline of the DeepFace architecture. A front-end of a single convolution-pooling-convolution filtering on the rectified input, followed by three locally-connected layers and two fully-connected layers. Color illustrates feature maps produced at each layer. The net includes more than 120 million parameters, where more than 95% come from the local and fully connected.</small></span></p>
 <div class="figure">
 <div id="deep-face-figure" class="figure-frame">
 <div class="centered" style="">
@@ -344,17 +344,13 @@ connected.</small></span></p>
 </div>
 </div>
 <aside class="notes">
-The DeepFace architecture <span class="citation"
-data-cites="Taigman:deepface14">(Taigman et al., 2014)</span>,
-visualized through colors to represent the functional mappings at each
-layer. There are 120 million parameters in the model.
+The DeepFace architecture <span class="citation" data-cites="Taigman:deepface14">(Taigman et al., 2014)</span>, visualized through colors to represent the functional mappings at each layer. There are 120 million parameters in the model.
 </aside>
 <div style="text-align:right">
-<small>Source: DeepFace <span class="citation"
-data-cites="Taigman:deepface14">(Taigman et al., 2014)</span></small>
+<small>Source: DeepFace <span class="citation" data-cites="Taigman:deepface14">(Taigman et al., 2014)</span></small>
 </div>
 </section>
-<section id="section-9" class="slide level2">
+<section id="section-10" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="early-pinball-figure" class="figure-frame">
@@ -364,15 +360,10 @@ data-cites="Taigman:deepface14">(Taigman et al., 2014)</span></small>
 </div>
 </div>
 <aside class="notes">
-Deep learning models are composition of simple functions. We can think
-of a pinball machine as an analogy. Each layer of pins corresponds to
-one of the layers of functions in the model. Input data is represented
-by the location of the ball from left to right when it is dropped in
-from the top. Output class comes from the position of the ball as it
-leaves the pins at the bottom.
+Deep learning models are composition of simple functions. We can think of a pinball machine as an analogy. Each layer of pins corresponds to one of the layers of functions in the model. Input data is represented by the location of the ball from left to right when it is dropped in from the top. Output class comes from the position of the ball as it leaves the pins at the bottom.
 </aside>
 </section>
-<section id="section-10" class="slide level2">
+<section id="section-11" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="pinball-initialization-figure" class="figure-frame">
@@ -381,12 +372,10 @@ leaves the pins at the bottom.
 </div>
 </div>
 <aside class="notes">
-At initialization, the pins, which represent the parameters of the
-function, aren’t in the right place to bring the balls to the correct
-decisions.
+At initialization, the pins, which represent the parameters of the function, aren’t in the right place to bring the balls to the correct decisions.
 </aside>
 </section>
-<section id="section-11" class="slide level2">
+<section id="section-12" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="pinball-trained-figure" class="figure-frame">
@@ -395,8 +384,7 @@ decisions.
 </div>
 </div>
 <aside class="notes">
-After learning the pins are now in the right place to bring the balls to
-the correct decisions.
+After learning the pins are now in the right place to bring the balls to the correct decisions.
 </aside>
 </section>
 <section id="evolved-relationship-2" class="slide level2">
@@ -408,8 +396,7 @@ the correct decisions.
 </div>
 </div>
 <aside class="notes">
-The mechanism by which data moves is changing, it is now mediated by the
-computer.
+The mechanism by which data moves is changing, it is now mediated by the computer.
 </aside>
 </section>
 <section id="societal-effects" class="slide level2">
@@ -418,7 +405,7 @@ computer.
 <li>This phenomenon has already revolutionised biology.
 <ul>
 <li>Large scale data acquisition and distribution.</li>
-<li>Transcriptomics, genomics, epigenomics, ‘rich phenomics’.</li>
+<li>Transcriptomics, genomics, epigenomics, ‘rich phenomics.’</li>
 </ul></li>
 <li>Great <em>promise</em> for personalized health.</li>
 </ul>
@@ -426,8 +413,7 @@ computer.
 <section id="societal-effects-1" class="slide level2">
 <h2>Societal Effects</h2>
 <ul>
-<li>Automated decision making within the computer based only on the
-data.</li>
+<li>Automated decision making within the computer based only on the data.</li>
 <li>Subjective biases need to be better understood.</li>
 <li>Particularly important where treatments are being prescribed.
 <ul>
@@ -443,78 +429,69 @@ data.</li>
 <li>from direct human-data to indirect human-computer-data</li>
 <li>modern data analysis is mediated by the machine</li>
 </ul></li>
-<li>This change of dynamics gives us the modern and emerging domain of
-data science</li>
+<li>This change of dynamics gives us the modern and emerging domain of data science</li>
 </ul>
 </section>
 <section id="human-communication" class="slide level2">
 <h2>Human Communication</h2>
 </section>
-<section id="section-12" class="slide level2">
-<h2></h2>
-<div class="anne-bob-conversation"
-style="maxwidth:100vw; max-height:100vh">
-<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation000.svg" width="70%" style=" ">
-</object>
-</div>
-</section>
 <section id="section-13" class="slide level2">
 <h2></h2>
-<div class="anne-bob-conversation"
-style="maxwidth:100vw; max-height:100vh">
-<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation001.svg" width="70%" style=" ">
+<div class="anne-bob-conversation" style="maxwidth:100vw; max-height:100vh">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation000.svg" width="70%" style=" ">
 </object>
 </div>
 </section>
 <section id="section-14" class="slide level2">
 <h2></h2>
-<div class="anne-bob-conversation"
-style="maxwidth:100vw; max-height:100vh">
-<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation002.svg" width="70%" style=" ">
+<div class="anne-bob-conversation" style="maxwidth:100vw; max-height:100vh">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation001.svg" width="70%" style=" ">
 </object>
 </div>
 </section>
 <section id="section-15" class="slide level2">
 <h2></h2>
-<div class="anne-bob-conversation"
-style="maxwidth:100vw; max-height:100vh">
-<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation003.svg" width="70%" style=" ">
+<div class="anne-bob-conversation" style="maxwidth:100vw; max-height:100vh">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation002.svg" width="70%" style=" ">
 </object>
 </div>
 </section>
 <section id="section-16" class="slide level2">
 <h2></h2>
-<div class="anne-bob-conversation"
-style="maxwidth:100vw; max-height:100vh">
-<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation004.svg" width="70%" style=" ">
+<div class="anne-bob-conversation" style="maxwidth:100vw; max-height:100vh">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation003.svg" width="70%" style=" ">
 </object>
 </div>
 </section>
 <section id="section-17" class="slide level2">
 <h2></h2>
-<div class="anne-bob-conversation"
-style="maxwidth:100vw; max-height:100vh">
-<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation005.svg" width="70%" style=" ">
+<div class="anne-bob-conversation" style="maxwidth:100vw; max-height:100vh">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation004.svg" width="70%" style=" ">
 </object>
 </div>
 </section>
 <section id="section-18" class="slide level2">
 <h2></h2>
-<div class="anne-bob-conversation"
-style="maxwidth:100vw; max-height:100vh">
-<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation006.svg" width="70%" style=" ">
+<div class="anne-bob-conversation" style="maxwidth:100vw; max-height:100vh">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation005.svg" width="70%" style=" ">
 </object>
 </div>
 </section>
 <section id="section-19" class="slide level2">
 <h2></h2>
-<div class="anne-bob-conversation"
-style="maxwidth:100vw; max-height:100vh">
-<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation007.svg" width="70%" style=" ">
+<div class="anne-bob-conversation" style="maxwidth:100vw; max-height:100vh">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation006.svg" width="70%" style=" ">
 </object>
 </div>
 </section>
 <section id="section-20" class="slide level2">
+<h2></h2>
+<div class="anne-bob-conversation" style="maxwidth:100vw; max-height:100vh">
+<object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-bob-conversation007.svg" width="70%" style=" ">
+</object>
+</div>
+</section>
+<section id="section-21" class="slide level2">
 <h2></h2>
 <div class="figure">
 <div id="classic-baby-shoes-figure" class="figure-frame">
@@ -527,17 +504,10 @@ For sale: baby shoes, never worn
 </div>
 </div>
 <aside class="notes">
-Consider the six word novel, apocraphally credited to Ernest Hemingway,
-“For sale: baby shoes, never worn”. To understand what that means to a
-human, you need a great deal of additional context. Context that is not
-directly accessible to a machine that has not got both the evolved and
-contextual understanding of our own condition to realize both the
-implication of the advert and what that implication means emotionally to
-the previous owner.
+Consider the six-word novel, apocryphally credited to Ernest Hemingway, “For sale: baby shoes, never worn.” To understand what that means to a human, you need a great deal of additional context. Context that is not directly accessible to a machine that has not got both the evolved and contextual understanding of our own condition to realize both the implication of the advert and what that implication means emotionally to the previous owner.
 </aside>
 <aside class="notes">
-Ernest Hemingway’s apocrophal six word novel would mean nothing to a
-computer.
+Ernest Hemingway’s apocryphal six-word novel would mean nothing to a computer.
 </aside>
 </section>
 <section id="heider-and-simmel-1944" class="slide level2">
@@ -549,56 +519,53 @@ computer.
 </div>
 </div>
 <aside class="notes">
-Fritz Heider and Marianne Simmel’s video of shapes from <span
-class="citation" data-cites="Heider:experimental44">Heider and Simmel
-(1944)</span>.
+Fritz Heider and Marianne Simmel’s video of shapes from <span class="citation" data-cites="Heider-experimental44">Heider and Simmel (1944)</span>.
 </aside>
 </section>
-<section id="section-21" class="slide level2">
+<section id="section-22" class="slide level2">
 <h2></h2>
 </section>
-<section id="section-22" class="slide level2">
+<section id="section-23" class="slide level2">
 <h2></h2>
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-computer-conversation000.svg" width="80%" style=" ">
 </object>
 </section>
-<section id="section-23" class="slide level2">
+<section id="section-24" class="slide level2">
 <h2></h2>
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-computer-conversation001.svg" width="80%" style=" ">
 </object>
 </section>
-<section id="section-24" class="slide level2">
+<section id="section-25" class="slide level2">
 <h2></h2>
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-computer-conversation002.svg" width="80%" style=" ">
 </object>
 </section>
-<section id="section-25" class="slide level2">
+<section id="section-26" class="slide level2">
 <h2></h2>
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-computer-conversation003.svg" width="80%" style=" ">
 </object>
 </section>
-<section id="section-26" class="slide level2">
+<section id="section-27" class="slide level2">
 <h2></h2>
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-computer-conversation004.svg" width="80%" style=" ">
 </object>
 </section>
-<section id="section-27" class="slide level2">
+<section id="section-28" class="slide level2">
 <h2></h2>
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-computer-conversation005.svg" width="80%" style=" ">
 </object>
 </section>
-<section id="section-28" class="slide level2">
+<section id="section-29" class="slide level2">
 <h2></h2>
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-computer-conversation006.svg" width="80%" style=" ">
 </object>
 </section>
-<section id="section-29" class="slide level2">
+<section id="section-30" class="slide level2">
 <h2></h2>
 <object class="svgplot " data="https://mlatcl.github.io/execed/./slides/diagrams//anne-computer-conversation007.svg" width="80%" style=" ">
 </object>
 <aside class="notes">
-This can be disturbing to humans because we are used to a low bandwidth
-communication rate.
+This can be disturbing to humans because we are used to a low bandwidth communication rate.
 </aside>
 </section>
 <section id="challenges" class="slide level2">
@@ -612,50 +579,36 @@ communication rate.
 <section id="thanks" class="slide level2 scrollable">
 <h2 class="scrollable">Thanks!</h2>
 <ul>
-<li><p>twitter: <a
-href="https://twitter.com/lawrennd">@lawrennd</a></p></li>
-<li><p>podcast: <a href="http://thetalkingmachines.com">The Talking
-Machines</a></p></li>
-<li><p>newspaper: <a
-href="http://www.theguardian.com/profile/neil-lawrence">Guardian Profile
-Page</a></p></li>
+<li><p>company: <a href="https://trent.ai">Trent AI</a></p></li>
+<li><p>book: <a href="https://www.penguin.co.uk/books/455130/the-atomic-human-by-lawrence-neil-d/9780241625248">The Atomic Human</a></p></li>
+<li><p>twitter: <a href="https://twitter.com/lawrennd">@lawrennd</a></p></li>
+<li><p><a href="https://the-atomic-human.ai">The Atomic Human</a> pages embodiment factor 13, 29, 35, 79, 87, 105, 197, 216-217, 249, 269, 353, 369 , baby shoes 368, psychological representation 326–329, 344–345, 353, 361, 367.</p></li>
+<li><p>newspaper: <a href="http://www.theguardian.com/profile/neil-lawrence">Guardian Profile Page</a></p></li>
 <li><p>blog posts:</p>
-<p><a
-href="http://inverseprobability.com/2015/12/04/what-kind-of-ai">System
-Zero</a></p></li>
+<p><a href="http://inverseprobability.com/2015/12/04/what-kind-of-ai">System Zero</a></p></li>
+</ul>
+</section>
+<section id="further-reading" class="slide level2 scrollable">
+<h2 class="scrollable">Further Reading</h2>
+<ul>
+<li><p>Chapter 8 of <span class="citation" data-cites="Lawrence-atomic24">Lawrence (2024)</span></p></li>
+<li><p>Chapter 1 of <span class="citation" data-cites="Lawrence-atomic24">Lawrence (2024)</span></p></li>
 </ul>
 </section>
 <section id="references" class="slide level2 unnumbered scrollable">
 <h2 class="unnumbered scrollable">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent"
-role="doc-bibliography">
-<div id="ref-Heider:experimental44" class="csl-entry"
-role="doc-biblioentry">
-Heider, F., Simmel, M., 1944. An experimental study of apparent
-behavior. The American Journal of Psychology 57, 243–259. <a
-href="https://doi.org/10.2307/1416950">https://doi.org/10.2307/1416950</a>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Heider-experimental44" class="csl-entry" role="doc-biblioentry">
+Heider, F., Simmel, M., 1944. An experimental study of apparent behavior. The American Journal of Psychology 57, 243–259. <a href="https://doi.org/10.2307/1416950">https://doi.org/10.2307/1416950</a>
 </div>
-<div id="ref-Lawrence:embodiment17" class="csl-entry"
-role="doc-biblioentry">
-Lawrence, N.D., 2017. <a href="https://arxiv.org/abs/1705.07996">Living
-together: Mind and machine intelligence</a>. arXiv.
+<div id="ref-Lawrence-atomic24" class="csl-entry" role="doc-biblioentry">
+Lawrence, N.D., 2024. The atomic human: Understanding ourselves in the age of AI. Allen Lane.
 </div>
-<div id="ref-Russakovsky-imagenet15" class="csl-entry"
-role="doc-biblioentry">
-Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S.,
-Huang, Z., Karpathy, A., Khosla, A., Bernstein, M., Berg, A.C., Fei-Fei,
-L., 2015. <span>ImageNet Large Scale Visual Recognition
-Challenge</span>. International Journal of Computer Vision (IJCV) 115,
-211–252. <a
-href="https://doi.org/10.1007/s11263-015-0816-y">https://doi.org/10.1007/s11263-015-0816-y</a>
+<div id="ref-Russakovsky-imagenet15" class="csl-entry" role="doc-biblioentry">
+Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z., Karpathy, A., Khosla, A., Bernstein, M., Berg, A.C., Fei-Fei, L., 2015. <span>ImageNet Large Scale Visual Recognition Challenge</span>. International Journal of Computer Vision (IJCV) 115, 211–252. <a href="https://doi.org/10.1007/s11263-015-0816-y">https://doi.org/10.1007/s11263-015-0816-y</a>
 </div>
-<div id="ref-Taigman:deepface14" class="csl-entry"
-role="doc-biblioentry">
-Taigman, Y., Yang, M., Ranzato, M., Wolf, L., 2014.
-<span>DeepFace</span>: Closing the gap to human-level performance in
-face verification, in: Proceedings of the <span>IEEE</span> Computer
-Society Conference on Computer Vision and Pattern Recognition. <a
-href="https://doi.org/10.1109/CVPR.2014.220">https://doi.org/10.1109/CVPR.2014.220</a>
+<div id="ref-Taigman:deepface14" class="csl-entry" role="doc-biblioentry">
+Taigman, Y., Yang, M., Ranzato, M., Wolf, L., 2014. <span>DeepFace</span>: Closing the gap to human-level performance in face verification, in: Proceedings of the <span>IEEE</span> Computer Society Conference on Computer Vision and Pattern Recognition. <a href="https://doi.org/10.1109/CVPR.2014.220">https://doi.org/10.1109/CVPR.2014.220</a>
 </div>
 </div>
 </section>
@@ -670,39 +623,8 @@ href="https://doi.org/10.1109/CVPR.2014.220">https://doi.org/10.1109/CVPR.2014.2
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        // Display controls in the bottom right corner
-        controls: true,
-        // Display a presentation progress bar
-        progress: true,
         // Push each slide change to the browser history
         history: true,
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
-        // Enable the slide overview mode
-        overview: true,
-        // Vertical centering of slides
-        center: true,
-        // Enables touch navigation on devices with touch input
-        touch: true,
-        // Turns fragments on and off globally
-        fragments: true,
-        // Flags if we should show a help overlay when the questionmark
-        // key is pressed
-        help: true,
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
-        // Transition style
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
-        // Transition speed
-        transitionSpeed: 'default', // default/fast/slow
-        // Transition style for full page slide backgrounds
-        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
         math: {
           mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js',
           config: 'TeX-AMS_HTML-full',
