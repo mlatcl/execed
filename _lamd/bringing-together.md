@@ -69,7 +69,7 @@ transition: None
 \slides{
 * Expand scope only after controls work in practice.
 * Standardise runbooks, ownership, and post‑incident upgrades.
-* Create an executive dashboard: decisions, controls, incidents, outcomes.
+* Organise an executive debriefs: decisions, controls, incidents, outcomes.
 }
 
 \section{Myths to avoid (optional wrap)}
