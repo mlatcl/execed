@@ -1,9 +1,15 @@
 ---
-title: "Project Management for Data"
+title: "Operating Model: Mission Control for AI"
+abstract: "<p>Project management reframed as an operating model for
+high‑stakes socio‑technical systems: decision rights, escalation,
+simulation, and incident response. We connect organisational structure
+to system structure (Conway’s Law, the API mandate) and show how this
+becomes essential in the agent era.</p>"
 edit_url: https://github.com/mlatcl/execed/edit/gh-pages/_lamd/project-management.md
 session: 5
 featured_image: slides/diagrams/atomic-human/Atomic_H_7_Not_Rocket.png
 reveal: 05-project-management.slides.html
+transition: None
 ipynb: 05-project-management.ipynb
 layout: lecture
 categories:
@@ -20,16 +26,148 @@ categories:
 <!--
 
 -->
-<!-- Explore exploit cycles -->
-<!-- tenets -->
-<!-- The convening power of data -->
-<!-- examples from DELVE and Amazon -->
-<!-- pathfinder projects -->
-<p>Corporate Managemnet</p>
-<p>Moonshots</p>
-<p>Educating the team (rotations)</p>
-<p>Growing Companies vs Static Companies</p>
-<p>Culture: ML Curious expeirnece (Case study)</p>
+<h1 id="operating-model-not-pilots">Operating model, not pilots</h1>
+<h1 id="organisation-architecture">Organisation ↔︎ architecture</h1>
+<h2 id="institutional-character">Institutional Character</h2>
+<div style="text-align:right">
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_business/includes/institutional-character.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_business/includes/institutional-character.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+</div>
+<p>Before we start, I’d like to highlight one idea that will be key for
+contextualisation of everything else. There is a strong interaction
+between the structure of an organisation and the structure of its
+software.</p>
+<p>This is known as Conway’s law:</p>
+<blockquote>
+<p>Organizations, who design systems, are constrained to produce designs
+which are copies of the communication structures of these
+organizations.</p>
+<p>Melvin Conway <span class="citation"
+data-cites="Conway-committees68">Conway (n.d.)</span></p>
+</blockquote>
+<h2 id="the-api-mandate">The API Mandate</h2>
+<div style="text-align:right">
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_business/includes/the-api-mandate-bezos.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_business/includes/the-api-mandate-bezos.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+</div>
+<p>The API Mandate was a memo issued by Jeff Bezos in 2002. Internet
+folklore has the memo making five statements:</p>
+<ul>
+<li>All teams will henceforth expose their data and functionality
+through service interfaces.</li>
+<li>Teams must communicate with each other through these
+interfaces.</li>
+<li>There will be no other form of inter-process communication allowed:
+no direct linking, no direct reads of another team’s data store, no
+shared-memory model, no back-doors whatsoever. The only communication
+allowed is via service interface calls over the network.</li>
+<li>It doesn’t matter what technology they use.</li>
+<li>All service interfaces, without exception, must be designed from the
+ground up to be externalizable. That is to say, the team must plan and
+design to be able to expose the interface to developers in the outside
+world. No exceptions.</li>
+</ul>
+<p>The mandate marked a shift in the way Amazon viewed software, moving
+to a model that dominates the way software is built today, so-called
+“Software-as-a-Service”.</p>
+<blockquote>
+<p>Any organization that designs a system (defined broadly) will produce
+a design whose structure is a copy of the organization’s communication
+structure.</p>
+<p><span class="citation" data-cites="Conway-committees68">Conway
+(n.d.)</span></p>
+</blockquote>
+<p>The law is cited in the classic software engineering text, The
+Mythical Man Month <span class="citation"
+data-cites="Brooks-mythical75">(Brooks, n.d.)</span>.</p>
+<p>As a result, and in awareness of Conway’s law, the implementation of
+this mandate also had a dramatic effect on Amazon’s organizational
+structure.</p>
+<blockquote>
+<p>Because the design that occurs first is almost never the best
+possible, the prevailing system concept may need to change. Therefore,
+flexibility of organization is important to effective design.</p>
+<p><span class="citation" data-cites="Conway-committees68">Conway
+(n.d.)</span></p>
+</blockquote>
+<p>Amazon is set up around the notion of the “two pizza team”. Teams of
+6-10 people that can be theoretically fed by two (American) pizzas. This
+structure is tightly interconnected with the software. Each of these
+teams owns one of these “services”. Amazon is strict about the team that
+develops the service <em>owning</em> the service in production. This
+approach is the secret to their scale as a company, and the approach has
+been adopted by many other large tech companies. The
+software-as-a-service approach changed the <em>information
+infrastructure</em> of the company. The routes through which information
+is shared. This had a knock-on effect on the corporate culture.</p>
+<p>Amazon works through an approach I think of as “devolved autonomy”.
+The culture of the company is widely taught (e.g. Customer Obsession,
+Ownership, Frugality), a team’s inputs and outputs are strictly defined,
+but within those parameters, teams have a great of autonomy in how they
+operate. The information infrastructure was devolved, so the autonomy
+was devolved. The different parts of Amazon are then bound together
+through shared corporate culture.</p>
+<p>Amazon prides itself on agility, I spent three years there and I can
+confirm things move very quickly. I used to joke that just as a dog year
+is seven normal years, an Amazon year is four normal years in any other
+company.</p>
+<p>Not all institutions move quickly. My current role is at the
+University of Cambridge. There are similarities between the way a
+University operates and the way Amazon operates. In particular
+Universities exploit <em>devolved autonomy</em> to empower their
+research leads.</p>
+<p>Naturally there are differences too, for example, Universities do
+less work on developing <em>culture</em>. Corporate culture is a
+critical element in ensuring that despite the devolved autonomy of
+Amazon, there is a common vision.</p>
+<p>Cambridge University is over 800 years old. Agility is not a word
+that is commonly used to describe its institutional framework. I don’t
+want to make a claim for whether an agile institution is better or
+worse, it’s circumstantial. Institutions have characters, like people.
+The institutional character of the University is the one of a steady and
+reliable friend. The institutional character of Amazon is more
+mecurial.</p>
+<p>Why do I emphasise this? Because when it comes to organisational data
+science, when it comes to a data driven culture around our decision
+making, that culture inter-plays with the institutional character. If
+decision making is truly data-driven, then we should expect co-evolution
+between the information infrastructure and the institutional
+structures.</p>
+<p>A common mistake I’ve seen is to transplant a data culture from one
+(ostensibly) successful institution to another. Such transplants
+commonly lead to organisational rejection. The institutional character
+of the new host will have cultural antibodies that operate against the
+transplant even if, at some (typically executive) level the institution
+is aware of the vital need for integrating the data driven culture.</p>
+<p>A major part of my job at Amazon was dealing with these tensions. As
+a scientist, initially working across the company, working with my team
+introduced dependencies and practices that impinged on the devolved
+autonomy. I face a similar challenge at Cambridge. Our aim is to
+integrate data driven methodologies with the classical sciences,
+humanities and across the academic spectrum. The devolved autonomy
+inherent in University research provides a similar set of challenges to
+those I faced at Amazon.</p>
+<p>My role before Amazon was at the University of Sheffield. Those were
+quieter times in terms of societal interest in machine learning and data
+science, but the Royal Society was already convening a working group on
+Machine Learning. This was my first interaction with policy advice, I’ve
+continued that interaction today by working with the AI Council,
+convening <a href="https://rs-delve.github.io">the DELVE group</a> to
+give pandemic advice, serving on the <a
+href="https://www.csap.cam.ac.uk/about-csap/people/governance/advisory-council/">Advisory
+Council for the Centre for Science and Policy</a>, and the <a
+href="https://www.gov.uk/government/publications/advisory-board-of-the-centre-for-data-ethics-and-innovation/advisory-board-of-the-centre-for-data-ethics-and-innovation">Advisory
+Board for the Centre for Data Ethics and Innovation</a>. I’m not an
+expert on the civil service and government, but I believe many of the
+themes I’ve outlined above also apply within government. The ideas I’ll
+talk about today build on the experiences I’ve had at Sheffield, Amazon,
+and Cambridge alongside the policy work I’ve been involved in to make
+suggestions of what the barriers are for enabling a culture of data
+driven policy making.</p>
+<h1 id="mission-control-roles-escalation-practice">Mission control:
+roles, escalation, practice</h1>
 <h2 id="thanks">Thanks!</h2>
 <p>For more information on these subjects and more you might want to
 check the following resources.</p>
@@ -47,5 +185,16 @@ Page</a></li>
 <li>blog: <a
 href="http://inverseprobability.com/blog.html">http://inverseprobability.com</a></li>
 </ul>
-<h1 id="references">References</h1>
+<h1 class="unnumbered" id="references">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-Brooks-mythical75" class="csl-entry" role="listitem">
+Brooks, F., n.d. The mythical man-month. Addison-Wesley.
+</div>
+<div id="ref-Conway-committees68" class="csl-entry" role="listitem">
+Conway, M.E., n.d. <a
+href="https://www.melconway.com/Home/pdf/committees.pdf">How do
+committees invent?</a> Datamation 14, 28–31.
+</div>
+</div>
 
