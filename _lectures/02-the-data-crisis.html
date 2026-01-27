@@ -1,10 +1,14 @@
 ---
-title: "The Data Crisis"
-abstract: "<p>In this talk we consider data readiness levels and how
-they may be deployed.</p>"
+title: "Intent, Incentives, and the Data Crisis"
+abstract: "<p>We reframe “data readiness” as an executive problem:
+intent and incentives, attention as the bottleneck, and how scaled
+optimisation creates System Zero risks. We keep DRLs, but treat them as
+instrumentation for decision quality, escalation, and
+accountability.</p>"
 edit_url: https://github.com/mlatcl/execed/edit/gh-pages/_lamd/the-data-crisis.md
 session: 2
-pptx: 02-the-data-crisis.pptx
+reveal: 02-the-data-crisis.slides.html
+ipynb: 02-the-data-crisis.ipynb
 layout: lecture
 categories:
 - notes
@@ -20,6 +24,72 @@ categories:
 <!--
 
 -->
+<h1 id="intent-incentives-and-the-data-crisis">Intent, incentives, and
+the data crisis</h1>
+<h2 id="trust-autonomy-and-embodiment">Trust, Autonomy and
+Embodiment</h2>
+<div style="text-align:right">
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_atomic-human/includes/trust-autonomy-embodiment.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_atomic-human/includes/trust-autonomy-embodiment.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+</div>
+<div class="figure">
+<div id="trust-autonomy-embodiment-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="https://mlatcl.github.io/execed/./slides/diagrams//atomic-human/Atomic_H_3_Intent.png" width="70%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="trust-autonomy-embodiment-magnify" class="magnify"
+onclick="magnifyFigure(&#39;trust-autonomy-embodiment&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="trust-autonomy-embodiment-caption" class="caption-frame">
+<p>Figure: The relationships between trust, autonomy and embodiment are
+key to understanding how to properly deploy AI systems in a way that
+avoids digital autocracy. (Illustration by Dan Andrews inspired by
+Chapter 3 “Intent” of “The Atomic Human” <span class="citation"
+data-cites="Lawrence-atomic24">Lawrence (2024)</span>)</p>
+</div>
+</div>
+<p>This illustration was created by Dan Andrews after reading Chapter 3
+“Intent” of “The Atomic Human” book. The chapter explores the concept of
+intent in AI systems and how trust, autonomy, and embodiment interact to
+shape our relationship with technology. Dan’s drawing captures these
+complex relationships and the balance needed for responsible AI
+deployment.</p>
+<p>See blog post on <a
+href="http://the-atomic-human.ai//images/dan-andrews-chapter-3/">Dan
+Andrews image from Chapter 3</a>.</p>
+<h2 id="the-attention-economy">The Attention Economy</h2>
+<div style="text-align:right">
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_economics/includes/the-attention-economy.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_economics/includes/the-attention-economy.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+</div>
+<h2 id="herbert-simon-on-information">Herbert Simon on Information</h2>
+<div style="text-align:right">
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/_economics/includes/herbert-simon-information.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/_economics/includes/herbert-simon-information.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+</div>
+<blockquote>
+<p>What information consumes is rather obvious: it consumes the
+attention of its recipients. Hence a wealth of information creates a
+poverty of attention …</p>
+<p><span class="citation" data-cites="Simon-information71">Simon
+(1971)</span></p>
+</blockquote>
+<p>The attention economy was a phenomenon described in 1971 by the
+American computer scientist Herbert Simon. He saw the coming information
+revolution and wrote that a wealth of information would create a poverty
+of attention. Too much information means that human attention becomes
+the scarce resource, the bottleneck. It becomes the gold in the
+attention economy.</p>
+<p>The power associated with control of information dates back to the
+invention of writing. By pressing reeds into clay tablets Sumerian
+scribes stored information and controlled the flow of information.</p>
+<h1 id="drls-as-instrumentation-not-a-checklist">DRLs as instrumentation
+(not a checklist)</h1>
 <h2 id="the-data-crisis">The Data Crisis</h2>
 <div style="text-align:right">
 <span class="editsection-bracket" style="">[</span><span
@@ -593,6 +663,55 @@ too keen to employ machine learning engineers who focus on the models,
 not the data. We should change our hiring priorities and training.
 Universities cannot provide the understanding of how to data-wrangle.
 Companies must fill this gap.</p>
+<h1 id="system-zero-and-executive-controls">System Zero and executive
+controls</h1>
+<div class="figure">
+<div id="-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="https://mlatcl.github.io/execed/./slides/diagrams//atomic-human/Atomic_H_8_System_Zero.png" width="60%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="-magnify" class="magnify" onclick="magnifyFigure(&#39;&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="-caption" class="caption-frame">
+<p>Figure: This is the drawing Dan was inspired to create for Chapter 8.
+It captures the notion of Syztem Zero. The idea of System Zero is that
+the machine’s access to information is so much greater than ours that it
+can manipulate us in ways that exploit our cognitive foibles,
+interacting directly with our reflexive selves and undermining our
+reflective selves.</p>
+</div>
+</div>
+<p>See blog post on <a
+href="http://the-atomic-human.ai//reflections/a-retrospective-on-system-zero/">A
+Retrospective on System Zero</a>..</p>
+<p>System Zero is when the machine’s access to our information is so
+much greater than ours it understands us in ways that we don’t
+understand each other.</p>
+<h2 id="thanks">Thanks!</h2>
+<div style="text-align:right">
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/snippets/edit/main/the-data-crisis.gpp.markdown" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/snippets/edit/main/the-data-crisis.gpp.markdown', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+</div>
+<p>For more information on these subjects and more you might want to
+check the following resources.</p>
+<ul>
+<li>company: <a href="https://trent.ai">Trent AI</a></li>
+<li>book: <a
+href="https://www.penguin.co.uk/books/455130/the-atomic-human-by-lawrence-neil-d/9780241625248">The
+Atomic Human</a></li>
+<li>twitter: <a href="https://twitter.com/lawrennd">@lawrennd</a></li>
+<li>podcast: <a href="http://thetalkingmachines.com">The Talking
+Machines</a></li>
+<li>newspaper: <a
+href="http://www.theguardian.com/profile/neil-lawrence">Guardian Profile
+Page</a></li>
+<li>blog: <a
+href="http://inverseprobability.com/blog.html">http://inverseprobability.com</a></li>
+</ul>
+<h1 class="unnumbered" id="references">References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent"
 role="list">
 <div id="ref-Lawrence-atomic24" class="csl-entry" role="listitem">
@@ -611,6 +730,10 @@ technical debt in machine learning systems</a>, in: Cortes, C.,
 Lawrence, N.D., Lee, D.D., Sugiyama, M., Garnett, R. (Eds.), Advances in
 Neural Information Processing Systems 28. Curran Associates, Inc., pp.
 2503–2511.
+</div>
+<div id="ref-Simon-information71" class="csl-entry" role="listitem">
+Simon, H.A., 1971. Designing organizations for an information-rich
+world. Johns Hopkins University Press, Baltimore, MD.
 </div>
 <div id="ref-Tukey:exploratory77" class="csl-entry" role="listitem">
 Tukey, J.W., 1977. Exploratory data analysis. Addison-Wesley.
