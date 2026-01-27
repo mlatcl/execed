@@ -1,10 +1,15 @@
 ---
-title: "Data Quality and Data Readiness Levels"
-abstract: "<p>In this talk we consider data readiness levels and how
-they may be deployed.</p>"
+title: "Uncertainty, Data Quality, and Decision Thresholds"
+abstract: "<p>Reframe “data quality” as executive decision-quality under
+uncertainty: what to measure, when to escalate, and how to “pause when
+unsure”. We keep DRLs, but connect them to calibration, thresholds, and
+operational readiness.</p>"
 edit_url: https://github.com/mlatcl/execed/edit/gh-pages/_lamd/data-quality.md
 session: 3
-pptx: 03-data-quality.pptx
+featured_image: slides/diagrams/atomic-human/Atomic_H_6_Gremlin.png
+reveal: 03-data-quality.slides.html
+transition: None
+ipynb: 03-data-quality.ipynb
 layout: lecture
 categories:
 - notes
@@ -20,6 +25,78 @@ categories:
 <!--
 
 -->
+<h1 id="decision-quality-under-uncertainty">Decision quality under
+uncertainty</h1>
+<div class="figure">
+<div id="a-diversity-of-approaches-brings-resilience-figure"
+class="figure-frame">
+<div class="centered" style="">
+<img class="" src="https://mlatcl.github.io/execed/./slides/diagrams//atomic-human/Atomic_H_6_Gremlin.png" width="60%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="a-diversity-of-approaches-brings-resilience-magnify"
+class="magnify"
+onclick="magnifyFigure(&#39;a-diversity-of-approaches-brings-resilience&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="a-diversity-of-approaches-brings-resilience-caption"
+class="caption-frame">
+<p>Figure: This is the drawing Dan was inspired to create for Chapter 6.
+It highlights how uncertainty means that a diversity of approaches
+brings resilience.</p>
+</div>
+</div>
+<p>See blog post on <a
+href="http://the-atomic-human.ai//reflections/balancing-reflective-and-reflexive/">Balancing
+Reflective and Reflexive</a>..</p>
+<p>From motor intelligence to mathematical instinct, it feels like
+there’s a full spectrum of decision-making approaches that can be
+deployed and that best performance is when they are judiciously deployed
+according to the circumstances. The Atomic Human tries to explore this
+in different contexts and I think Dan Andrews did a great job of
+capturing some of those explorations in his image for Chapter 7.</p>
+<p>I think the reason why they relate is because in both cases there is
+time pressure, it’s from the outside world that pressures come and
+require us to deliver a conclusion on a particular timeframe. What I
+find remarkable in human intelligence is how we sustain both these fast
+and slow answers together, so that we’re ready to go with some form of
+answer at any given moment. That means that as individuals we are filled
+with contradictions, differences between the versions of our selves we
+imagine versus how we behave in practice.</p>
+<div class="figure">
+<div id="reflective-or-reactive-figure" class="figure-frame">
+<div class="centered" style="">
+<img class="" src="https://mlatcl.github.io/execed/./slides/diagrams//atomic-human/Atomic_H_7_Not_Rocket.png" width="60%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
+</div>
+</div>
+<div id="reflective-or-reactive-magnify" class="magnify"
+onclick="magnifyFigure(&#39;reflective-or-reactive&#39;)">
+<img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
+</div>
+<div id="reflective-or-reactive-caption" class="caption-frame">
+<p>Figure: This is the drawing Dan was inspired to create for Chapter 7.
+Reflective and reactive approaches are driven by how much time is
+available for decision making.</p>
+</div>
+</div>
+<p>See blog post on <a
+href="http://the-atomic-human.ai//reflections/racing-fast-and-slow/">Racing,
+Fast and Slow</a>..</p>
+<p>Individuals and cultures can be more dominated by their reflexive or
+their reflective self. The arguments I make in The Gremlin of
+Uncertainty suggest that McLaren and Ferrari (in previous incarnations
+when then were dominating the F1 championship) were respectively
+dominated by planning and improvisational approaches. Similarly, I
+describe my father and brother’s approach as being respectively
+dominated by planning and improvisational approaches. There’s even a
+roundabout connection to how an individual chooses to react to a
+situation, with a reflexive or a reflective response. What Kahneman
+called slow or fast thinking.</p>
+<p>Without knowing how much uncertainty we are facing, we don’t know
+which approach is better. In practice we see across individuals,
+cultures, nations and species that a diversity of approaches is taken.
+When we are certain planning can be more efficient, but it is less
+robust.</p>
 <h2 id="the-gartner-hype-cycle">The Gartner Hype Cycle</h2>
 <div style="text-align:right">
 <span class="editsection-bracket" style="">[</span><span
@@ -489,7 +566,7 @@ style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/i
 </div>
 <div class="centered" style="">
 <svg viewBox="0 0 200 200" style="width:15%">
-<defs> <clipPath id="clip61">
+<defs> <clipPath id="clip2">
 <style>
 circle {
   fill: black;
@@ -500,7 +577,7 @@ circle {
 Ernest Mwebaze
 </title>
 <image preserveAspectRatio="xMinYMin slice" width="100%"
-       xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/ernest-mwebaze.png" clip-path="url(#clip61)"/>
+       xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/ernest-mwebaze.png" clip-path="url(#clip2)"/>
 </svg>
 </div>
 <div class="figure">
@@ -525,7 +602,7 @@ style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/i
 </div>
 <div class="centered" style="">
 <svg viewBox="0 0 200 200" style="width:15%">
-<defs> <clipPath id="clip62">
+<defs> <clipPath id="clip3">
 <style>
 circle {
   fill: black;
@@ -536,7 +613,7 @@ circle {
 Martin Mubangizi
 </title>
 <image preserveAspectRatio="xMinYMin slice" width="100%"
-       xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/martin-mubangizi.png" clip-path="url(#clip62)"/>
+       xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/martin-mubangizi.png" clip-path="url(#clip3)"/>
 </svg>
 </div>
 <div class="figure">
@@ -563,7 +640,7 @@ style=""><a href="https://github.com/lawrennd/snippets/edit/main/_data-science/i
 </div>
 <div class="centered" style="">
 <svg viewBox="0 0 200 200" style="width:15%">
-<defs> <clipPath id="clip63">
+<defs> <clipPath id="clip4">
 <style>
 circle {
   fill: black;
@@ -574,7 +651,7 @@ circle {
 Morine Amutorine
 </title>
 <image preserveAspectRatio="xMinYMin slice" width="100%"
-       xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/morine-amutorine.png" clip-path="url(#clip63)"/>
+       xlink:href="https://mlatcl.github.io/execed/./slides/diagrams//people/morine-amutorine.png" clip-path="url(#clip4)"/>
 </svg>
 </div>
 <div class="figure">

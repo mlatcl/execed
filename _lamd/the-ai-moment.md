@@ -1,7 +1,5 @@
 ---
-layout: lecture
 featured_image: slides/diagrams/atomic-human/Atomic_H_1_Gods_Robots.png
-week: 1
 session: 1
 title: "The AI Moment: Decisions, Information, and the Atomic Human"
 abstract: >

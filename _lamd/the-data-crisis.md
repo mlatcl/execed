@@ -1,10 +1,12 @@
 ---
 session: 2
+featured_image: slides/diagrams/atomic-human/Atomic_H_3_Intent.png
 title: "Intent, Incentives, and the Data Crisis"
 abstract: >
   We reframe “data readiness” as an executive problem: intent and incentives, attention as the bottleneck,
   and how scaled optimisation creates System Zero risks. We keep DRLs, but treat them as instrumentation
   for decision quality, escalation, and accountability.
+transition: None
 ---
 
 \section{Intent, incentives, and the data crisis}
@@ -13,8 +15,8 @@ abstract: >
 
 \newslide{Executive framing}
 \slides{
-* Data isn’t an asset in isolation: it’s leverage over **decisions**.
-* The crisis is rarely “dirty data” — it’s **misaligned intent**, **hidden incentives**, and **unobserved failure** at scale.
+* Data isn’t an asset in isolation: it's leverage over **decisions**.
+* The crisis is rarely "dirty data" — it's **misaligned intent**, **hidden incentives**, and **unobserved failure** at scale.
 * Your default questions: what is the system optimising, who benefits, and who pays when it’s wrong?
 }
 
@@ -23,9 +25,9 @@ abstract: >
 \newslide{How data-driven systems fail (at scale)}
 \slides{
 * **Goodhart dynamics**: when a measure becomes a target, it stops being a good measure.
-* **Gaming/adversaries**: once the objective is learnable, it’s exploitable.
+* **Gaming/adversaries**: once the objective is learnable, it's exploitable.
 * **Homogeneity risk**: one ranking/decision rule becomes a society-wide single point of failure.
-* **Accountability gaps**: “the model said so” is not a control system.
+* **Accountability gaps**: "the model said so" is not a control system.
 }
 
 \section{DRLs as instrumentation (not a checklist)}

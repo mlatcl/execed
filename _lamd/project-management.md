@@ -1,5 +1,6 @@
 ---
 session: 5
+featured_image: slides/diagrams/atomic-human/Atomic_H_7_Not_Rocket.png
 title: "Project Management for Data"
 abstract: >
 

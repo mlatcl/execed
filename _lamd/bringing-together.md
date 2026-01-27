@@ -1,5 +1,6 @@
 ---
 session: 7
+featured_image: slides/diagrams/atomic-human/Atomic_H_Epilogue.png
 title: Bringing it Together
 abstract: "In this final session we bring together the different lessons learned about the new wave of technologies."
 ---

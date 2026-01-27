@@ -1,9 +1,32 @@
 ---
 session: 3
-title: "Data Quality and Data Readiness Levels"
+featured_image: slides/diagrams/atomic-human/Atomic_H_6_Gremlin.png
+title: "Uncertainty, Data Quality, and Decision Thresholds"
 abstract: >
-  In this talk we consider data readiness levels and how they may be deployed.
+  Reframe “data quality” as executive decision-quality under uncertainty: what to measure, when to escalate,
+  and how to “pause when unsure”. We keep DRLs, but connect them to calibration, thresholds, and operational readiness.
+transition: None
 ---
+
+\section{Decision quality under uncertainty}
+
+\include{_atomic-human/includes/a-diversity-of-approaches-brings-resilience.md}
+
+\newslide{Executive framing}
+\slides{
+* Data quality is not cleanliness — it’s whether decisions are **reliable enough** for their consequences.
+* Uncertainty is unavoidable; governance is about **thresholds**, **monitoring**, and **escalation**.
+* Default rule: when uncertainty is high, slow down and widen the loop.
+}
+
+\include{_atomic-human/includes/reflective-or-reactive.md}
+
+\newslide{A simple operating discipline}
+\slides{
+* Define decision thresholds (automate / assist / escalate).
+* Instrument uncertainty (calibration, drift, novelty) and set triggers.
+* Practice incident response: “pause when unsure” and rollback/override.
+}
 
 \include{_data-science/includes/gartner-hype-cycle-ai-bd-dm-dl-ml.md}
 <!--include{_ai/includes/game-playing-ai.md}-->
@@ -46,5 +69,7 @@ $$
 
 
 \thanks
+
+\reading
 
 \references

@@ -1,5 +1,6 @@
 ---
 session: 6
+featured_image: slides/diagrams/atomic-human/Atomic_H_8_System_Zero.png
 title: "Data, Ethics and Privacy"
 abstract: >
 
