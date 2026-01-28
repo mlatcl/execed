@@ -15,12 +15,22 @@ transition: None
 \newslide{Executive framing}
 \slides{
 * “AI delivery” fails when it's treated as a tool rollout.
-* It succeeds when it's treated as an **operating model change**:
+* It succeeds when it's treated as an *operating model change*:
   * decision rights,
   * escalation,
   * accountability,
   * and practice under failure.
 }
+
+\notes{The shift is from "ship an AI model" to "operate a socio-technical system". The book’s repeated lesson is that high-stakes work is not heroic improvisation: it's roles, handoffs, and practiced escalation. A mission-control mindset turns uncertainty into procedure: thresholds, drills, and feedback loops.}
+
+\addatomic{rockets}{187-210}
+\addatomic{Apollo programme}{184-7, 197-210}
+\addatomic{Mission Control Center}{192, 195-6}
+\addatomic{test pilot}{163-8, 189, 190, 192-3, 196, 197, 200, 211, 245}
+\addatomic{counterfactual simulation}{215-18}
+\addatomic{simulations}{215}
+\addatomic{Watt’s governor}{122-5, 127, 131, 143, 144, 184, 198, 202-3, 206, 207, 221, 231, 234, 251, 254, 256-7, 263}
 
 \newslide{What changes in the agent era}
 \slides{
@@ -43,12 +53,16 @@ transition: None
 * **Drills**: pre‑mortems, simulations, and incident exercises.
 }
 
+\notes{The purpose of “runbooks” and “drills” is not bureaucracy. It is to make the organisation behave like a control system: detect, escalate, and correct before a local failure becomes systemic.}
+
 \newslide{Escalation design}
 \slides{
 * Define triggers for human escalation (uncertainty, novelty, drift, complaints, anomalies).
 * Include “pause when unsure” as a first-class action.
 * Make override real: time-bounded decisions, rollback paths, and audit trails.
 }
+
+\notes{Escalation is the governance layer for uncertainty. If we cannot name the trigger and the accountable owner, escalation becomes performative — and agents will simply route around it.}
 
 \newslide{How to structure a rollout}
 \slides{
