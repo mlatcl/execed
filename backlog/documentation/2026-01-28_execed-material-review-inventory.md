@@ -7,7 +7,7 @@ owner: Neil D. Lawrence
 priority: High
 related_cips:
   - "0002"
-status: Proposed
+status: In Progress
 tags:
   - execed
   - material-review
@@ -35,4 +35,10 @@ Create the repeatable “inventory layer” for CIP-0002:
 
 - Backlog items should link to CIPs (HOW), not requirements (WHAT).
 - This task is intentionally “inventory only” — recommendations and refresh proposals come in follow-on tasks.
+
+## Progress Updates
+
+### 2026-01-28
+
+Started implementation. Initial inventory script added under `tools/material_review/` and can write outputs to `artifacts/material-review/`.
 

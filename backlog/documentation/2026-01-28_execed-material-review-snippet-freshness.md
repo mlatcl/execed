@@ -7,7 +7,7 @@ owner: Neil D. Lawrence
 priority: High
 related_cips:
   - "0002"
-status: Proposed
+status: In Progress
 tags:
   - execed
   - material-review
@@ -31,4 +31,10 @@ Using the inventories from CIP-0002, compute snippet “freshness”:
 - [ ] A report exists listing snippet path → last updated date → last commit message.
 - [ ] A “top candidates for refresh” list exists with rationale (high-impact + stale, or high-impact + unstable).
 - [ ] Results are reproducible (one command/script regenerates them).
+
+## Progress Updates
+
+### 2026-01-28
+
+Started implementation. Added `tools/material_review/snippet_freshness.py` and generated an initial report under `artifacts/material-review/`.
 

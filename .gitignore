@@ -82,3 +82,6 @@ lynguine.log
 execed.code-workspace
 execed.code-workspace~
 .DS_Store
+
+# Material review artifacts (generated)
+artifacts/
