@@ -21,6 +21,12 @@ transition: None
 * Ethics is not “values statements”: it is **recourse**, **auditability**, and **accountable escalation**.
 }
 
+\notes{For executives, “ethics and privacy” is not primarily about abstract principles. It is about power and control in information systems: who can see what, who can act on it, and what happens when the system is wrong. If people cannot challenge decisions, cannot understand the evidence, and cannot trigger escalation, then trust collapses and the system becomes a manipulation surface.}
+
+\addatomic{trust}{43, 79, 100}
+\addatomic{privacy}{27, 82, 84, 365}
+\addatomic{personal data/personal data rights}{82-4, 216, 221, 222, 242-4, 246, 257, 309, 363-5}
+
 \section{System Zero: influence below awareness}
 
 \include{_atomic-human/includes/reality-is-more-humdrum.md}
@@ -32,6 +38,17 @@ transition: None
 * **Homogeneity**: one ranking model becomes a society-wide control surface.
 * **Optimisation**: incentives push toward engagement/manipulation unless constrained.
 }
+
+\notes{System Zero is the "below-awareness" risk: influence without an explicit decision point. The combination of knowledge asymmetry, homogeneity, and optimisation pressure produces a new kind of governance problem: you are managing a control system that can steer behaviour.}
+
+\addatomic{System Zero}{242-7, 306, 309, 329, 350, 355, 359, 361, 363, 364}
+\addatomic{knowledge asymmetry}{367}
+\addatomic{power asymmetries}{363, 364, 366, 369}
+\addatomic{social media}{15, 80, 81, 86, 108, 226, 243, 244, 245, 247, 359, 360, 362, 364}
+\addatomic{surveillance capitalism}{222, 244, 257}
+\addatomic{digital surveillance}{303-4, 309-10}
+\addatomic{state surveillance}{303-6, 308-11, 352}
+\addatomic{Gas Light (play)/gaslighting}{302-3}
 
 \section{Data rights, governance, and recourse}
 
@@ -49,6 +66,8 @@ transition: None
 * **Named owner**: who is accountable for outcomes (not just the tooling)?
 * **Escalation path**: when do we pause automation and revert to humans?
 }
+
+\notes{These are the “trust infrastructure” primitives. Without recourse, auditability, and named accountable owners, you do not have governance, you have delegation to an opaque system.}
 
 \newslide{Agent-era governance checklist}
 \slides{
