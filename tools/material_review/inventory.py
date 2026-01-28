@@ -104,6 +104,34 @@ def iter_source_files(root: Path) -> Iterable[Path]:
                 yield p
 
 
+def iter_lecture_files_from_csv(lamd_dir: Path) -> Iterable[Path]:
+    """
+    Yield lecture source files based on lamd_dir/lectures.csv.
+
+    This avoids accidentally indexing talk macros and other helper .gpp files
+    that live alongside lectures in some repos.
+    """
+    csv_path = lamd_dir / "lectures.csv"
+    if not csv_path.exists():
+        return
+    try:
+        rows = csv_path.read_text(encoding="utf-8", errors="ignore").splitlines()
+    except Exception:
+        return
+    if not rows:
+        return
+    for stub in rows[1:]:
+        stub = stub.strip()
+        if not stub:
+            continue
+        md = lamd_dir / f"{stub}.md"
+        gpp = lamd_dir / f"{stub}.gpp.markdown"
+        if md.exists():
+            yield md
+        elif gpp.exists():
+            yield gpp
+
+
 def parse_frontmatter_session(md_text: str) -> Optional[str]:
     """
     Best-effort frontmatter parse for 'session:' value.
@@ -126,10 +154,85 @@ def extract_includes(md_text: str) -> list[str]:
     return sorted({m.group(1).strip() for m in INCLUDE_RE.finditer(md_text)})
 
 
+def resolve_include_path(
+    include: str,
+    *,
+    source_file: Path,
+    snippets_roots: list[Path],
+) -> Optional[Path]:
+    """
+    Best-effort mapping from an \\include{...} target to a real file path.
+
+    Rules:
+    - If include is an absolute path and exists, use it.
+    - If include starts with '_' (e.g. _ai/includes/foo.md), try snippets_roots/<include>.
+    - Otherwise, treat as relative to the source file directory.
+    """
+    inc = include.strip()
+    if not inc:
+        return None
+
+    p = Path(inc)
+    if p.is_absolute():
+        return p if p.exists() else None
+
+    if inc.startswith("_"):
+        for root in snippets_roots:
+            cand = (root / inc).resolve()
+            if cand.exists():
+                return cand
+
+    cand = (source_file.parent / inc).resolve()
+    if cand.exists():
+        return cand
+
+    return None
+
+
+def extract_includes_transitive(
+    *,
+    root_text: str,
+    root_file: Path,
+    snippets_roots: list[Path],
+    max_depth: int = 5,
+) -> list[str]:
+    """
+    Return transitive closure of includes by recursively expanding included snippets.
+
+    Output is a sorted, de-duplicated list of include strings (the literal \\include{...} targets),
+    including both direct and nested includes.
+    """
+    seen_includes: set[str] = set()
+    seen_files: set[Path] = set()
+
+    def walk(text: str, file_path: Path, depth: int) -> None:
+        if depth > max_depth:
+            return
+        for inc in extract_includes(text):
+            if inc in seen_includes:
+                continue
+            seen_includes.add(inc)
+            resolved = resolve_include_path(inc, source_file=file_path, snippets_roots=snippets_roots)
+            if resolved is None:
+                continue
+            if resolved in seen_files:
+                continue
+            seen_files.add(resolved)
+            try:
+                child_text = resolved.read_text(errors="ignore")
+            except Exception:
+                continue
+            walk(child_text, resolved, depth + 1)
+
+    walk(root_text, root_file, 0)
+    return sorted(seen_includes)
+
+
 @dataclasses.dataclass(frozen=True)
 class FileInventory:
     path: str
     includes: list[str]
+    includes_transitive: Optional[list[str]] = None
     session: Optional[str] = None
     last_changed: Optional[str] = None  # YYYY-MM-DD when available
 
@@ -137,11 +240,20 @@ class FileInventory:
 def build_inventory(
     roots: list[Path],
     since: Optional[dt.date],
+    *,
+    transitive: bool,
+    snippets_roots: list[Path],
+    max_depth: int,
 ) -> list[FileInventory]:
     inv: list[FileInventory] = []
     for root in roots:
         repo_root = find_repo_root(root)
-        for f in iter_source_files(root):
+        files: Iterable[Path]
+        if root.is_dir() and (root / "lectures.csv").exists():
+            files = iter_lecture_files_from_csv(root)
+        else:
+            files = iter_source_files(root)
+        for f in files:
             try:
                 txt = f.read_text(errors="ignore")
             except Exception:
@@ -149,6 +261,14 @@ def build_inventory(
             includes = extract_includes(txt)
             if not includes:
                 continue
+            includes_transitive: Optional[list[str]] = None
+            if transitive:
+                includes_transitive = extract_includes_transitive(
+                    root_text=txt,
+                    root_file=f,
+                    snippets_roots=snippets_roots,
+                    max_depth=max_depth,
+                )
 
             session = parse_frontmatter_session(txt)
 
@@ -168,6 +288,7 @@ def build_inventory(
                 FileInventory(
                     path=str(f),
                     includes=includes,
+                    includes_transitive=includes_transitive,
                     session=session,
                     last_changed=last_changed.isoformat() if last_changed else None,
                 )
@@ -183,10 +304,28 @@ def include_frequency(items: list[FileInventory]) -> dict[str, int]:
     return dict(sorted(freq.items(), key=lambda kv: (-kv[1], kv[0])))
 
 
+def include_frequency_transitive(items: list[FileInventory]) -> dict[str, int]:
+    """
+    Frequency table based on transitive includes (includes inside included snippets).
+
+    If a FileInventory has no includes_transitive, it contributes nothing.
+    """
+    freq: dict[str, int] = {}
+    for it in items:
+        if not it.includes_transitive:
+            continue
+        for inc in it.includes_transitive:
+            freq[inc] = freq.get(inc, 0) + 1
+    return dict(sorted(freq.items(), key=lambda kv: (-kv[1], kv[0])))
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--execed-lamd", type=Path, default=Path("execed/_lamd"))
     ap.add_argument("--talks-dir", type=Path, action="append", default=[])
+    ap.add_argument("--snippets-root", type=Path, action="append", default=[], help="Root of snippets repo (e.g. ~/lawrennd/snippets)")
+    ap.add_argument("--transitive", action="store_true", help="Also compute transitive includes by expanding included snippets")
+    ap.add_argument("--max-depth", type=int, default=5, help="Max recursion depth for transitive include expansion")
     ap.add_argument("--since", type=str, default=None, help="Only include files changed on/after YYYY-MM-DD")
     ap.add_argument("--out-dir", type=Path, default=None, help="Write outputs to this directory")
     args = ap.parse_args()
@@ -195,8 +334,26 @@ def main() -> int:
     if args.since:
         since = dt.date.fromisoformat(args.since)
 
-    execed_items = build_inventory([args.execed_lamd], since=None)
-    talks_items = build_inventory(args.talks_dir, since=since) if args.talks_dir else []
+    snippets_roots = [p.expanduser().resolve() for p in (args.snippets_root or [])]
+
+    execed_items = build_inventory(
+        [args.execed_lamd],
+        since=None,
+        transitive=args.transitive,
+        snippets_roots=snippets_roots,
+        max_depth=args.max_depth,
+    )
+    talks_items = (
+        build_inventory(
+            args.talks_dir,
+            since=since,
+            transitive=args.transitive,
+            snippets_roots=snippets_roots,
+            max_depth=args.max_depth,
+        )
+        if args.talks_dir
+        else []
+    )
 
     out = {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -205,11 +362,13 @@ def main() -> int:
             "root": str(args.execed_lamd),
             "files": [dataclasses.asdict(x) for x in execed_items],
             "include_frequency": include_frequency(execed_items),
+            "include_frequency_transitive": include_frequency_transitive(execed_items) if args.transitive else {},
         },
         "talks": {
             "roots": [str(p) for p in args.talks_dir],
             "files": [dataclasses.asdict(x) for x in talks_items],
             "include_frequency": include_frequency(talks_items),
+            "include_frequency_transitive": include_frequency_transitive(talks_items) if args.transitive else {},
         },
     }
 

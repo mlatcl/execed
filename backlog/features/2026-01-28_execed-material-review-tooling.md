@@ -51,3 +51,23 @@ Started implementation:
   - `snippet_freshness.py` (git-based freshness report for snippet paths)
 - Outputs are written to `artifacts/material-review/` and are ignored via `.gitignore` (generated, reproducible).
 
+Tooling improvements (to support better assessments):
+
+- `inventory.py`
+  - Uses `_lamd/lectures.csv` when present to avoid indexing macro/helper `.gpp` files.
+  - Supports **transitive include expansion** (snippets included by snippets):
+    - `--transitive`
+    - `--snippets-root /Users/neil/lawrennd/snippets`
+    - `--max-depth N` (default 5)
+  - Writes both:
+    - `include_frequency` (direct includes)
+    - `include_frequency_transitive` (includes inside included snippets)
+
+- `snippet_freshness.py`
+  - Supports `--use-transitive` to rank using `include_frequency_transitive`.
+
+Upstream interface sketch (for later `lamd` integration):
+
+- `lamd material-review inventory --lamd-dir _lamd --talks-dir ... --since ... --snippets-root ... [--transitive --max-depth ...] --out-dir ...`
+- `lamd material-review freshness --inventory ... --snippets-repo ... [--use-transitive] --out-dir ...`
+

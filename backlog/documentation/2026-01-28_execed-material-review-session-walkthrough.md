@@ -43,7 +43,7 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
 ## Inputs
 
 - Lecture sources: `execed/_lamd/*.md`
-- Include inventory outputs: `artifacts/material-review/inventory.json` (generated)
+- Include inventory outputs: `artifacts/material-review/inventory.json` (generated). Prefer `includes_transitive` / `include_frequency_transitive` when available.
 - Freshness outputs: `artifacts/material-review/snippet_freshness.json` (generated)
 - Chapter cross-check notes: `backlog/documentation/2026-01-28_execed-material-review-chapter-crosscheck.md`
 - Talk sources (scope): `~/lawrennd/talks/_atomic-human/`, `~/lawrennd/talks/_business/` (optionally `_policy`, `_economics`)
@@ -106,6 +106,47 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
 - **Proposed snippet changes**:
   - Add a small Ch.5 anchor snippet (printing press ↔ social media) to make the “information revolution” analogy explicit *without* turning Session 1 into a history lecture.
   - Consider adding a Ch.9 “AI fallacy” micro-snippet (machines don’t understand like humans; social cue illusions) if we see repeated executive anthropomorphism in delivery feedback.
+
+- **Per-snippet patch list (Session 1)** (proposals: add missing `\notes{...}` and `\addatomic{...}{...}`):
+  - `_atomic-human/includes/gods-and-robots-scribeysense.md`
+    - Add `\notes{...}`: “we project personhood onto machines; ‘god/robot’ imagery is a cognitive trap; keep the frame on decisions, incentives, and institutions.”
+    - Add book refs:
+      - `\addatomic{Terminator image embodies}{7, 9, 12, 13, 21, 30, 31, 216, 220, 257, 333, 353}`
+      - `\addatomic{Terminator (movie character)}{7, 9, 12, 13, 21, 30, 31, 216, 220, 257, 333, 353}`
+      - `\addatomic{anthropomorphization (‘anthrox’)}{30-31, 90-91, 93-4, 100, 132, 148, 153, 163, 216-17, 239, 276, 326, 342}`
+  - `_data-science/includes/new-flow-of-information.md`
+    - Add book refs (so the notes link back explicitly to the Atomic Human framing):
+      - `\addatomic{information theory}{10-11, 30, 98, 134, 149, 269}`
+      - `\addatomic{Shannon, Claude}{10, 30, 61, 74, 98, 126, 134, 140, 143, 149, 260, 264, 269-70, 277, 315, 358, 363}`
+      - `\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}`
+      - `\addatomic{anthropomorphization (‘anthrox’)}{30-31, 90-91, 93-4, 100, 132, 148, 153, 163, 216-17, 239, 276, 326, 342}` (since the notes already use the idea)
+  - `_ai/includes/processor-ham.md`
+    - Add book refs:
+      - `\addatomic{ignorance: HAMs}{347}` (if we explicitly use the “HAM” framing here)
+      - `\addatomic{test pilot}{163-8, 189, 190, 192-3, 196, 197, 200, 211, 245}` (if we keep the Apollo/test‑pilot analogy in the notes)
+  - `_ai/includes/the-atomic-eye.md`
+    - No change required (already has notes and `\addatomic{atomic human, the}{13}`).
+  - `_data-science/includes/evolved-relationship.md`
+    - Optionally add book refs to tie the “phone distraction / misaligned objectives” story to the book’s System Zero language:
+      - `\addatomic{System Zero}{242-7, 306, 309, 329, 350, 355, 359, 361, 363, 364}`
+  - `_ai/includes/embodiment-factors.md`
+    - Confirm that the included `_ai/includes/embodiment-factors-short.md` remains the canonical `\addatomic{embodiment factor}{...}` source for this deck (no new snippet needed unless we want a shorter page list for exec delivery).
+  - `_ai/includes/centrifugal-governor.md`
+    - Add book refs (so the “control/feedback” archetype is explicitly sourced):
+      - `\addatomic{Watt’s governor}{122-5, 127, 131, 143, 144, 184, 198, 202-3, 206, 207, 221, 231, 234, 251, 254, 256-7, 263}`
+      - `\addatomic{cybernetics founded by}{131, 143, 306}` (if we explicitly name cybernetics as “governor”)
+  - `_ai/includes/conversation-computer.md`
+    - Add book refs (to anchor the “conversation ≠ understanding” point back to the book):
+      - `\addatomic{telepathy}{248-50}` (if we connect to the Turing anecdote / social cues)
+      - `\addatomic{anthropomorphization (‘anthrox’)}{30-31, 90-91, 93-4, 100, 132, 148, 153, 163, 216-17, 239, 276, 326, 342}`
+  - `_atomic-human/includes/trust-autonomy-embodiment.md`
+    - Add `\notes{...}`: trust as infrastructure for devolved autonomy; accountability is the price of delegation; “earn trust” is an operating mechanism, not a slogan.
+    - Add book refs:
+      - `\addatomic{trust}{43, 79, 100}` (expand as needed once we decide which trust points are surfaced)
+      - `\addatomic{embodiment factor}{13, 29, 35, 79, 87, 105, 197, 216-217, 249, 269, 327, 353, 363, 369}`
+      - `\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}`
+  - `_data-science/includes/three-data-science-challenges.md`
+    - Optional: add `\addatomic{System Zero}{242-7, 306, 309, 329, 350, 355, 359, 361, 363, 364}` if we explicitly name “loss of control” as System Zero-style influence rather than generic privacy risk.
 
 ### Session 2 — `the-data-crisis`
 

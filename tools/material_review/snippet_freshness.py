@@ -46,13 +46,20 @@ def main() -> int:
     ap.add_argument("--snippets-repo", type=Path, default=Path("/Users/neil/lawrennd/snippets"))
     ap.add_argument("--out-dir", type=Path, default=Path("artifacts/material-review"))
     ap.add_argument("--stale-days", type=int, default=365)
+    ap.add_argument(
+        "--use-transitive",
+        action="store_true",
+        help="Use include_frequency_transitive (includes inside included snippets) when available",
+    )
     args = ap.parse_args()
 
     inv = json.loads(args.inventory.read_text())
     freq = {}
     # include_frequency.csv has combined totals, but inventory.json has separate dicts.
-    execed_freq = inv.get("execed", {}).get("include_frequency", {}) or {}
-    talks_freq = inv.get("talks", {}).get("include_frequency", {}) or {}
+    execed_key = "include_frequency_transitive" if args.use_transitive else "include_frequency"
+    talks_key = "include_frequency_transitive" if args.use_transitive else "include_frequency"
+    execed_freq = inv.get("execed", {}).get(execed_key, {}) or {}
+    talks_freq = inv.get("talks", {}).get(talks_key, {}) or {}
     all_includes = sorted(set(execed_freq.keys()) | set(talks_freq.keys()))
 
     rows = []
@@ -97,6 +104,7 @@ def main() -> int:
                 "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
                 "snippets_repo": str(args.snippets_repo),
                 "stale_days": args.stale_days,
+                "use_transitive": bool(args.use_transitive),
                 "rows": rows,
             },
             indent=2,
