@@ -20,6 +20,11 @@ transition: None
 * Your default questions: what is the system optimising, who benefits, and who pays when it’s wrong?
 }
 
+\notes{The key move in this session is to treat "data readiness" as an executive governance question. Data only matters because it changes decisions. Once decisions are automated or scaled, incentives and optimisation pressure reshape behaviour - and the failure modes stop looking like “bad data” and start looking like organisational blind spots.}
+
+\addatomic{objectives}{29, 36, 83-4, 148, 149, 179}
+\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}
+
 \include{_economics/includes/the-attention-economy.md}
 
 \newslide{How data-driven systems fail (at scale)}
@@ -30,6 +35,8 @@ transition: None
 * **Accountability gaps**: "the model said so" is not a control system.
 }
 
+\notes{These are incentive-shaped failures. If a metric becomes consequential, people (and systems) optimise against it. Once optimisation is legible, it can be gamed. And once many organisations adopt the same decision rule, small flaws become systemic. “The model said so” is not a control system: it’s a delegation without responsibility.}
+
 \section{DRLs as instrumentation (not a checklist)}
 
 \include{_data-science/includes/the-data-crisis.md}
@@ -37,6 +44,14 @@ transition: None
 \include{_data-science/includes/value-of-data.md}
 \include{_data-science/includes/data-science-as-debugging.md}
 \include{_data-science/includes/data-readiness-levels.md}
+
+\newslide{Access / Assess / Address (make DRLs operational)}
+\slides{
+* **Access** (DRL-C): can we legally/ethically/technically get the data?
+* **Assess** (DRL-B): what can we learn about the data *before* the downstream question?
+* **Address** (DRL-A): what is decision-specific (context, thresholds, deployment)?
+}
+\notes{Use Access/Assess/Address as the vocabulary that makes DRLs actionable. It separates what can be made reusable (assess) from what must remain decision-specific (address). This is the executive-friendly version of “instrumentation”: it tells you what work reduces future cost, and what work must be governed tightly because it encodes intent.}
 
 \newslide{Background: Big Data}
 \slides{
@@ -56,6 +71,12 @@ transition: None
 * Demand **recourse**: who can challenge/appeal a decision, and what evidence is recorded?
 * Keep **accountability human**: delegation is optional; responsibility is not.
 }
+
+\notes{System Zero is the reminder that influence can operate below conscious awareness: the system can steer behaviour without an explicit "decision point". That's why auditability, recourse, and escalation aren't compliance theatre - they're control surfaces.}
+
+\addatomic{System Zero}{242-7, 306, 309, 329, 350, 355, 359, 361, 363, 364}
+\addatomic{Gas Light (play)/gaslighting}{302-3}
+\addatomic{social media}{15, 80, 81, 86, 108, 226, 243, 244, 245, 247, 359, 360, 362, 364}
 
 \newslide{What to do on Monday (practical)}
 \slides{

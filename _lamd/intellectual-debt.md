@@ -42,6 +42,8 @@ transition: None
 * **Limit blast radius**: scopes, sandboxes, rate limits, and kill switches.
 }
 
+\notes{A useful "breadcrumbs" rule in the agent era: make intent explicit *before* implementation, and keep a trail of decisions you can later audit and unwind. If you can't answer "what changed, why, and who approved it?", you are accumulating intellectual debt. Treat review breakpoints (where humans re-check intent) as part of the operating model, not a nice-to-have.}
+
 \thanks
 
 \reading

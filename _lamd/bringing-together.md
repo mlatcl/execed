@@ -48,6 +48,8 @@ transition: None
 * **Recourse**: challenge/appeal path and named accountable owner.
 }
 
+\notes{Treat documentation as a control surface. Keep “breadcrumbs” that connect WHY → WHAT → HOW → DO so that decisions can be challenged, reviewed, and unwound. If you can’t trace intent to action, you don’t have governance — you have hope.}
+
 \section{30/60/90 day playbook}
 
 \newslide{First 30 days: choose and instrument}

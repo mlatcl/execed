@@ -67,6 +67,8 @@ transition: None
   * “kill switch” and rollback.
 }
 
+\notes{A simple governance rhythm you can reuse: WHY → WHAT → HOW → DO → DOCUMENT. WHY: principles you won’t trade off. WHAT: outcomes that must be true. HOW: operating design (roles, escalation, interfaces). DO: this week’s tasks. DOCUMENT: keep decision breadcrumbs so you can explain and unwind. This is the difference between "pilot theatre" and an operating model that survives scale.}
+
 \thanks
 
 \reading
