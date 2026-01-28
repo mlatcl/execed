@@ -7,7 +7,7 @@ owner: Neil D. Lawrence
 priority: Medium
 related_cips:
   - "0002"
-status: Proposed
+status: In Progress
 tags:
   - execed
   - material-review
@@ -39,4 +39,15 @@ Phase 2 (Upstream design):
 - [ ] A new script entrypoint exists for running the inventories end-to-end.
 - [ ] Outputs are stable and suitable for long-term reuse (machine-readable + human report).
 - [ ] A short upstream proposal is written (what should land in `lamd`, with CLI shape).
+
+## Progress Updates
+
+### 2026-01-28
+
+Started implementation:
+
+- Initial scripts added under `tools/material_review/`:
+  - `inventory.py` (include inventory for ExecEd + talk collections)
+  - `snippet_freshness.py` (git-based freshness report for snippet paths)
+- Outputs are written to `artifacts/material-review/` and are ignored via `.gitignore` (generated, reproducible).
 
