@@ -88,6 +88,16 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
   - `_ai/includes/conversation-computer.md`
   - `_atomic-human/includes/trust-autonomy-embodiment.md`
   - `_data-science/includes/three-data-science-challenges.md`
+
+- **Transitive snippet usage (includes inside included snippets)** (highlights from latest transitive inventory):
+  - From `_ai/includes/embodiment-factors.md`:
+    - `_ai/includes/embodiment-factors-short.md` (contains the core `\addatomic{embodiment factor}{...}` block)
+    - `_ai/includes/embodiment-factors-computer-human-table.html` (embedded figure/table)
+    - `_ai/includes/formula-one-engine.md`, `_ai/includes/marcel-renault.md`, `_ai/includes/caleb-mcduff.md` (examples used by the embodiment section)
+  - From `_ai/includes/centrifugal-governor.md`:
+    - `_ai/includes/holborn-science-centrifugal-governor.md`, `_ai/includes/watt-steam-engine.md`, `_ai/includes/centrifugal-governor-diagram.md`
+  - From `_atomic-human/includes/trust-autonomy-embodiment.md`:
+    - `_atomic-human/includes/trust-autonomy-embodiment-diagram.md`
 - **Notes to add/restore (Atomic Human-inspired)**:
   - The “AI moment” is a *change in the flow of information* that makes different decisions cheap to automate (and cheap to scale).
   - The executive risk is not “superintelligence”, it’s **scale + incentives + feedback**: a system that is *slightly wrong* can become *systemically harmful* when rolled out everywhere.
@@ -116,10 +126,9 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
       - `\addatomic{anthropomorphization (‘anthrox’)}{30-31, 90-91, 93-4, 100, 132, 148, 153, 163, 216-17, 239, 276, 326, 342}`
   - `_data-science/includes/new-flow-of-information.md`
     - Add book refs (so the notes link back explicitly to the Atomic Human framing):
-      - `\addatomic{information theory}{10-11, 30, 98, 134, 149, 269}`
-      - `\addatomic{Shannon, Claude}{10, 30, 61, 74, 98, 126, 134, 140, 143, 149, 260, 264, 269-70, 277, 315, 358, 363}`
       - `\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}`
       - `\addatomic{anthropomorphization (‘anthrox’)}{30-31, 90-91, 93-4, 100, 132, 148, 153, 163, 216-17, 239, 276, 326, 342}` (since the notes already use the idea)
+    - Do **not** anchor Shannon/information-theory references here; those belong more naturally with the embodiment/info-theory material (and should live in `_ai/includes/embodiment-factors-short.md` or a dedicated info-theory snippet).
   - `_ai/includes/processor-ham.md`
     - Add book refs:
       - `\addatomic{ignorance: HAMs}{347}` (if we explicitly use the “HAM” framing here)
@@ -147,6 +156,14 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
       - `\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}`
   - `_data-science/includes/three-data-science-challenges.md`
     - Optional: add `\addatomic{System Zero}{242-7, 306, 309, 329, 350, 355, 359, 361, 363, 364}` if we explicitly name “loss of control” as System Zero-style influence rather than generic privacy risk.
+
+- **Book/chapter alignment check (Session 1)** (re-checked against chapter sources + index):
+  - **Prologue (AI “moment” as investment/expectations shift)**: covered by the opening slides (branding + investment jump framing). Good.
+  - **Ch.1 (mythic AI framing; Terminator/God imagery; Narcissus; anthropomorphization)**: covered via `_atomic-human/includes/gods-and-robots-scribeysense.md` notes + `\addatomic` tags. Good.
+  - **Ch.3 (Intent)**: only indirectly present (via “what decision / what information” questions). Candidate improvement: add a short, explicit “intent” anchor (either a small snippet or a 2–3 bullet note block) so Session 1 names the concept.
+  - **Ch.12 (Trust / accountability)**: partially covered via trust/autonomy snippet. Candidate improvement: add one line in notes linking trust to “intelligent accountability” (Baroness O’Neill framing) to sharpen the business-facing takeaway.
+  - **Ch.5 (information revolutions / printing press analogue)**: not explicitly anchored yet (still a proposed addition).
+  - **Ch.9 (AI fallacy / conversation ≠ understanding)**: partially covered by conversation + anthropomorphization, but not explicitly named; optional micro-anchor remains sensible.
 
 ### Session 2 — `the-data-crisis`
 
