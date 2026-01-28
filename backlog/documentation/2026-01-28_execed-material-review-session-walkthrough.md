@@ -64,10 +64,39 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
 
 - **Current framing**: AI moment + decisions + trust/autonomy
 - **Chapter anchors (target)**: Prologue, Ch.1, Ch.3, Ch.12 (+ optional Ch.2/Ch.5/Ch.9 micro-anchors)
-- **Talk spines (candidates)**: TBD (from talk inventory)
-- **Current snippets**: TBD (from include inventory)
+- **Talk spines (candidates)**:
+  - From `~/lawrennd/talks/_business/`:
+    - `the-age-of-generative-ai-june-2024-alp.md`
+    - `data-first-culture-november-24.md`
+    - `ai-opportunities-and-challenges-may-2025.md`
+    - `leading-with-ai-lloyds-bank.md`
+    - `human-machine-collaboration.md`
+  - From `~/lawrennd/talks/_atomic-human/` (many variants share the same spine; pick the most recent-delivered deck):
+    - `how-ai-works-and-how-it-will-transform-our-lives.md`
+    - `business-and-the-atomic-human.md`
+    - `ai-and-capability-shaping-servicenow.md`
+    - `translating-ai-into-practice-astrazeneca.md`
+    - `humans-in-the-ai-world.md` (and cohort variants)
+- **Current snippets (current lecture includes)**:
+  - `_atomic-human/includes/gods-and-robots-scribeysense.md`
+  - `_data-science/includes/new-flow-of-information.md`
+  - `_ai/includes/processor-ham.md`
+  - `_ai/includes/the-atomic-eye.md`
+  - `_data-science/includes/evolved-relationship.md`
+  - `_ai/includes/embodiment-factors.md`
+  - `_ai/includes/centrifugal-governor.md`
+  - `_ai/includes/conversation-computer.md`
+  - `_atomic-human/includes/trust-autonomy-embodiment.md`
+  - `_data-science/includes/three-data-science-challenges.md`
 - **Notes to add/restore (Atomic Human-inspired)**:
-  - TBD (exec-facing narrative, the “AI moment” framing, and why this is about decisions and institutions, not sci‑fi)
+  - The “AI moment” is a *change in the flow of information* that makes different decisions cheap to automate (and cheap to scale).
+  - The executive risk is not “superintelligence”, it’s **scale + incentives + feedback**: a system that is *slightly wrong* can become *systemically harmful* when rolled out everywhere.
+  - Distinguish:
+    - **Intelligent entities** (anthropomorphic framing that invites magical thinking)
+    - **Intelligent systems** (supply chains, platforms, credit systems: lots of small automated decisions, coordinated through data + incentives)
+  - The core leadership question to keep repeating: *what is the decision, what information does it require, how can it fail, and who is on the hook?*
+  - “Conversation” is a capability shift: the interface cost collapses, so delegation temptation rises — but accountability must remain with humans (preview Session 4/6).
+  - Trust/autonomy is an operating design choice: devolve authority *only* where information is complete enough and escalation is real (preview Session 5 mission control).
 - **Book references (`\addatomic`) to include** (seed list; extend as needed):
   - `\addatomic{embodiment factor}{13, 29, 35, 79, 87, 105, 197, 216-217, 249, 269, 327, 353, 363, 369}`
   - `\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}`
@@ -75,7 +104,8 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
   - `\addatomic{Laplace’s demon}{111-14, 145}` (expand page list as needed)
   - `\addatomic{telepathy}{248-50}` (if we use the “Turing got fooled by social cues” point)
 - **Proposed snippet changes**:
-  - TBD
+  - Add a small Ch.5 anchor snippet (printing press ↔ social media) to make the “information revolution” analogy explicit *without* turning Session 1 into a history lecture.
+  - Consider adding a Ch.9 “AI fallacy” micro-snippet (machines don’t understand like humans; social cue illusions) if we see repeated executive anthropomorphism in delivery feedback.
 
 ### Session 2 — `the-data-crisis`
 
