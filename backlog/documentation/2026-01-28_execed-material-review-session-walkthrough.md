@@ -169,17 +169,61 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
 
 - **Current framing**: intent/incentives + System Zero + attention
 - **Chapter anchors (target)**: Ch.3, Ch.8, Ch.10 (+ optional Ch.5 printing press → social media)
-- **Talk spines (candidates)**: TBD
-- **Current snippets**: TBD
+- **Talk spines (candidates)** (examples that already carry key Session 2 snippets):
+  - Attention economy:
+    - `~/lawrennd/talks/_business/leading-with-ai-lloyds-bank.md`
+    - `~/lawrennd/talks/_business/ai-opportunities-and-challenges-may-2025.md`
+    - `~/lawrennd/talks/_business/the-transformative-power-of-ai-and-its-challenges.md`
+    - `~/lawrennd/talks/_atomic-human/humans-in-the-ai-world.md` (and cohort variants)
+    - `~/lawrennd/talks/_economics/ai-cannot-replace-the-atomic-human-mimit.md` (and variants across `_economics`, `_policy`)
+  - “Data crisis” framing:
+    - `~/lawrennd/talks/_business/data-first-culture.md` (includes `_data-science/includes/the-data-crisis.md`)
+    - `~/lawrennd/talks/_business/post-digital-transformation.md` (includes `_data-science/includes/data-readiness-levels.md`)
+- **Current snippets (current lecture includes)**:
+  - `_atomic-human/includes/trust-autonomy-embodiment.md`
+  - `_economics/includes/the-attention-economy.md`
+  - `_data-science/includes/the-data-crisis.md`
+  - `_data-science/includes/lies-damned-lies.md`
+  - `_data-science/includes/value-of-data.md`
+  - `_data-science/includes/data-science-as-debugging.md`
+  - `_data-science/includes/data-readiness-levels.md`
+  - `_atomic-human/includes/reality-is-more-humdrum.md`
+
+- **Transitive snippet usage (includes inside included snippets)** (highlights):
+  - From `_economics/includes/the-attention-economy.md`:
+    - `_economics/includes/herbert-simon-information.md`
+  - From `_data-science/includes/data-readiness-levels.md`:
+    - `_data-science/includes/data-readiness-levels-short.md`
+    - `_data-science/includes/three-grades-of-data-readiness.md`
+    - `_data-science/includes/data-joel-tests.md`
+  - From `_data-science/includes/lies-damned-lies.md`:
+    - `_data-science/includes/lies-damned-lies-big-data.md`
+  - Supporting/background pulled in by DRL/transparency framing:
+    - `_statistics/includes/mathematical-statistics.md`
+  - From trust/autonomy:
+    - `_atomic-human/includes/trust-autonomy-embodiment-diagram.md`
 - **Notes to add/restore (Atomic Human-inspired)**:
-  - TBD (incentives → optimisation → drift; how “intent” becomes legible and therefore gameable)
+  - “Data crisis” is mostly not about cleanliness — it’s about **objectives**: what the system is optimising, what it rewards, and what it makes invisible.
+  - Attention is the bottleneck: when attention is scarce, **rankings become power**, and incentives to manipulate the information topography intensify.
+  - Goodhart dynamics should be treated as a default: assume metrics will be gamed once they become consequential.
+  - System Zero is the “below-awareness” failure mode: influence and manipulation can occur without explicit persuasion.
+  - Executive control primitives to emphasise: escalation (“pause when unsure”), recourse/appeals, audit trails, and named accountable owners.
 - **Book references (`\addatomic`) to include** (seed list; extend as needed):
   - `\addatomic{System Zero}{242-7, 306, 309, 329, 350, 355, 359, 361, 363, 364}`
   - `\addatomic{Gas Light (play)/gaslighting}{302-3}` (expand if needed)
   - `\addatomic{trust}{43, 79, 100}` (expand if needed)
   - `\addatomic{printing press}{8, 9, 13, 24, 68, 75, 104-5, 106-8, 107-8, 345, 354-5}` (if using the “info revolution” analogue)
+  - `\addatomic{objectives}{29, 36, 83-4, 148, 149, 179}` (for the “what are we optimising?” framing)
+  - `\addatomic{social media}{15, 80, 81, 86, 108, 226, 243, 244, 245, 247, 359, 360, 362, 364}` (if we explicitly name the incentive/attention context)
+  - `\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}` (if we make “information topography” explicit rather than implicit)
 - **Proposed snippet changes**:
-  - TBD
+  - Consider adding an exec-friendly “Access / Assess / Address” micro-anchor (Fynesse framework) to make the DRL story actionable:
+    - Canonical source snippet: `_data-science/includes/access-assess-address.md`
+    - Rationale: it explicitly maps to DRLs (**Access ↔ DRL-C**, **Assess ↔ DRL-B**, **Address ↔ DRL-A**) and gives an operating vocabulary that integrates cleanly with “DRLs as instrumentation”.
+  - If we want a stronger explicit Ch.3 “Intent” anchor, consider adding a short atomic-human intent snippet (or a very small `\notes{...}` block) that defines intent vs observed behaviour (“objective is learnable, therefore gameable”).
+  - Ch.10 (Gaslighting) is currently referenced in the framing but not strongly anchored in the snippet set for Session 2 (it is more central in Session 6). Decide whether to:
+    - keep gaslighting as a light mention here, or
+    - add a small Ch.10-aligned snippet (only if it improves the narrative and doesn’t duplicate Session 6).
 
 ### Session 3 — `data-quality`
 
@@ -203,6 +247,12 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
 - **Current snippets**: TBD
 - **Notes to add/restore (Atomic Human-inspired)**:
   - TBD (decomposition hides accountability; why “understanding” becomes the scarce capability)
+- **Breadcrumbs / governance micro-anchor (VibeSafe-inspired)**:
+  - Add 2–3 speaker-note bullets that translate “breadcrumbs” into exec language:
+    - make **intent explicit before implementation** (what are we trying to do?),
+    - keep **audit trails** (what changed, why, and who approved it),
+    - define **breakpoints for review** (when humans must re-check).
+  - Use as a bridge from “intellectual debt” → “agent era”: the cost of misinterpretation is drift you can’t unwind.
 - **Book references (`\addatomic`) to include** (seed list; extend as needed):
   - `\addatomic{automation}{6, 24, 46-7, 77-8, 80-81, 83, 85-87, 363-6, 368-369}` (expand as needed)
   - `\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}` (as the “why debt emerges” precursor)
@@ -217,6 +267,13 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
 - **Current snippets**: TBD
 - **Notes to add/restore (Atomic Human-inspired)**:
   - TBD (mission control as governance; feedback beats prediction; roles + escalation + drills)
+- **Breadcrumbs / governance micro-anchor (VibeSafe-inspired)**:
+  - Add a “WHY → WHAT → HOW → DO → DOCUMENT” framing line as a practical operating rhythm:
+    - **WHY**: principles (what we will not trade off)
+    - **WHAT**: outcomes (what must be true)
+    - **HOW**: operating design (roles, escalation, interfaces)
+    - **DO**: tasks (who does what this week)
+    - **DOCUMENT**: keep decision breadcrumbs (so the system stays maintainable)
 - **Book references (`\addatomic`) to include** (seed list; extend as needed):
   - `\addatomic{Laplace’s demon}{111-14, 145}` (as “prediction thinking”)
   - `\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}` (operating model as topography design)
@@ -246,6 +303,11 @@ Then propose **candidate snippet swaps/additions** and **notes additions** (not 
 - **Current snippets**: TBD
 - **Notes to add/restore (Atomic Human-inspired)**:
   - TBD (playbook narrative + institutional responsibility; recap the course “spine” explicitly)
+- **Breadcrumbs / governance micro-anchor (VibeSafe-inspired)**:
+  - In the capstone recap, include a “minimum viable governance loop” slide/note:
+    - keep a short chain from **WHY** to **DO** (so people can challenge decisions),
+    - keep breadcrumbs so you can **explain and unwind**,
+    - treat documentation as a **control surface** (not an afterthought).
 - **Book references (`\addatomic`) to include** (seed list; extend as needed):
   - `\addatomic{trust}{43, 79, 100}` (expand if needed)
   - `\addatomic{System Zero}{242-7, 306, 309, 329, 350, 355, 359, 361, 363, 364}` (as a recap of the core risk)
