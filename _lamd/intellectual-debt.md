@@ -20,6 +20,16 @@ transition: None
 * With agents, that becomes **operational risk**: actions happen faster than review and across more surfaces.
 }
 
+\notes{In the agent era, "intellectual debt" also shows up as a practical accountability failure: the organisation can no longer explain why a decision was taken, how it was produced, or how to safely change it. Decomposition and "information assembly lines" create speed, but they also hide system-level failure unless we deliberately invest in auditability and review.}
+
+\addatomic{intellectual debt}{84, 85, 349-50, 365}
+\addatomic{automation}{6, 24, 46-7, 77-8, 80-81, 83, 85-87, 363-6, 368-369}
+\addatomic{decomposition}{58, 79}
+\addatomic{information assembly line}{57-8, 79}
+\addatomic{accountability}{352, 363}
+\addatomic{intelligent accountability}{363-4}
+\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}
+
 \include{_ai/includes/intellectual-debt-short.md}
 \include{_ai/includes/data-and-intellectual-debt.md}
 
