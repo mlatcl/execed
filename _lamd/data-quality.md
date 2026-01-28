@@ -19,6 +19,11 @@ transition: None
 * Default rule: when uncertainty is high, slow down and widen the loop.
 }
 
+\notes{This is the "gremlin" lesson: uncertainty never disappears, it only gets hidden. So the executive question is not “is the data perfect?” but “is the decision reliable enough, and what happens when it isn’t?” Good governance makes uncertainty legible: calibrated confidence, explicit thresholds, and real escalation paths.}
+
+\addatomic{uncertainty}{150-52, 158, 160, 168}
+\addatomic{Laplace’s gremlin}{161, 178, 179, 181, 276}
+
 \include{_atomic-human/includes/reflective-or-reactive.md}
 
 \newslide{A simple operating discipline}
@@ -27,6 +32,11 @@ transition: None
 * Instrument uncertainty (calibration, drift, novelty) and set triggers.
 * Practice incident response: “pause when unsure” and rollback/override.
 }
+
+\notes{Threshold logic is governance: it defines what can run unattended and what must route to humans. Calibration matters because "confidence" only helps if it means what it says. “Pause when unsure” is the organisational commitment to treat uncertainty as a first-class signal.}
+
+\addatomic{threshold logic}{262-3}
+\addatomic{probability}{111, 136, 161, 162, 168-70}
 
 \include{_data-science/includes/gartner-hype-cycle-ai-bd-dm-dl-ml.md}
 <!--include{_ai/includes/game-playing-ai.md}-->
@@ -66,6 +76,8 @@ $$
 
 * Data is modern software
 * We need to revisit software engineering and computer science in this context.
+
+\notes{Practical takeaway: pick one automated (or candidate) decision and write down the threshold ladder (automate/assist/escalate), the monitoring triggers, and the escalation owner. Then treat each incident as a feedback loop: adjust thresholds, improve instrumentation, and reduce intellectual debt rather than patching ad hoc.}
 
 
 \thanks
