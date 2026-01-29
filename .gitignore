@@ -61,6 +61,7 @@ vendor/bundle/
 
 # Local Python virtualenv + caches
 .venv/
+.venv-py312-segfault-*/
 __pycache__/
 .ipynb_checkpoints/
 
@@ -76,6 +77,18 @@ _lamd/*.ipynb
 _lamd/makefile
 _lamd/talk-people.gpp
 _lamd/lynguine.log
+_lamd/ndlpy.log
+_lamd/*~
+_lamd/#*#
+_lamd/.#*
+_lamd/project-management.pptx
+
+# VibeSafe requirements system files (templates)
+requirements/README.md
+requirements/requirement_template.md
+
+# Local VibeSafe validator script (installed, not project content)
+scripts/validate_vibesafe_structure.py
 
 # Misc local outputs
 lynguine.log

@@ -31,6 +31,16 @@ transition: None
 * **Operating model**: roles, decision rights, drills, incident response.
 }
 
+\notes{This capstone is a control-point recap. Each item corresponds to an "executive lever" that limits failure at scale: define objectives, make uncertainty legible with thresholds, build trust infrastructure (rights, recourse, auditability), and operate with an explicit model of roles and escalation.}
+
+\addatomic{objectives}{29, 36, 83-4, 148, 149, 179}
+\addatomic{topography, information}{34-9, 43-8, 57, 62, 104, 115-16, 127, 140, 192, 196, 199, 291, 334, 354-5}
+\addatomic{trust}{43, 79, 100}
+\addatomic{System Zero}{242-7, 306, 309, 329, 350, 355, 359, 361, 363, 364}
+\addatomic{accountability}{352, 363}
+\addatomic{intelligent accountability}{363-4}
+\addatomic{automation}{6, 24, 46-7, 77-8, 80-81, 83, 85-87, 363-6, 368-369}
+
 \section{Agents: capability with constraints}
 
 \newslide{Agent rollout ladder}
