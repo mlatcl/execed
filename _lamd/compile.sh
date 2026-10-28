@@ -1,36 +1,43 @@
-#!/usr/bin/env bash
-
+#!/bin/bash
+# Compile lectures and worksheets listed in the CSVs (skip header row).
 set -euo pipefail
 
-MAKETALK="maketalk"
-if [ -x "../.venv/bin/maketalk" ]; then
-    MAKETALK="../.venv/bin/maketalk"
-elif command -v maketalk >/dev/null 2>&1; then
-    MAKETALK="maketalk"
-else
-    echo "Error: 'maketalk' not found. Install lamd (e.g. '../.venv/bin/pip install almd')." 1>&2
-    exit 127
-fi
+cd "$(dirname "$0")"
 
-# Ensure helper CLIs (mdfield, dependencies, etc.) are on PATH
-if [ "${MAKETALK}" = "../.venv/bin/maketalk" ]; then
-    VENV_BIN="$(cd ../.venv/bin && pwd)"
-    export PATH="${VENV_BIN}:${PATH}"
-fi
-
-FILES=""
-SKIP=true
-while read stub; do
-    if $SKIP; then
-	SKIP=false
-    else
-        if [ -f "${stub}.md" ]; then
-            "${MAKETALK}" "${stub}.md"
-        elif [ -f "${stub}.gpp.markdown" ]; then
-            "${MAKETALK}" "${stub}.gpp.markdown"
-        else
-            echo "Error: can't find source for '${stub}' (tried .md and .gpp.markdown)" 1>&2
-            exit 1
+compile_list() {
+    local csv="$1"
+    local skip=true
+    local stub
+    while IFS= read -r stub || [[ -n "$stub" ]]; do
+        stub="${stub//$'\r'/}"
+        [[ -z "$stub" ]] && continue
+        if $skip; then
+            skip=false
+            continue
         fi
-    fi
-done < lectures.csv
+        echo "maketalk ${stub}.md"
+        maketalk "${stub}.md"
+    done < "$csv"
+}
+
+compile_list lectures.csv
+if [[ -f worksheets.csv ]]; then
+    compile_list worksheets.csv
+fi
+
+# Printable assessment handouts (pandoc), not LaMD.
+handouts_dir="../assessments/handouts"
+if [[ -f "${handouts_dir}/handouts.csv" ]]; then
+    skip=true
+    while IFS= read -r stub || [[ -n "$stub" ]]; do
+        stub="${stub//$'\r'/}"
+        [[ -z "$stub" ]] && continue
+        if $skip; then
+            skip=false
+            continue
+        fi
+        echo "pandoc ${stub}.md -> tex/pdf"
+        pandoc "${handouts_dir}/${stub}.md" -s -o "${handouts_dir}/${stub}.tex"
+        pandoc "${handouts_dir}/${stub}.md" -o "${handouts_dir}/${stub}.pdf"
+    done < "${handouts_dir}/handouts.csv"
+fi
